@@ -29,7 +29,7 @@ public class Login extends AppCompatActivity {
         linearLayout_textQrLogin.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(Login.this,Main_QrCode.class);
+                Intent intent = new Intent(Login.this,ScanQRMLKit.class);
                 startActivity(intent);
             }
         });

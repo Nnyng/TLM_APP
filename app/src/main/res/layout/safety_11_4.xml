@@ -33,7 +33,7 @@
                     android:layout_height="wrap_content"
                     android:text="ระบบแจ้งเหตุอัตโนมัติ สำหรับแผนก Treater"
                     android:textColor="@color/colorBlack"
-                    android:textSize="28dp"
+                    android:textSize="38dp"
                     android:theme="@style/MyFont" />
 
             </androidx.appcompat.widget.Toolbar>
@@ -51,7 +51,7 @@
                 android:paddingBottom="5dp"
                 android:text="DATE/TIME"
                 android:textColor="@color/colorBlack"
-                android:textSize="20dp"
+                android:textSize="25dp"
                 android:theme="@style/MyFont" />
 
             <TextView
@@ -61,7 +61,7 @@
                 android:layout_marginTop="20dp"
                 android:text="ลำดับที่"
                 android:textColor="@color/colorBlack"
-                android:textSize="25dp"
+                android:textSize="32dp"
                 android:theme="@style/MyFont" />
 
             <RelativeLayout
@@ -88,7 +88,7 @@
                 android:layout_marginTop="20dp"
                 android:text="Zone"
                 android:textColor="@color/colorBlack"
-                android:textSize="25dp"
+                android:textSize="32dp"
                 android:theme="@style/MyFont" />
 
             <RelativeLayout
@@ -115,7 +115,7 @@
                 android:layout_marginTop="20dp"
                 android:text="ตำแหน่งติดตั้ง"
                 android:textColor="@color/colorBlack"
-                android:textSize="25dp"
+                android:textSize="32dp"
                 android:theme="@style/MyFont" />
 
             <RelativeLayout
@@ -142,7 +142,7 @@
                 android:layout_marginTop="20dp"
                 android:text="ผลการตรวจสภาพทั่วไปทุกเดือน"
                 android:textColor="@color/colorBlack"
-                android:textSize="25dp"
+                android:textSize="32dp"
                 android:theme="@style/MyFont" />
 
             <RelativeLayout
@@ -179,7 +179,7 @@
                     android:paddingTop="0dp"
                     android:text="ลงชื่อผู้ตรวจ"
                     android:textColor="@color/colorBlack"
-                    android:textSize="20dp"
+                    android:textSize="25dp"
                     android:theme="@style/MyFont" />
 
                 <EditText
@@ -188,7 +188,7 @@
                     android:layout_marginLeft="120dp"
                     android:maxLines="1"
                     android:textColor="@color/colorBlack"
-                    android:textSize="20dp"
+                    android:textSize="28dp"
                     android:theme="@style/MyFont" />
             </RelativeLayout>
 
@@ -209,7 +209,7 @@
                     android:paddingTop="0dp"
                     android:text="ลงชื่อผู้ตรวจสอบ"
                     android:textColor="@color/colorBlack"
-                    android:textSize="20dp"
+                    android:textSize="25dp"
                     android:theme="@style/MyFont" />
 
                 <EditText
@@ -218,7 +218,7 @@
                     android:layout_marginLeft="156dp"
                     android:maxLines="1"
                     android:textColor="@color/colorBlack"
-                    android:textSize="20dp"
+                    android:textSize="28dp"
                     android:theme="@style/MyFont" />
             </RelativeLayout>
 
@@ -234,7 +234,7 @@
                 android:gravity="center"
                 android:text="บันทึก"
                 android:textColor="@color/colorWhite"
-                android:textSize="25dp"
+                android:textSize="35dp"
                 android:textStyle="bold"
                 android:theme="@style/MyFont" />
 

@@ -29,7 +29,7 @@
                 android:layout_height="wrap_content"
                 android:text=" DAILY CHECK"
                 android:textColor="@color/colorBlack"
-                android:textSize="28dp"
+                android:textSize="38dp"
                 android:theme="@style/MyFont" />
         </androidx.appcompat.widget.Toolbar>
 
@@ -45,11 +45,12 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="25dp"
+                android:layout_marginTop="23dp"
                 android:gravity="center"
                 android:text="DIESEL  FIRE  PUMP"
                 android:textColor="@color/colorBlack"
-                android:textSize="25dp" />
+                android:fontFamily="@font/thsarabunnewbold"
+                android:textSize="32dp" />
         </LinearLayout>
 
         <LinearLayout
@@ -64,11 +65,11 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="25dp"
+                android:layout_marginTop="23dp"
                 android:gravity="center"
                 android:text="PORTABLE  FIRE  PUMP"
                 android:textColor="@color/colorBlack"
-                android:textSize="25dp" />
+                android:textSize="32dp" />
         </LinearLayout>
 
         <LinearLayout
@@ -83,11 +84,11 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="25dp"
+                android:layout_marginTop="23dp"
                 android:gravity="center"
                 android:text="FIRE  PUMP"
                 android:textColor="@color/colorBlack"
-                android:textSize="25dp" />
+                android:textSize="32dp" />
         </LinearLayout>
 
         <LinearLayout
@@ -102,11 +103,11 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="25dp"
+                android:layout_marginTop="23dp"
                 android:gravity="center"
                 android:text="PORTABLE GENERATOR SAKARI GEN6 HVA"
                 android:textColor="@color/colorBlack"
-                android:textSize="25dp" />
+                android:textSize="32dp" />
         </LinearLayout>
 
         <LinearLayout
@@ -121,11 +122,11 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="25dp"
+                android:layout_marginTop="23dp"
                 android:gravity="center"
                 android:text="PORTABLE GENERATOR HONDA GX 120"
                 android:textColor="@color/colorBlack"
-                android:textSize="25dp" />
+                android:textSize="32dp" />
         </LinearLayout>
 
 

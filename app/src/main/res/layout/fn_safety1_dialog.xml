@@ -30,7 +30,7 @@
                 android:paddingBottom="5dp"
                 android:text="DATE/TIME"
                 android:textColor="@color/colorBlack"
-                android:textSize="20dp"
+                android:textSize="25dp"
                 android:theme="@style/MyFont" />
 
             <TextView
@@ -40,7 +40,7 @@
                 android:layout_marginTop="20dp"
                 android:text="สถานที่ติดตั้ง"
                 android:textColor="@color/colorBlack"
-                android:textSize="25dp"
+                android:textSize="32dp"
                 android:theme="@style/MyFont" />
 
 
@@ -58,7 +58,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="20dp"
                     android:theme="@style/spinnerItemStyle"
-                    android:layout_marginTop="18dp"
+                    android:layout_marginTop="12dp"
                     android:layout_weight="1"
                     android:entries="@array/Location"/>
 
@@ -71,7 +71,7 @@
                 android:layout_marginTop="20dp"
                 android:text="ชนิดของอุปกรณ์"
                 android:textColor="@color/colorBlack"
-                android:textSize="25dp"
+                android:textSize="32dp"
                 android:theme="@style/MyFont" />
 
             <RelativeLayout
@@ -88,7 +88,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="20dp"
                     android:theme="@style/spinnerItemStyle"
-                    android:layout_marginTop="18dp"
+                    android:layout_marginTop="14dp"
                     android:layout_weight="1"
                     android:entries="@array/device_Type"
                     />
@@ -102,7 +102,7 @@
                 android:layout_marginTop="20dp"
                 android:text="จำนวน"
                 android:textColor="@color/colorBlack"
-                android:textSize="25dp"
+                android:textSize="32dp"
                 android:theme="@style/MyFont" />
 
             <RelativeLayout
@@ -118,7 +118,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="20dp"
                     android:theme="@style/spinnerItemStyle"
-                    android:layout_marginTop="18dp"
+                    android:layout_marginTop="12dp"
                     android:layout_weight="1"
                     android:entries="@array/total"/>
 
@@ -132,7 +132,7 @@
                 android:layout_marginTop="20dp"
                 android:text="ประเภทของอุปกรณ์"
                 android:textColor="@color/colorBlack"
-                android:textSize="25dp"
+                android:textSize="32dp"
                 android:theme="@style/MyFont" />
 
             <RelativeLayout
@@ -149,7 +149,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="20dp"
                     android:theme="@style/spinnerItemStyle"
-                    android:layout_marginTop="18dp"
+                    android:layout_marginTop="12dp"
                     android:layout_weight="1"
                     android:entries="@array/Total_Type"/>
 
@@ -162,7 +162,7 @@
                 android:layout_marginTop="20dp"
                 android:text="สภาพทั่วไปของอุปกรณ์"
                 android:textColor="@color/colorBlack"
-                android:textSize="25dp"
+                android:textSize="32dp"
                 android:theme="@style/MyFont" />
 
             <RelativeLayout
@@ -178,7 +178,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="20dp"
                     android:theme="@style/spinnerItemStyle"
-                    android:layout_marginTop="18dp"
+                    android:layout_marginTop="12dp"
                     android:layout_weight="1"
                     android:entries="@array/Generality"/>
 
@@ -191,7 +191,7 @@
                 android:layout_marginTop="20dp"
                 android:text="ชื่ออุปกรณ์"
                 android:textColor="@color/colorBlack"
-                android:textSize="25dp"
+                android:textSize="32dp"
                 android:theme="@style/MyFont" />
 
             <RelativeLayout
@@ -209,7 +209,7 @@
                     android:paddingTop="13dp"
                     android:layout_marginLeft="20dp"
                     android:textColor="@color/colorBlack"
-                    android:textSize="22dp"
+                    android:textSize="30dp"
                     android:theme="@style/MyFont" />
             </RelativeLayout>
 
@@ -220,7 +220,7 @@
                 android:layout_marginTop="20dp"
                 android:text="หมายเหตุ"
                 android:textColor="@color/colorBlack"
-                android:textSize="25dp"
+                android:textSize="32dp"
                 android:theme="@style/MyFont" />
 
             <RelativeLayout
@@ -238,7 +238,7 @@
                     android:paddingLeft="10dp"
                     android:theme="@style/MyFont"
                     android:textColor="@color/colorBlack"
-                    android:textSize="25dp" />
+                    android:textSize="28dp" />
             </RelativeLayout>
 
 
@@ -259,7 +259,7 @@
                     android:text="ลงชื่อผู้ตรวจ"
                     android:theme="@style/MyFont"
                     android:textColor="@color/colorBlack"
-                    android:textSize="20dp" />
+                    android:textSize="25dp" />
 
                 <EditText
                     android:id="@+id/Signfn1"
@@ -269,7 +269,7 @@
                     android:maxLines="1"
                     android:theme="@style/MyFont"
                     android:textColor="@color/colorBlack"
-                    android:textSize="20dp" />
+                    android:textSize="28dp" />
             </RelativeLayout>
 
             <RelativeLayout
@@ -289,7 +289,7 @@
                     android:text="ตำแหน่ง"
                     android:theme="@style/MyFont"
                     android:textColor="@color/colorBlack"
-                    android:textSize="20dp" />
+                    android:textSize="25dp" />
 
                 <EditText
                     android:id="@+id/positionSignfn1"
@@ -299,7 +299,7 @@
                     android:maxLines="1"
                     android:theme="@style/MyFont"
                     android:textColor="@color/colorBlack"
-                    android:textSize="20dp" />
+                    android:textSize="28dp" />
             </RelativeLayout>
 
             <RelativeLayout
@@ -319,7 +319,7 @@
                     android:paddingTop="0dp"
                     android:theme="@style/MyFont"
                     android:textColor="@color/colorBlack"
-                    android:textSize="20dp" />
+                    android:textSize="25dp" />
 
                 <EditText
                     android:id="@+id/ed_Signinspectorfn1"
@@ -329,7 +329,7 @@
                     android:maxLines="1"
                     android:theme="@style/MyFont"
                     android:textColor="@color/colorBlack"
-                    android:textSize="20dp" />
+                    android:textSize="28dp" />
             </RelativeLayout>
 
             <RelativeLayout
@@ -349,7 +349,7 @@
                     android:theme="@style/MyFont"
                     android:paddingTop="0dp"
                     android:textColor="@color/colorBlack"
-                    android:textSize="20dp" />
+                    android:textSize="25dp" />
 
                 <EditText
                     android:id="@+id/position_ed_Signinspectorfn1"
@@ -359,7 +359,7 @@
                     android:maxLines="1"
                     android:theme="@style/MyFont"
                     android:textColor="@color/colorBlack"
-                    android:textSize="20dp" />
+                    android:textSize="28dp" />
             </RelativeLayout>
 
             <LinearLayout
@@ -376,7 +376,7 @@
                     android:background="#8FBC8F"
                     android:text="Update"
                     android:textColor="@color/colorBlack"
-                    android:textSize="20dp"/>
+                    android:textSize="32dp"/>
 
                 <Button
                     android:id="@+id/btnDelete"
@@ -386,7 +386,7 @@
                     android:text="Delete"
                     android:background="#CC3333"
                     android:textColor="@color/colorBlack"
-                    android:textSize="20dp"/>
+                    android:textSize="32dp"/>
 
             </LinearLayout>
 

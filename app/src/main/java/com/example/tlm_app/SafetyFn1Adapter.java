@@ -6,7 +6,7 @@ import android.widget.BaseAdapter;
 
 import java.util.List;
 
-public class SafetyFn1Adapter extends BaseAdapter {
+public class  SafetyFn1Adapter extends BaseAdapter {
 
     List<FireFightingEquipment> fireEquipment;
 

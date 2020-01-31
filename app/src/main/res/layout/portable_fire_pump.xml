@@ -31,7 +31,7 @@
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:textSize="28dp"
+                    android:textSize="38dp"
                     android:text=" PORTABLE  FIRE  PUMP"
                     android:textColor="@color/colorBlack"
                     android:theme="@style/MyFont" />
@@ -51,7 +51,7 @@
                 android:paddingBottom="5dp"
                 android:text="DATE/TIME"
                 android:textColor="@color/colorBlack"
-                android:textSize="20dp"
+                android:textSize="25dp"
                 android:theme="@style/MyFont" />
 
             <TextView
@@ -61,14 +61,14 @@
                 android:layout_marginTop="23dp"
                 android:text="แบตเตอรี่"
                 android:textColor="@color/colorBlack"
-                android:textSize="25dp"
+                android:textSize="33dp"
                 android:theme="@style/MyFont" />
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="2dp"
                 android:layout_marginLeft="25dp"
-                android:layout_marginRight="480dp"
+                android:layout_marginRight="489dp"
                 android:background="@color/colorBlack"
                 android:textAppearance="@style/MyFont" />
 
@@ -79,7 +79,7 @@
                 android:layout_marginTop="23dp"
                 android:text="ตรวจวัดแรงดันแบตเตอรี่  ไม่น้อยกว่า 12 โวลท์"
                 android:textColor="@color/colorBlack"
-                android:textSize="25dp"
+                android:textSize="32dp"
                 android:theme="@style/MyFont" />
 
             <RelativeLayout
@@ -107,7 +107,7 @@
                 android:layout_marginTop="20dp"
                 android:text="หมายเหตุ"
                 android:textColor="@color/colorBlack"
-                android:textSize="25dp"
+                android:textSize="32dp"
                 android:theme="@style/MyFont" />
 
             <RelativeLayout
@@ -143,7 +143,7 @@
                 android:layout_marginTop="23dp"
                 android:text="ขั้วต่อแบตเตอรี่  สะอาด"
                 android:textColor="@color/colorBlack"
-                android:textSize="25dp"
+                android:textSize="32dp"
                 android:theme="@style/MyFont" />
 
             <RelativeLayout
@@ -171,7 +171,7 @@
                 android:layout_marginTop="20dp"
                 android:text="หมายเหตุ"
                 android:textColor="@color/colorBlack"
-                android:textSize="25dp"
+                android:textSize="32dp"
                 android:theme="@style/MyFont" />
 
             <RelativeLayout
@@ -207,7 +207,7 @@
                 android:layout_marginTop="23dp"
                 android:text="ควรเปลี่ยนแบตเตอรี่ทุกๆ 2 ปี  เปลี่ยนใหม่ถ้าจำเปน"
                 android:textColor="@color/colorBlack"
-                android:textSize="25dp"
+                android:textSize="32dp"
                 android:theme="@style/MyFont" />
 
             <RelativeLayout
@@ -235,7 +235,7 @@
                 android:layout_marginTop="20dp"
                 android:text="หมายเหตุ"
                 android:textColor="@color/colorBlack"
-                android:textSize="25dp"
+                android:textSize="32dp"
                 android:theme="@style/MyFont" />
 
             <RelativeLayout
@@ -271,14 +271,14 @@
             android:layout_marginTop="23dp"
             android:text="เครื่องชาร์จแบตเตอรี่อัตโนมัติ"
             android:textColor="@color/colorBlack"
-            android:textSize="25dp"
+            android:textSize="33dp"
             android:theme="@style/MyFont" />
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="2dp"
                 android:layout_marginLeft="25dp"
-                android:layout_marginRight="274dp"
+                android:layout_marginRight="305dp"
                 android:background="@color/colorBlack"
                 android:textAppearance="@style/MyFont" />
 
@@ -291,7 +291,7 @@
                 android:text="ต่ออุปกรณ์ Automatic battery charger
                         ประมาณ 13 ชั่วโมงต่อการชาร์จ"
                 android:textColor="@color/colorBlack"
-                android:textSize="25dp"
+                android:textSize="32dp"
                 android:theme="@style/MyFont" />
 
             <RelativeLayout
@@ -320,7 +320,7 @@
                 android:layout_marginTop="20dp"
                 android:text="หมายเหตุ"
                 android:textColor="@color/colorBlack"
-                android:textSize="25dp"
+                android:textSize="32dp"
                 android:theme="@style/MyFont" />
 
             <RelativeLayout
@@ -337,7 +337,7 @@
                     android:paddingLeft="10dp"
                     android:theme="@style/MyFont"
                     android:textColor="@color/colorBlack"
-                    android:textSize="25dp" />
+                    android:textSize="28dp" />
             </RelativeLayout>
 
             <TextView
@@ -356,7 +356,7 @@
                 android:layout_marginTop="23dp"
                 android:text="ทำการชาร์จแบตเตอรี่ทุกๆ 15 วัน  แบตเตอรี่ 50 %"
                 android:textColor="@color/colorBlack"
-                android:textSize="25dp"
+                android:textSize="32dp"
                 android:theme="@style/MyFont" />
 
             <RelativeLayout
@@ -384,7 +384,7 @@
                 android:layout_marginTop="20dp"
                 android:text="หมายเหตุ"
                 android:textColor="@color/colorBlack"
-                android:textSize="25dp"
+                android:textSize="32dp"
                 android:theme="@style/MyFont" />
 
             <RelativeLayout
@@ -401,7 +401,7 @@
                     android:paddingLeft="10dp"
                     android:theme="@style/MyFont"
                     android:textColor="@color/colorBlack"
-                    android:textSize="25dp" />
+                    android:textSize="28dp" />
             </RelativeLayout>
 
             <TextView
@@ -421,14 +421,14 @@
                 android:layout_marginTop="23dp"
                 android:text="เชือกสำหรับดึงสตาร์ท"
                 android:textColor="@color/colorBlack"
-                android:textSize="25dp"
+                android:textSize="33dp"
                 android:theme="@style/MyFont" />
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="2dp"
                 android:layout_marginLeft="25dp"
-                android:layout_marginRight="348dp"
+                android:layout_marginRight="372dp"
                 android:background="@color/colorBlack"
                 android:textAppearance="@style/MyFont" />
 
@@ -439,7 +439,7 @@
                 android:layout_marginTop="23dp"
                 android:text="การสวมใส่และชำรุด  เปลี่ยนใหม่ถ้าจำเป็น"
                 android:textColor="@color/colorBlack"
-                android:textSize="25dp"
+                android:textSize="32dp"
                 android:theme="@style/MyFont" />
 
             <RelativeLayout
@@ -467,7 +467,7 @@
                 android:layout_marginTop="20dp"
                 android:text="หมายเหตุ"
                 android:textColor="@color/colorBlack"
-                android:textSize="25dp"
+                android:textSize="32dp"
                 android:theme="@style/MyFont" />
 
             <RelativeLayout
@@ -484,7 +484,7 @@
                     android:paddingLeft="10dp"
                     android:theme="@style/MyFont"
                     android:textColor="@color/colorBlack"
-                    android:textSize="25dp" />
+                    android:textSize="28dp" />
             </RelativeLayout>
 
             <TextView
@@ -504,14 +504,14 @@
                 android:layout_marginTop="23dp"
                 android:text="เครื่องยนต์"
                 android:textColor="@color/colorBlack"
-                android:textSize="25dp"
+                android:textSize="33dp"
                 android:theme="@style/MyFont" />
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="2dp"
                 android:layout_marginLeft="25dp"
-                android:layout_marginRight="467dp"
+                android:layout_marginRight="478dp"
                 android:background="@color/colorBlack"
                 android:textAppearance="@style/MyFont" />
 
@@ -522,7 +522,7 @@
                 android:layout_marginTop="23dp"
                 android:text="น้ำมันเชื้อเพลิง  น้ำมันเชื้อเพลิงในถังต้ม  เต็มถังเสมอ"
                 android:textColor="@color/colorBlack"
-                android:textSize="25dp"
+                android:textSize="32dp"
                 android:theme="@style/MyFont" />
 
             <RelativeLayout
@@ -550,7 +550,7 @@
                 android:layout_marginTop="20dp"
                 android:text="หมายเหตุ"
                 android:textColor="@color/colorBlack"
-                android:textSize="25dp"
+                android:textSize="32dp"
                 android:theme="@style/MyFont" />
 
             <RelativeLayout
@@ -567,7 +567,7 @@
                     android:paddingLeft="10dp"
                     android:theme="@style/MyFont"
                     android:textColor="@color/colorBlack"
-                    android:textSize="25dp" />
+                    android:textSize="28dp" />
             </RelativeLayout>
 
             <TextView
@@ -586,7 +586,7 @@
                 android:layout_marginTop="23dp"
                 android:text="น้ำมันเครื่อง  น้ำมันเครื่องต้องอยู่ในระดับขีดบน "
                 android:textColor="@color/colorBlack"
-                android:textSize="25dp"
+                android:textSize="32dp"
                 android:theme="@style/MyFont" />
 
             <RelativeLayout
@@ -614,7 +614,7 @@
                 android:layout_marginTop="20dp"
                 android:text="หมายเหตุ"
                 android:textColor="@color/colorBlack"
-                android:textSize="25dp"
+                android:textSize="32dp"
                 android:theme="@style/MyFont" />
 
             <RelativeLayout
@@ -631,7 +631,7 @@
                     android:paddingLeft="10dp"
                     android:theme="@style/MyFont"
                     android:textColor="@color/colorBlack"
-                    android:textSize="25dp" />
+                    android:textSize="28dp" />
             </RelativeLayout>
 
             <TextView
@@ -651,7 +651,7 @@
                 android:text="หลอดไฟแสดงสถานะ
                                                     หลอดไฟต้องแสดงสถานะทุกหลอด"
                 android:textColor="@color/colorBlack"
-                android:textSize="25dp"
+                android:textSize="32dp"
                 android:theme="@style/MyFont" />
 
             <RelativeLayout
@@ -680,7 +680,7 @@
                 android:layout_marginTop="20dp"
                 android:text="หมายเหตุ"
                 android:textColor="@color/colorBlack"
-                android:textSize="25dp"
+                android:textSize="32dp"
                 android:theme="@style/MyFont" />
 
             <RelativeLayout
@@ -697,7 +697,7 @@
                     android:paddingLeft="10dp"
                     android:theme="@style/MyFont"
                     android:textColor="@color/colorBlack"
-                    android:textSize="25dp" />
+                    android:textSize="28dp" />
             </RelativeLayout>
 
             <TextView
@@ -718,7 +718,7 @@
                 android:text="หัวเทียนเครื่องยนต์
                                                             ความสกปรก  ระยะห่าง gap ชำรุด"
                 android:textColor="@color/colorBlack"
-                android:textSize="25dp"
+                android:textSize="32dp"
                 android:theme="@style/MyFont" />
 
             <RelativeLayout
@@ -747,7 +747,7 @@
                 android:layout_marginTop="20dp"
                 android:text="หมายเหตุ"
                 android:textColor="@color/colorBlack"
-                android:textSize="25dp"
+                android:textSize="32dp"
                 android:theme="@style/MyFont" />
 
             <RelativeLayout
@@ -764,7 +764,7 @@
                     android:paddingLeft="10dp"
                     android:theme="@style/MyFont"
                     android:textColor="@color/colorBlack"
-                    android:textSize="25dp" />
+                    android:textSize="28dp" />
             </RelativeLayout>
 
             <TextView
@@ -784,7 +784,7 @@
                 android:layout_marginTop="23dp"
                 android:text="ระบบเชื้อเพลิง  อาการรั่วซึมจากท่อและจุดต่อ"
                 android:textColor="@color/colorBlack"
-                android:textSize="25dp"
+                android:textSize="32dp"
                 android:theme="@style/MyFont" />
 
             <RelativeLayout
@@ -812,7 +812,7 @@
                 android:layout_marginTop="20dp"
                 android:text="หมายเหตุ"
                 android:textColor="@color/colorBlack"
-                android:textSize="25dp"
+                android:textSize="32dp"
                 android:theme="@style/MyFont" />
 
             <RelativeLayout
@@ -829,7 +829,7 @@
                     android:paddingLeft="10dp"
                     android:theme="@style/MyFont"
                     android:textColor="@color/colorBlack"
-                    android:textSize="25dp" />
+                    android:textSize="28dp" />
             </RelativeLayout>
 
             <TextView
@@ -848,14 +848,14 @@
                 android:layout_marginTop="23dp"
                 android:text="การทดสอบ"
                 android:textColor="@color/colorBlack"
-                android:textSize="25dp"
+                android:textSize="33dp"
                 android:theme="@style/MyFont" />
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="2dp"
                 android:layout_marginLeft="25dp"
-                android:layout_marginRight="459dp"
+                android:layout_marginRight="468dp"
                 android:background="@color/colorBlack"
                 android:textAppearance="@style/MyFont" />
 
@@ -867,7 +867,7 @@
                 android:text="ทดสอบการเดินเครื่อง สัปดาห์ละ 1 ครั้ง ครั้งละ 5 นาที
                         ระบบการทำงานปกติ"
                 android:textColor="@color/colorBlack"
-                android:textSize="25dp"
+                android:textSize="32dp"
                 android:theme="@style/MyFont" />
 
             <RelativeLayout
@@ -896,7 +896,7 @@
                 android:layout_marginTop="20dp"
                 android:text="หมายเหตุ"
                 android:textColor="@color/colorBlack"
-                android:textSize="25dp"
+                android:textSize="32dp"
                 android:theme="@style/MyFont" />
 
             <RelativeLayout
@@ -943,7 +943,7 @@
                     android:paddingTop="0dp"
                     android:text="ลงชื่อผู้ตรวจ"
                     android:textColor="@color/colorBlack"
-                    android:textSize="20dp"
+                    android:textSize="25dp"
                     android:theme="@style/MyFont" />
 
                 <EditText
@@ -952,7 +952,7 @@
                     android:layout_marginLeft="120dp"
                     android:maxLines="1"
                     android:textColor="@color/colorBlack"
-                    android:textSize="20dp"
+                    android:textSize="28dp"
                     android:theme="@style/MyFont" />
             </RelativeLayout>
 
@@ -973,7 +973,7 @@
                     android:paddingTop="0dp"
                     android:text="ลงชื่อผู้ตรวจสอบ"
                     android:textColor="@color/colorBlack"
-                    android:textSize="20dp"
+                    android:textSize="25dp"
                     android:theme="@style/MyFont" />
 
                 <EditText
@@ -982,7 +982,7 @@
                     android:layout_marginLeft="156dp"
                     android:maxLines="1"
                     android:textColor="@color/colorBlack"
-                    android:textSize="20dp"
+                    android:textSize="28dp"
                     android:theme="@style/MyFont" />
             </RelativeLayout>
 
@@ -998,7 +998,7 @@
                 android:gravity="center"
                 android:text="บันทึก"
                 android:textColor="@color/colorWhite"
-                android:textSize="25dp"
+                android:textSize="35dp"
                 android:textStyle="bold"
                 android:theme="@style/MyFont" />
 

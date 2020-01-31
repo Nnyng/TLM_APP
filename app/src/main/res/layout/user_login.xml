@@ -52,7 +52,7 @@
             android:inputType="textEmailAddress"
             android:textColor="@color/colorBlack"
             android:textColorHint="@color/colorBlack"
-            android:textSize="25dp"/>
+            android:textSize="32dp"/>
 </LinearLayout>
 
     <LinearLayout
@@ -80,7 +80,7 @@
             android:inputType="textPassword"
             android:textColor="@color/colorBlack"
             android:textColorHint="@color/colorBlack"
-            android:textSize="25dp"/>
+            android:textSize="32dp"/>
     </LinearLayout>
 
     <!-- Login Button -->
@@ -95,7 +95,7 @@
         android:background="@drawable/framebtnlogin"
         android:text="@string/login_button"
         android:textColor="@color/colorWhite"
-        android:textSize="22dp" />
+        android:textSize="35dp" />
 
     <Button
             android:id="@+id/btn_reset_password"
@@ -105,7 +105,7 @@
             android:background="@null"
             android:text="@string/forgot_password_button"
             android:textAllCaps="false"
-            android:textSize="18dp"
+            android:textSize="25dp"
             android:textColor="@color/Forgot_password" />
 
         <!-- Link to Login Screen -->
@@ -119,7 +119,7 @@
             android:text="@string/link_to_register"
             android:textAllCaps="false"
             android:textColor="@color/colorGray"
-            android:textSize="18dp" />
+            android:textSize="25dp" />
 
 
     <ProgressBar

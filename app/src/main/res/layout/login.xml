@@ -48,13 +48,14 @@
                 android:id="@+id/textLogin"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="110dp"
+                android:layout_marginTop="3dp"
+                android:layout_marginLeft="130dp"
                 android:layout_toRightOf="@+id/im_userLogin"
-                android:fontFamily="@font/thsarabunnew"
+                android:fontFamily="@font/thsarabunnewbold"
                 android:text="เข้าสู่ระบบ"
                 android:textAppearance="@style/MyFont"
                 android:textColor="@android:color/black"
-                android:textSize="25dp" />
+                android:textSize="33dp" />
 
         </LinearLayout>
 
@@ -101,14 +102,15 @@
             <TextView
                 android:id="@+id/textQrLogin"
                 fonPath="pridiregular"
+                android:layout_marginTop="3dp"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="55dp"
+                android:layout_marginLeft="73dp"
                 android:layout_toRightOf="@+id/im_userQrLogin"
-                android:fontFamily="@font/thsarabunnew"
+                android:fontFamily="@font/thsarabunnewbold"
                 android:text="เข้าสู่ระบบด้วยคิวอาร์โค้ด"
                 android:textColor="@android:color/black"
-                android:textSize="25dp" />
+                android:textSize="33dp" />
 
         </LinearLayout>
     </RelativeLayout>

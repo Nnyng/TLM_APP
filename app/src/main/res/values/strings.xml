@@ -94,14 +94,14 @@
     // Function Safety2
     ชนิดของไฟฉุกเฉิน
     <string-array name="electricity_emergency_Type">
-        <item>-SELECT-</item>
+        <item></item>
         <item>Battery Box</item>
         <item>Battery Center Control</item>
         <item>Battery stand alone unit</item>
     </string-array>
     สภาพของไฟฉุกเฉิน
     <string-array name="generality_electricity">
-        <item>-SELECT-</item>
+        <item></item>
         <item>หลอดไฟติด/สภาพทั่วไป OK</item>
         <item>หลอดไฟไม่ติด/สภาพทั่วไป NO</item>
         <item>หลอดไฟติด/สภาพทั่วไป NO</item>
@@ -109,7 +109,7 @@
     </string-array>
     สถานที่ติดตั้ง
     <string-array name="location_FnSafety2">
-        <item>-SELECT-</item>
+        <item></item>
         <item>ประตูทางเข้า OFFICE</item>
         <item>ตรงข้ามห้อง Pantry Room</item>
         <item>ในห้องน้ำหญิง</item>
@@ -1424,7 +1424,7 @@
     // Function Safety 3 แบบฟอร์มตรวจเช็คถังดับเพลิง
     // หมายเลขจุดติดตั้ง
     <string-array name="No_Fn3">
-        <item>-SELECT-</item>
+        <item></item>
         <item>No.1</item>
         <item>No.2</item>
         <item>No.3</item>
@@ -1570,7 +1570,7 @@
     </string-array>
     // ชนิดของอุปกรณ์
     <string-array name="Type_Device_Fn3">
-        <item>-SELECT-</item>
+        <item></item>
         <item>CO2</item>
         <item>ถังดับเพลิง SoftEx</item>
         <item>เคมีแห้ง ขนาด 15 ปอนด์</item>
@@ -1582,7 +1582,7 @@
     </string-array>
     // สถานที่ติดตั้ง
     <string-array name="location_Fn3">
-        <item>-SELECT-</item>
+        <item></item>
         <item>ชั้นบน Office</item>
         <item>ชั้นล่างหน้าห้องน้ำ Office</item>
         <item>ห้อง ประชุม4</item>
@@ -1649,7 +1649,7 @@
     </string-array>
     // สภาพทั่วไป
     <string-array name="generality_Fn3">
-        <item>-SELECT-</item>
+        <item></item>
         <item>ใช่</item>
         <item>ไม่ใช่</item>
         <item>ปกติ</item>
@@ -1669,7 +1669,7 @@
     <!--    </string-array>-->
 
     <string-array name="choice_Fn12">
-        <item>-SELECT-</item>
+        <item></item>
         <item>OK</item>
         <item>NG</item>
     </string-array>

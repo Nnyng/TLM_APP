@@ -34,7 +34,7 @@
                     android:layout_marginLeft="30dp"
                     android:layout_marginTop="5dp"
                     android:textColor="@color/colorBlack"
-                    android:textSize="28dp"
+                    android:textSize="38dp"
                     android:text="ตรวจเช็คระบบดับเพลิงอัตโนมัติ CO2"
                     android:theme="@style/MyFont" />
 
@@ -53,7 +53,7 @@
                 android:paddingBottom="5dp"
                 android:text="DATE/TIME"
                 android:textColor="@color/colorBlack"
-                android:textSize="20dp"
+                android:textSize="25dp"
                 android:theme="@style/MyFont" />
 
             <TextView
@@ -63,7 +63,7 @@
                 android:layout_marginLeft="25dp"
                 android:text="ชนิดของอุปกรณ์"
                 android:textColor="@color/colorBlack"
-                android:textSize="25dp"
+                android:textSize="32dp"
                 android:theme="@style/MyFont" />
 
             <RelativeLayout
@@ -90,7 +90,7 @@
                 android:layout_marginTop="20dp"
                 android:text="สถานที่ติดตั้ง"
                 android:textColor="@color/colorBlack"
-                android:textSize="25dp"
+                android:textSize="32dp"
                 android:theme="@style/MyFont" />
 
             <RelativeLayout
@@ -117,7 +117,7 @@
                 android:layout_marginTop="20dp"
                 android:text="ระบบการทำงานอัตโนมัติ"
                 android:textColor="@color/colorBlack"
-                android:textSize="25dp"
+                android:textSize="32dp"
                 android:theme="@style/MyFont" />
 
             <RelativeLayout
@@ -144,7 +144,7 @@
                 android:layout_marginTop="20dp"
                 android:text="ระบบ Manual"
                 android:textColor="@color/colorBlack"
-                android:textSize="25dp"
+                android:textSize="32dp"
                 android:theme="@style/MyFont" />
 
             <RelativeLayout
@@ -171,7 +171,7 @@
                 android:layout_marginTop="20dp"
                 android:text="สลัก Pirot อยู่ในสภาพปกติ"
                 android:textColor="@color/colorBlack"
-                android:textSize="25dp"
+                android:textSize="32dp"
                 android:theme="@style/MyFont" />
 
             <RelativeLayout
@@ -198,7 +198,7 @@
                 android:layout_marginTop="20dp"
                 android:text="สลักของถัง CO2 อยู่ในสภาพปกติ"
                 android:textColor="@color/colorBlack"
-                android:textSize="25dp"
+                android:textSize="32dp"
                 android:theme="@style/MyFont" />
 
             <RelativeLayout
@@ -225,7 +225,7 @@
                 android:layout_marginTop="20dp"
                 android:text="ไม่มีสิ่งกีดขวางทางเข้า"
                 android:textColor="@color/colorBlack"
-                android:textSize="25dp"
+                android:textSize="32dp"
                 android:theme="@style/MyFont" />
 
             <RelativeLayout
@@ -252,7 +252,7 @@
                 android:layout_marginTop="20dp"
                 android:text="หมายเหตุ"
                 android:textColor="@color/colorBlack"
-                android:textSize="25dp"
+                android:textSize="32dp"
                 android:theme="@style/MyFont" />
 
             <RelativeLayout
@@ -269,7 +269,7 @@
                     android:paddingLeft="10dp"
                     android:theme="@style/MyFont"
                     android:textColor="@color/colorBlack"
-                    android:textSize="25dp" />
+                    android:textSize="28dp" />
             </RelativeLayout>
 
             <RelativeLayout
@@ -289,7 +289,7 @@
                     android:paddingTop="0dp"
                     android:text="ลงชื่อผู้ตรวจ"
                     android:textColor="@color/colorBlack"
-                    android:textSize="20dp"
+                    android:textSize="25dp"
                     android:theme="@style/MyFont" />
 
                 <EditText
@@ -298,7 +298,7 @@
                     android:layout_marginLeft="120dp"
                     android:maxLines="1"
                     android:textColor="@color/colorBlack"
-                    android:textSize="20dp"
+                    android:textSize="28dp"
                     android:theme="@style/MyFont" />
             </RelativeLayout>
 
@@ -319,7 +319,7 @@
                     android:paddingTop="0dp"
                     android:text="ลงชื่อผู้ตรวจสอบ"
                     android:textColor="@color/colorBlack"
-                    android:textSize="20dp"
+                    android:textSize="25dp"
                     android:theme="@style/MyFont" />
 
                 <EditText
@@ -328,7 +328,7 @@
                     android:layout_marginLeft="156dp"
                     android:maxLines="1"
                     android:textColor="@color/colorBlack"
-                    android:textSize="20dp"
+                    android:textSize="28dp"
                     android:theme="@style/MyFont" />
             </RelativeLayout>
 
@@ -344,7 +344,7 @@
                 android:gravity="center"
                 android:text="บันทึก"
                 android:textColor="@color/colorWhite"
-                android:textSize="25dp"
+                android:textSize="35dp"
                 android:textStyle="bold"
                 android:theme="@style/MyFont" />
 

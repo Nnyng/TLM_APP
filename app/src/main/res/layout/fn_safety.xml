@@ -33,8 +33,8 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="SAFETY"
-                    android:textSize="30dp"
-                    android:theme="@style/MyFont"
+                    android:textSize="50dp"
+                    android:fontFamily="@font/thsarabunnewbold"
                     android:layout_marginTop="5dp"
                     android:textColor="@color/colorBlack"
                     android:layout_marginLeft="30dp"/>
@@ -79,14 +79,14 @@
                     android:id="@+id/textSafety1"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="55dp"
-                    android:layout_marginTop="25dp"
+                    android:layout_marginLeft="70dp"
+                    android:layout_marginTop="20dp"
                     android:layout_toRightOf="@+id/im_safety1"
                     android:gravity="center"
                     android:text="ตรวจเช็คอุปกรณ์ผจญเพลิง"
                     android:textAppearance="@style/MyFont"
                     android:textColor="@android:color/black"
-                    android:textSize="26dp" />
+                    android:textSize="35dp" />
 
                 <!--                <ImageView-->
                 <!--                    android:id="@+id/im_safety1_1"-->
@@ -122,14 +122,14 @@
                     android:id="@+id/textSafety2"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="87dp"
-                    android:layout_marginTop="25dp"
+                    android:layout_marginLeft="99dp"
+                    android:layout_marginTop="20dp"
                     android:layout_toRightOf="@+id/im_safety2"
                     android:gravity="center"
                     android:text="ตรวจเช็คไฟฉุกเฉิน"
                     android:textAppearance="@style/MyFont"
                     android:textColor="@android:color/black"
-                    android:textSize="26dp" />
+                    android:textSize="35dp" />
 
                 <!--                <ImageView-->
                 <!--                    android:id="@+id/im_safety2_2"-->
@@ -165,14 +165,14 @@
                     android:id="@+id/textSafety3"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="82dp"
-                    android:layout_marginTop="25dp"
+                    android:layout_marginLeft="97dp"
+                    android:layout_marginTop="20dp"
                     android:layout_toRightOf="@+id/im_safety3"
                     android:gravity="center"
                     android:text="ตรวจเช็คถังดับเพลิง"
                     android:textAppearance="@style/MyFont"
                     android:textColor="@android:color/black"
-                    android:textSize="26dp" />
+                    android:textSize="35dp" />
 
                 <!--                <ImageView-->
                 <!--                    android:id="@+id/im_safety3_3"-->
@@ -209,14 +209,14 @@
                     android:id="@+id/textSafety4"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="45dp"
-                    android:layout_marginTop="25dp"
+                    android:layout_marginLeft="62dp"
+                    android:layout_marginTop="20dp"
                     android:layout_toRightOf="@+id/im_safety4"
                     android:gravity="center"
                     android:text="ตรวจเช็คป้ายและประตูทางหนีไฟ"
                     android:textAppearance="@style/MyFont"
                     android:textColor="@android:color/black"
-                    android:textSize="26dp" />
+                    android:textSize="35dp" />
 
                 <!--                <ImageView-->
                 <!--                    android:id="@+id/im_safety4_4"-->
@@ -251,14 +251,14 @@
                     android:id="@+id/textSafety5"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="60dp"
-                    android:layout_marginTop="25dp"
+                    android:layout_marginLeft="80dp"
+                    android:layout_marginTop="20dp"
                     android:layout_toRightOf="@+id/im_safety5"
                     android:gravity="center"
                     android:text="ตรวจเช็คตู้เก็บสายดับเพลิง"
                     android:textAppearance="@style/MyFont"
                     android:textColor="@android:color/black"
-                    android:textSize="26dp" />
+                    android:textSize="35dp" />
 
                 <!--                <ImageView-->
                 <!--                    android:id="@+id/im_safety5_5"-->
@@ -295,14 +295,14 @@
                     android:id="@+id/textSafety6"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="75dp"
-                    android:layout_marginTop="25dp"
+                    android:layout_marginLeft="95dp"
+                    android:layout_marginTop="20dp"
                     android:layout_toRightOf="@+id/im_safety6"
                     android:gravity="center"
                     android:text="ตรวจเช็ค Eye/Shower"
                     android:textAppearance="@style/MyFont"
                     android:textColor="@android:color/black"
-                    android:textSize="26dp" />
+                    android:textSize="35dp" />
 
                 <!--                <ImageView-->
                 <!--                    android:id="@+id/im_safety6_6"-->
@@ -338,14 +338,14 @@
                     android:id="@+id/textSafety7"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="60dp"
-                    android:layout_marginTop="25dp"
+                    android:layout_marginLeft="68dp"
+                    android:layout_marginTop="20dp"
                     android:layout_toRightOf="@+id/im_safety7"
                     android:gravity="center"
                     android:text="ตรวจเช็คระบบโฟมดับเพลิง"
                     android:textAppearance="@style/MyFont"
                     android:textColor="@android:color/black"
-                    android:textSize="26dp" />
+                    android:textSize="35dp" />
 
                 <!--                <ImageView-->
                 <!--                    android:id="@+id/im_safety7_7"-->
@@ -381,14 +381,14 @@
                     android:id="@+id/textSafety8"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="70dp"
-                    android:layout_marginTop="25dp"
+                    android:layout_marginLeft="92dp"
+                    android:layout_marginTop="20dp"
                     android:layout_toRightOf="@+id/im_safety8"
                     android:gravity="center"
                     android:text="ตรวจเช็คอุปกรณ์ดับเพลิง"
                     android:textAppearance="@style/MyFont"
                     android:textColor="@android:color/black"
-                    android:textSize="26dp" />
+                    android:textSize="35dp" />
 
                 <!--                <ImageView-->
                 <!--                    android:id="@+id/im_safety8_8"-->
@@ -425,14 +425,14 @@
                     android:id="@+id/textSafety9"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="20dp"
-                    android:layout_marginTop="25dp"
+                    android:layout_marginLeft="47dp"
+                    android:layout_marginTop="20dp"
                     android:layout_toRightOf="@+id/im_safety9"
                     android:gravity="center"
                     android:text="ตรวจเช็คระบบดับเพลิงอัตโนมัติ CO2"
                     android:textAppearance="@style/MyFont"
                     android:textColor="@android:color/black"
-                    android:textSize="26dp" />
+                    android:textSize="35dp" />
 
                 <!--                <ImageView-->
                 <!--                    android:id="@+id/im_safety9_9"-->
@@ -468,14 +468,14 @@
                     android:id="@+id/textSafety10"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="38dp"
-                    android:layout_marginTop="25dp"
+                    android:layout_marginLeft="47dp"
+                    android:layout_marginTop="20dp"
                     android:layout_toRightOf="@+id/im_safety10"
                     android:gravity="center"
                     android:text="ตรวจเช็ควาล์วหลักของระบบดับเพลิง"
                     android:textAppearance="@style/MyFont"
                     android:textColor="@android:color/black"
-                    android:textSize="26dp" />
+                    android:textSize="35dp" />
 
                 <!-- <ImageView-->
                 <!-- android:id="@+id/im_safety4_4"-->
@@ -509,14 +509,14 @@
                     android:id="@+id/textSafety11"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="85dp"
-                    android:layout_marginTop="25dp"
+                    android:layout_marginLeft="100dp"
+                    android:layout_marginTop="20dp"
                     android:layout_toRightOf="@+id/im_safety11"
                     android:gravity="center"
                     android:text="ตรวจเช็ค Fire Alarm"
                     android:textAppearance="@style/MyFont"
                     android:textColor="@android:color/black"
-                    android:textSize="26dp" />
+                    android:textSize="35dp" />
 
                 <!-- <ImageView-->
                 <!-- android:id="@+id/im_safety4_4"-->
@@ -550,14 +550,14 @@
                     android:id="@+id/textSafety12"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="110dp"
-                    android:layout_marginTop="25dp"
+                    android:layout_marginLeft="130dp"
+                    android:layout_marginTop="20dp"
                     android:layout_toRightOf="@+id/im_safety12"
                     android:gravity="center"
                     android:text="DAILY CHECK"
                     android:textAppearance="@style/MyFont"
                     android:textColor="@android:color/black"
-                    android:textSize="26dp" />
+                    android:textSize="35dp" />
 
                 <!-- <ImageView-->
                 <!-- android:id="@+id/im_safety4_4"-->
@@ -591,14 +591,14 @@
                     android:id="@+id/textLogOut"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="140dp"
-                    android:layout_marginTop="25dp"
+                    android:layout_marginLeft="145dp"
+                    android:layout_marginTop="20dp"
                     android:layout_toRightOf="@+id/im_logOut"
                     android:gravity="center"
                     android:text="LOG OUT"
                     android:textAppearance="@style/MyFont"
-                    android:textColor="@android:color/black"
-                    android:textSize="26dp" />
+                    android:textColor="@color/colorBlack"
+                    android:textSize="35dp" />
 
                 <!-- <ImageView-->
                 <!-- android:id="@+id/im_safety4_4"-->

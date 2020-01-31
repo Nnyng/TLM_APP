@@ -239,7 +239,7 @@ public class FnSafety_1 extends AppCompatActivity {
 
         //checking if the value is provided
         if (!TextUtils.isEmpty(location)){
-            String id = firebaseReference.child("CheckFireFightingEquipment").push().getKey();
+            String id = firebaseReference.child("CheckFireFightingEquipmentFn1").push().getKey();
 
             FireFightingEquipment fire = new FireFightingEquipment();
 
@@ -266,7 +266,7 @@ public class FnSafety_1 extends AppCompatActivity {
             fire.setPosition_ed_signspector_fn1(positEdSignSpector);
 
 
-            firebaseReference.child("CheckFireFightingEquipment").child(id).setValue(fire);
+            firebaseReference.child("CheckFireFightingEquipmentFn1").child(id).setValue(fire);
 
             Toast.makeText(this, "Checking Successful", Toast.LENGTH_LONG).show();
 
@@ -287,7 +287,7 @@ public class FnSafety_1 extends AppCompatActivity {
 //    }
 
     private void showData() {
-        Query query = firebaseReference.child("CheckFireFightingEquipment");
+        Query query = firebaseReference.child("CheckFireFightingEquipmentFn1");
         query.addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
@@ -325,14 +325,14 @@ public class FnSafety_1 extends AppCompatActivity {
         fire.setPosition_ed_signspector_fn1(positionEdSignSpec);
 
 
-        firebaseReference.child("CheckFireFightingEquipment").child(id).setValue(fire);
+        firebaseReference.child("CheckFireFightingEquipmentFn1").child(id).setValue(fire);
         Toast.makeText(this, "Data Updated", Toast.LENGTH_LONG).show();
         return true;
     }
 
         private boolean deleteData(String id) {
             // removing
-            firebaseReference.child("CheckFireFightingEquipment").child(id).removeValue();
+            firebaseReference.child("CheckFireFightingEquipmentFn1").child(id).removeValue();
 
             Toast.makeText(this, "Data Deleted", Toast.LENGTH_LONG).show();
 

@@ -35,7 +35,7 @@
                 android:layout_marginTop="5dp"
                 android:text="ตรวจเช็คป้ายและประตูทางหนีไฟ"
                 android:textColor="@color/colorBlack"
-                android:textSize="28dp"
+                android:textSize="38dp"
                 android:theme="@style/MyFont" />
 
         </androidx.appcompat.widget.Toolbar>
@@ -53,7 +53,7 @@
                 android:paddingTop="8dp"
                 android:text="DATE/TIME"
                 android:textColor="@color/colorBlack"
-                android:textSize="20dp"
+                android:textSize="25dp"
                 android:theme="@style/MyFont"/>
 
             <TextView
@@ -61,7 +61,7 @@
                 android:layout_height="wrap_content"
                 android:text="สถานที่ติดตั้ง"
                 android:textColor="@color/colorBlack"
-                android:textSize="25dp"
+                android:textSize="32dp"
                 android:layout_marginLeft="25dp"
                 android:layout_marginTop="20dp"
                 android:theme="@style/MyFont"/>
@@ -86,7 +86,7 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:textSize="25dp"
+                android:textSize="32dp"
                 android:text="ชนิดของป้ายทางหนีไฟ"
                 android:layout_marginLeft="25dp"
                 android:layout_marginTop="20dp"
@@ -113,7 +113,7 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:textSize="25dp"
+                android:textSize="32dp"
                 android:text="สภาพของป้ายทางหนีไฟ"
                 android:layout_marginLeft="25dp"
                 android:layout_marginTop="20dp"
@@ -144,7 +144,7 @@
                 android:layout_marginTop="20dp"
                 android:text="หมายเหตุ"
                 android:textColor="@color/colorBlack"
-                android:textSize="25dp"
+                android:textSize="32dp"
                 android:theme="@style/MyFont" />
 
             <RelativeLayout
@@ -182,7 +182,7 @@
                     android:text="ลงชื่อผู้ตรวจ"
                     android:theme="@style/MyFont"
                     android:textColor="@color/colorBlack"
-                    android:textSize="20dp" />
+                    android:textSize="25dp" />
 
                 <EditText
                     android:layout_width="match_parent"
@@ -191,7 +191,7 @@
                     android:maxLines="1"
                     android:theme="@style/MyFont"
                     android:textColor="@color/colorBlack"
-                    android:textSize="20dp" />
+                    android:textSize="28dp" />
             </RelativeLayout>
 
 
@@ -222,7 +222,7 @@
                     android:maxLines="1"
                     android:theme="@style/MyFont"
                     android:textColor="@color/colorBlack"
-                    android:textSize="20dp" />
+                    android:textSize="28dp" />
             </RelativeLayout>
 
 
@@ -238,7 +238,7 @@
                 android:theme="@style/MyFont"
                 android:text="บันทึก"
                 android:textColor="@color/colorWhite"
-                android:textSize="25dp"
+                android:textSize="35dp"
                 android:textStyle="bold" />
 
             <Button

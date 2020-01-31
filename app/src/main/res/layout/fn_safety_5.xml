@@ -35,7 +35,7 @@
                     android:layout_marginTop="5dp"
                     android:text="ตรวจเช็คตู้เก็บสายดับเพลิง"
                     android:textColor="@color/colorBlack"
-                    android:textSize="28dp"
+                    android:textSize="38dp"
                     android:theme="@style/MyFont" />
             </androidx.appcompat.widget.Toolbar>
 
@@ -52,7 +52,7 @@
                 android:paddingBottom="5dp"
                 android:text="DATE/TIME"
                 android:textColor="@color/colorBlack"
-                android:textSize="20dp"
+                android:textSize="25dp"
                 android:theme="@style/MyFont" />
 
             <TextView
@@ -62,7 +62,7 @@
                 android:layout_marginTop="20dp"
                 android:text="หมายเลขอุปกรณ์"
                 android:textColor="@color/colorBlack"
-                android:textSize="25dp"
+                android:textSize="32dp"
                 android:theme="@style/MyFont" />
 
             <RelativeLayout
@@ -89,7 +89,7 @@
                 android:layout_marginTop="20dp"
                 android:text="สถานที่ติดตั้ง"
                 android:textColor="@color/colorBlack"
-                android:textSize="25dp"
+                android:textSize="32dp"
                 android:theme="@style/MyFont" />
 
             <RelativeLayout
@@ -116,7 +116,7 @@
                 android:layout_marginTop="20dp"
                 android:text="ชนิดของอุปกรณ์"
                 android:textColor="@color/colorBlack"
-                android:textSize="25dp"
+                android:textSize="32dp"
                 android:theme="@style/MyFont" />
 
             <RelativeLayout
@@ -144,7 +144,7 @@
                 android:layout_marginTop="20dp"
                 android:text="ไม่มีสิ่งกีดขวางทางเข้า"
                 android:textColor="@color/colorBlack"
-                android:textSize="25dp"
+                android:textSize="32dp"
                 android:theme="@style/MyFont" />
 
             <RelativeLayout
@@ -171,7 +171,7 @@
                 android:layout_marginTop="20dp"
                 android:text="อยู่ในที่แขวนติดตั้ง"
                 android:textColor="@color/colorBlack"
-                android:textSize="25dp"
+                android:textSize="32dp"
                 android:theme="@style/MyFont" />
 
             <RelativeLayout
@@ -198,7 +198,7 @@
                 android:layout_marginTop="20dp"
                 android:text="ตัวยึดมั่นคง แข็งแรง"
                 android:textColor="@color/colorBlack"
-                android:textSize="25dp"
+                android:textSize="32dp"
                 android:theme="@style/MyFont" />
 
             <RelativeLayout
@@ -225,7 +225,7 @@
                 android:layout_marginTop="20dp"
                 android:text="หัวฉีดไม่มีสิ่งอุดตัน"
                 android:textColor="@color/colorBlack"
-                android:textSize="25dp"
+                android:textSize="32dp"
                 android:theme="@style/MyFont" />
 
             <RelativeLayout
@@ -252,7 +252,7 @@
                 android:layout_marginTop="20dp"
                 android:text="แรงดันปกติ"
                 android:textColor="@color/colorBlack"
-                android:textSize="25dp"
+                android:textSize="32dp"
                 android:theme="@style/MyFont" />
 
             <RelativeLayout
@@ -279,7 +279,7 @@
                 android:layout_marginTop="20dp"
                 android:text="สายดับเพลิงพร้อมใช้งาน"
                 android:textColor="@color/colorBlack"
-                android:textSize="25dp"
+                android:textSize="32dp"
                 android:theme="@style/MyFont" />
 
             <RelativeLayout
@@ -306,7 +306,7 @@
                 android:layout_marginTop="20dp"
                 android:text="วันที่ทดสอบจริง (ERT)"
                 android:textColor="@color/colorBlack"
-                android:textSize="25dp"
+                android:textSize="32dp"
                 android:theme="@style/MyFont" />
 
 
@@ -375,7 +375,7 @@
                     android:paddingTop="0dp"
                     android:text="ลงชื่อผู้ตรวจ"
                     android:textColor="@color/colorBlack"
-                    android:textSize="20dp"
+                    android:textSize="25dp"
                     android:theme="@style/MyFont" />
 
                 <EditText
@@ -384,7 +384,7 @@
                     android:layout_marginLeft="120dp"
                     android:maxLines="1"
                     android:textColor="@color/colorBlack"
-                    android:textSize="20dp"
+                    android:textSize="28dp"
                     android:theme="@style/MyFont" />
             </RelativeLayout>
 
@@ -405,7 +405,7 @@
                     android:paddingTop="0dp"
                     android:text="ลงชื่อผู้ตรวจสอบ"
                     android:textColor="@color/colorBlack"
-                    android:textSize="20dp"
+                    android:textSize="25dp"
                     android:theme="@style/MyFont" />
 
                 <EditText
@@ -414,7 +414,7 @@
                     android:layout_marginLeft="156dp"
                     android:maxLines="1"
                     android:textColor="@color/colorBlack"
-                    android:textSize="20dp"
+                    android:textSize="28dp"
                     android:theme="@style/MyFont" />
             </RelativeLayout>
 
@@ -430,7 +430,7 @@
                 android:gravity="center"
                 android:text="บันทึก"
                 android:textColor="@color/colorWhite"
-                android:textSize="25dp"
+                android:textSize="35dp"
                 android:textStyle="bold"
                 android:theme="@style/MyFont" />
 

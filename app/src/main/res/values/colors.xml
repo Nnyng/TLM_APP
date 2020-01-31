@@ -71,5 +71,7 @@
     <color name="btn_logut_bg">#36a2eb</color>
 
     <color name="frameQRlogin">#CC3300</color>
+    <color name="frameReadQR">#EE0000</color>
+
 
 </resources>
