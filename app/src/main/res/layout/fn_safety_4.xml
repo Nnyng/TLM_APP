@@ -46,7 +46,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="380dp"
                 android:layout_marginRight="30dp"
-                android:layout_marginTop="40dp"
+                android:layout_marginTop="20dp"
                 android:background="@drawable/frame_background_white"
                 android:gravity="center"
                 android:paddingBottom="5dp"
@@ -62,7 +62,8 @@
                 android:text="สถานที่ติดตั้ง"
                 android:textColor="@color/colorBlack"
                 android:textSize="32dp"
-                android:layout_marginLeft="25dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginLeft="30dp"
                 android:layout_marginTop="20dp"
                 android:theme="@style/MyFont"/>
 
@@ -70,15 +71,16 @@
                 android:layout_width="match_parent"
                 android:layout_height="60dp"
                 android:theme="@style/spinnerItemStyle"
-                android:layout_marginLeft="25dp"
-                android:layout_marginRight="150dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
                 android:background="@drawable/frame_background_white">
 
                 <Spinner
                     android:id="@+id/spinner_fnsafety4_1"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="5dp"
+                    android:layout_marginTop="12dp"
+                    android:entries="@array/Location_fire_exitFn4"
                     android:theme="@style/spinnerItemStyle"
                     android:layout_marginLeft="20dp"/>
             </RelativeLayout>
@@ -88,16 +90,17 @@
                 android:layout_height="wrap_content"
                 android:textSize="32dp"
                 android:text="ชนิดของป้ายทางหนีไฟ"
-                android:layout_marginLeft="25dp"
-                android:layout_marginTop="20dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="12dp"
                 android:textColor="@color/colorBlack"
                 android:theme="@style/MyFont"/>
 
             <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="60dp"
-                android:layout_marginLeft="25dp"
-                android:layout_marginRight="150dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
                 android:theme="@style/spinnerItemStyle"
                 android:background="@drawable/frame_background_white">
 
@@ -105,8 +108,9 @@
                     android:id="@+id/spinner_fnsafety4_2"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="5dp"
+                    android:layout_marginTop="12dp"
                     android:layout_marginLeft="20dp"
+                    android:entries="@array/Type_fire_exitFn4"
                     android:theme="@style/spinnerItemStyle"/>
             </RelativeLayout>
 
@@ -115,16 +119,17 @@
                 android:layout_height="wrap_content"
                 android:textSize="32dp"
                 android:text="สภาพของป้ายทางหนีไฟ"
-                android:layout_marginLeft="25dp"
-                android:layout_marginTop="20dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginTop="12dp"
                 android:textColor="@color/colorBlack"
                 android:theme="@style/MyFont"/>
 
             <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="60dp"
-                android:layout_marginLeft="25dp"
-                android:layout_marginRight="150dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
                 android:theme="@style/spinnerItemStyle"
                 android:background="@drawable/frame_background_white">
 
@@ -132,7 +137,8 @@
                     android:id="@+id/spinner_fnsafety4_3"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="5dp"
+                    android:layout_marginTop="12dp"
+                    android:entries="@array/generality_fire_exitFn4"
                     android:layout_marginLeft="20dp"
                     android:theme="@style/spinnerItemStyle"/>
             </RelativeLayout>
@@ -140,8 +146,39 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="25dp"
-                android:layout_marginTop="20dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginTop="12dp"
+                android:text="ชื่ออุปกรณ์"
+                android:textColor="@color/colorBlack"
+                android:textSize="32dp"
+                android:theme="@style/MyFont" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:background="@drawable/frame_background_white">
+
+                <TextView
+                    android:id="@+id/nameDevicefn4"
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"
+                    android:maxLines="2"
+                    android:paddingTop="13dp"
+                    android:layout_marginLeft="20dp"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="22dp"
+                    android:theme="@style/MyFont" />
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginTop="12dp"
                 android:text="หมายเหตุ"
                 android:textColor="@color/colorBlack"
                 android:textSize="32dp"
@@ -150,11 +187,12 @@
             <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="25dp"
-                android:layout_marginRight="25dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
                 android:background="@drawable/frame_background_white">
 
                 <EditText
+                    android:id="@+id/notationFn4"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:maxLines="2"
@@ -167,7 +205,7 @@
             <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="25dp"
+                android:layout_marginLeft="30dp"
                 android:layout_marginTop="40dp"
                 android:layout_marginRight="240dp"
                 android:theme="@style/spinnerItemStyle"
@@ -177,7 +215,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="15dp"
-                    android:paddingLeft="10dp"
+                    android:paddingLeft="12dp"
                     android:paddingTop="0dp"
                     android:text="ลงชื่อผู้ตรวจ"
                     android:theme="@style/MyFont"
@@ -185,6 +223,7 @@
                     android:textSize="25dp" />
 
                 <EditText
+                    android:id="@+id/SignatureFn4"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_marginLeft="120dp"
@@ -199,7 +238,7 @@
             <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="25dp"
+                android:layout_marginLeft="30dp"
                 android:layout_marginTop="15dp"
                 android:layout_marginRight="240dp"
                 android:background="@drawable/frame_background_white">
@@ -209,13 +248,14 @@
                     android:layout_height="wrap_content"
                     android:layout_marginTop="15dp"
                     android:text="ลงชื่อผู้ตรวจสอบ"
-                    android:paddingLeft="7dp"
+                    android:paddingLeft="10dp"
                     android:paddingTop="0dp"
                     android:theme="@style/MyFont"
                     android:textColor="@color/colorBlack"
-                    android:textSize="20dp" />
+                    android:textSize="25dp" />
 
                 <EditText
+                    android:id="@+id/ed_SigninspectorFn4"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_marginLeft="156dp"
@@ -227,7 +267,7 @@
 
 
             <Button
-                android:id="@+id/btn_save_fb4"
+                android:id="@+id/btn_save_fn4"
                 android:layout_width="match_parent"
                 android:layout_height="60dp"
                 android:layout_marginLeft="170dp"
@@ -247,6 +287,11 @@
                 android:background="@color/background_fnsafety4"
                 android:gravity="center">
             </Button>
+
+            <ListView
+                android:id="@+id/listViewSafety4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
 
 
         </LinearLayout>

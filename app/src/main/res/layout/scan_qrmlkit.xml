@@ -25,6 +25,8 @@
 
     </FrameLayout>
 
+
+
     <LinearLayout
         android:id="@+id/info"
         android:layout_alignParentBottom="true"
@@ -36,11 +38,23 @@
         <Button
             android:id="@+id/btn_again"
             android:text="SCAN AGAIN"
+            android:textSize="30dp"
+            android:textColor="@color/colorBlack"
             android:enabled="false"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"/>
     </LinearLayout>
 
+<!--    <TextView-->
+<!--        android:id="@+id/tvDialog"-->
+<!--        android:maxLines="5"-->
+<!--        android:layout_marginTop="700dp"-->
+<!--        android:layout_marginLeft="8dp"-->
+<!--        android:layout_marginRight="8dp"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:textColor="@color/colorBlack"-->
+<!--        android:textSize="25dp"/>-->
 
 
 </RelativeLayout>

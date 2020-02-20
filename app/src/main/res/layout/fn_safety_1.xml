@@ -48,7 +48,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="380dp"
-                android:layout_marginTop="40dp"
+                android:layout_marginTop="20dp"
                 android:layout_marginRight="30dp"
                 android:background="@drawable/frame_background_white"
                 android:gravity="center"
@@ -62,7 +62,8 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="25dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
                 android:layout_marginTop="20dp"
                 android:text="สถานที่ติดตั้ง"
                 android:textColor="@color/colorBlack"
@@ -73,8 +74,8 @@
             <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="60dp"
-                android:layout_marginLeft="25dp"
-                android:layout_marginRight="150dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
                 android:background="@drawable/frame_background_white"
                 android:theme="@style/spinnerItemStyle">
 
@@ -93,8 +94,9 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="25dp"
-                android:layout_marginTop="20dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginTop="12dp"
                 android:text="ชนิดของอุปกรณ์"
                 android:textColor="@color/colorBlack"
                 android:textSize="32dp"
@@ -103,8 +105,8 @@
             <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="60dp"
-                android:layout_marginLeft="25dp"
-                android:layout_marginRight="150dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
                 android:background="@drawable/frame_background_white">
 
                 <Spinner
@@ -122,8 +124,9 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="25dp"
-                android:layout_marginTop="20dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginTop="12dp"
                 android:text="จำนวน"
                 android:textColor="@color/colorBlack"
                 android:textSize="32dp"
@@ -132,8 +135,8 @@
             <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="60dp"
-                android:layout_marginLeft="25dp"
-                android:layout_marginRight="150dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
                 android:background="@drawable/frame_background_white">
 
                 <Spinner
@@ -152,8 +155,9 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="25dp"
-                android:layout_marginTop="20dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginTop="12dp"
                 android:text="ประเภทของอุปกรณ์"
                 android:textColor="@color/colorBlack"
                 android:textSize="32dp"
@@ -162,8 +166,8 @@
             <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="60dp"
-                android:layout_marginLeft="25dp"
-                android:layout_marginRight="150dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
                 android:background="@drawable/frame_background_white">
 
 
@@ -182,8 +186,9 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="25dp"
-                android:layout_marginTop="20dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginTop="12dp"
                 android:text="สภาพทั่วไปของอุปกรณ์"
                 android:textColor="@color/colorBlack"
                 android:textSize="32dp"
@@ -192,8 +197,8 @@
             <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="60dp"
-                android:layout_marginLeft="25dp"
-                android:layout_marginRight="150dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
                 android:background="@drawable/frame_background_white">
 
                 <Spinner
@@ -213,8 +218,9 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="25dp"
-                android:layout_marginTop="20dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginTop="12dp"
                 android:text="ชื่ออุปกรณ์"
                 android:textColor="@color/colorBlack"
                 android:textSize="32dp"
@@ -223,8 +229,8 @@
             <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="25dp"
-                android:layout_marginRight="25dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
                 android:background="@drawable/frame_background_white">
 
                 <TextView
@@ -242,8 +248,9 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="25dp"
-                android:layout_marginTop="20dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginTop="12dp"
                 android:text="หมายเหตุ"
                 android:textColor="@color/colorBlack"
                 android:textSize="32dp"
@@ -252,8 +259,8 @@
             <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="25dp"
-                android:layout_marginRight="25dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
                 android:background="@drawable/frame_background_white">
 
                 <EditText
@@ -271,7 +278,7 @@
             <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="25dp"
+                android:layout_marginLeft="30dp"
                 android:layout_marginTop="40dp"
                 android:layout_marginRight="240dp"
                 android:background="@drawable/frame_background_white">
@@ -301,7 +308,7 @@
             <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="25dp"
+                android:layout_marginLeft="30dp"
                 android:layout_marginTop="15dp"
                 android:layout_marginRight="240dp"
                 android:background="@drawable/frame_background_white">
@@ -331,7 +338,7 @@
             <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="25dp"
+                android:layout_marginLeft="30dp"
                 android:layout_marginTop="15dp"
                 android:layout_marginRight="240dp"
                 android:background="@drawable/frame_background_white">
@@ -361,7 +368,7 @@
             <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="25dp"
+                android:layout_marginLeft="30dp"
                 android:layout_marginTop="15dp"
                 android:layout_marginRight="240dp"
                 android:background="@drawable/frame_background_white">

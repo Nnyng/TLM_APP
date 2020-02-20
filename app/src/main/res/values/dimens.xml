@@ -7,4 +7,10 @@
     <dimen name="fab_margin">16dp</dimen>
     <dimen name="logo_w_h">100dp</dimen>
 
+    /// testdialog///
+
+    <dimen name="icon">150dp</dimen>
+    <dimen name="h1">30dp</dimen>
+    <dimen name="h2">30dp</dimen>
+    <dimen name="padding">10dp</dimen>
 </resources>

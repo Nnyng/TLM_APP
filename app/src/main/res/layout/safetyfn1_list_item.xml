@@ -15,6 +15,7 @@
         android:layout_height="wrap_content"
         android:text="datetime"
         android:textSize="30dp"
+        android:layout_marginLeft="8dp"
         android:fontFamily="@font/thsarabunnewbold"
         android:textColor="@color/colorBlack"
         android:id="@+id/tvdatefn1"/>
@@ -24,6 +25,7 @@
         android:layout_height="wrap_content"
         android:text="locat"
         android:textSize="30dp"
+        android:layout_marginLeft="8dp"
         android:fontFamily="@font/thsarabunnewbold"
         android:textColor="@color/colorBlack"
         android:id="@+id/tvLocationfn1"/>
@@ -34,6 +36,7 @@
         android:layout_height="wrap_content"
         android:text="device"
         android:textSize="30dp"
+        android:layout_marginLeft="8dp"
         android:fontFamily="@font/thsarabunnewbold"
         android:textColor="@color/colorBlack"
         android:id="@+id/tvDeviceTypefn1"/>
@@ -43,6 +46,7 @@
         android:layout_height="wrap_content"
         android:text="total"
         android:textSize="30dp"
+        android:layout_marginLeft="8dp"
         android:fontFamily="@font/thsarabunnewbold"
         android:textColor="@color/colorBlack"
         android:id="@+id/tvTotalfn1"/>
@@ -52,6 +56,7 @@
         android:layout_height="wrap_content"
         android:text="totalType"
         android:textSize="30dp"
+        android:layout_marginLeft="8dp"
         android:fontFamily="@font/thsarabunnewbold"
         android:textColor="@color/colorBlack"
         android:id="@+id/tvTotalTypefn1"/>
@@ -61,6 +66,7 @@
         android:layout_height="wrap_content"
         android:text="generality"
         android:textSize="30dp"
+        android:layout_marginLeft="8dp"
         android:fontFamily="@font/thsarabunnewbold"
         android:textColor="@color/colorBlack"
         android:id="@+id/tvGeneralityfn1"/>
@@ -70,6 +76,7 @@
         android:layout_height="wrap_content"
         android:text="Manufacturer"
         android:textSize="30dp"
+        android:layout_marginLeft="8dp"
         android:fontFamily="@font/thsarabunnewbold"
         android:textColor="@color/colorBlack"
         android:id="@+id/tvManufacturerfn1"/>
@@ -79,6 +86,7 @@
         android:layout_height="wrap_content"
         android:text="Notation"
         android:textSize="30dp"
+        android:layout_marginLeft="8dp"
         android:fontFamily="@font/thsarabunnewbold"
         android:textColor="@color/colorBlack"
         android:id="@+id/tvNotationfn1"/>
@@ -88,6 +96,7 @@
         android:layout_height="wrap_content"
         android:text="sign"
         android:textSize="30dp"
+        android:layout_marginLeft="8dp"
         android:fontFamily="@font/thsarabunnewbold"
         android:textColor="@color/colorBlack"
         android:id="@+id/tvSignfn1"/>
@@ -97,6 +106,7 @@
         android:layout_height="wrap_content"
         android:text="positionSign"
         android:textSize="30dp"
+        android:layout_marginLeft="8dp"
         android:fontFamily="@font/thsarabunnewbold"
         android:textColor="@color/colorBlack"
         android:id="@+id/tvPosition_Signfn1"/>
@@ -106,6 +116,7 @@
         android:layout_height="wrap_content"
         android:text="edSign"
         android:textSize="30dp"
+        android:layout_marginLeft="8dp"
         android:fontFamily="@font/thsarabunnewbold"
         android:textColor="@color/colorBlack"
         android:id="@+id/tvEdSignfn1"/>
@@ -115,6 +126,7 @@
         android:layout_height="wrap_content"
         android:text="positionEdSign"
         android:textSize="30dp"
+        android:layout_marginLeft="8dp"
         android:fontFamily="@font/thsarabunnewbold"
         android:textColor="@color/colorBlack"
         android:id="@+id/tvPosition_Ed_Signfn1"/>

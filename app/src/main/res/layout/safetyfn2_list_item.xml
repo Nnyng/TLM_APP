@@ -14,6 +14,7 @@
         android:layout_height="wrap_content"
         android:text="datetime"
         android:textSize="30dp"
+        android:layout_marginLeft="8dp"
         android:textColor="@color/colorBlack"
         android:fontFamily="@font/thsarabunnewbold"
         android:id="@+id/tvdatefn2"/>
@@ -22,6 +23,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="locat"
+        android:layout_marginLeft="8dp"
         android:textSize="30dp"
         android:textColor="@color/colorBlack"
         android:fontFamily="@font/thsarabunnewbold"
@@ -32,6 +34,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="device"
+        android:layout_marginLeft="8dp"
         android:textSize="30dp"
         android:textColor="@color/colorBlack"
         android:fontFamily="@font/thsarabunnewbold"
@@ -43,6 +46,7 @@
         android:layout_height="wrap_content"
         android:text="generality"
         android:textSize="30dp"
+        android:layout_marginLeft="8dp"
         android:textColor="@color/colorBlack"
         android:fontFamily="@font/thsarabunnewbold"
         android:id="@+id/tvGeneralityfn2"/>
@@ -59,6 +63,7 @@
         android:layout_height="wrap_content"
         android:text="Notation"
         android:textSize="30dp"
+        android:layout_marginLeft="8dp"
         android:textColor="@color/colorBlack"
         android:fontFamily="@font/thsarabunnewbold"
         android:id="@+id/tvNotationfn2"/>
@@ -68,6 +73,7 @@
         android:layout_height="wrap_content"
         android:text="sign"
         android:textSize="30dp"
+        android:layout_marginLeft="8dp"
         android:textColor="@color/colorBlack"
         android:fontFamily="@font/thsarabunnewbold"
         android:id="@+id/tvSignfn2"/>
@@ -77,6 +83,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="edSign"
+        android:layout_marginLeft="8dp"
         android:textSize="30dp"
         android:textColor="@color/colorBlack"
         android:fontFamily="@font/thsarabunnewbold"

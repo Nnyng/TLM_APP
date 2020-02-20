@@ -9,12 +9,21 @@ import android.content.DialogInterface;
 import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
+import android.text.TextUtils;
 import android.view.View;
 import android.widget.Button;
+import android.widget.EditText;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.google.android.gms.tasks.OnFailureListener;
 import com.google.android.gms.tasks.OnSuccessListener;
+import com.google.firebase.database.DataSnapshot;
+import com.google.firebase.database.DatabaseError;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.database.Query;
+import com.google.firebase.database.ValueEventListener;
 import com.google.firebase.ml.vision.FirebaseVision;
 import com.google.firebase.ml.vision.barcode.FirebaseVisionBarcode;
 import com.google.firebase.ml.vision.barcode.FirebaseVisionBarcodeDetector;
@@ -30,13 +39,19 @@ import com.otaliastudios.cameraview.CameraView;
 import com.otaliastudios.cameraview.frame.Frame;
 import com.otaliastudios.cameraview.frame.FrameProcessor;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class ScanQRMLKit extends AppCompatActivity {
-
+    private TextView tvDialog;
+    private Button btn_again;
+    private DatabaseReference firebaseReference;
     CameraView camera_view;
     boolean isDetected = false;
     Button btn_start_again;
+    private List<GetDataDialog>dataDialogs;
+    private String result;
+
 
     FirebaseVisionBarcodeDetectorOptions options;
     FirebaseVisionBarcodeDetector detector;
@@ -45,6 +60,10 @@ public class ScanQRMLKit extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.scan_qrmlkit);
+
+//        initInstances();
+//        initFirebase();
+//        showData();
 
         Dexter.withActivity(this)
                 .withPermissions(new String[]{Manifest.permission.CAMERA,Manifest.permission.RECORD_AUDIO})
@@ -127,12 +146,12 @@ public class ScanQRMLKit extends AppCompatActivity {
                     }
                     break;
                     case FirebaseVisionBarcode.TYPE_CONTACT_INFO: {
-                        String info = new StringBuilder("Name: ")
+                        String info = new StringBuilder("Location: ")
                                 .append(item.getContactInfo().getName().getFormattedName())
                                 .append("\n")
-                                .append("Address: ")
+                                .append("Detail1: ")
                                 .append(item.getContactInfo().getAddresses().get(0).getAddressLines()[0])
-                                .append("Email: ")
+                                .append("Detail2: ")
                                 .append(item.getContactInfo().getEmails().get(0).getAddress())
                                 .toString();
                         createDialog(info);
@@ -145,19 +164,101 @@ public class ScanQRMLKit extends AppCompatActivity {
         }
     }
 
+
+//    private void initFirebase() {
+//        firebaseReference = FirebaseDatabase.getInstance().getReference();
+//    }
+//
+//    private void  initInstances(){
+//        tvDialog = (TextView) findViewById(R.id.tvDialog);
+//        btn_again = (Button) findViewById(R.id.btn_again);
+//
+//
+//        btn_again = (Button) findViewById(R.id.btn_again);
+//        btn_again.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//
+//                if  (v == btn_again) {
+//                    addData();
+//                }
+//            }
+//        });
+//
+//
+//        dataDialogs = new ArrayList<>();
+//
+//    }
+//
+//    private  void addData(){
+//
+//        String detail = tvDialog.getText().toString();
+//        String btn = btn_again.getText().toString();
+//
+//        if (!TextUtils.isEmpty(detail)){
+//            String id = firebaseReference.child("GetDataDialog").push().getKey();
+//
+//            GetDataDialog data = new GetDataDialog();
+//
+//            data.setId(id);
+//            data.setDevice_type(detail);
+//            data.setLocation(detail);
+//
+//            firebaseReference.child("GetDataDialog").child(id).setValue(data);
+//
+//            Toast.makeText(this, "Checking Successful", Toast.LENGTH_LONG).show();
+//
+//        }else {
+//
+//            //if the value is not given displaying a toast
+//            Toast.makeText(this, "Please fill your information completely", Toast.LENGTH_LONG).show();
+//        }
+//    }
+//
+//    private  void showData(){
+//        Query query = firebaseReference.child("GetDataDialog");
+//        query.addValueEventListener(new ValueEventListener() {
+//            @Override
+//            public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
+//                dataDialogs.clear();
+//                for (DataSnapshot postSnapshot: dataSnapshot.getChildren()){
+//                    GetDataDialog data = postSnapshot.getValue(GetDataDialog.class);
+//                    dataDialogs.add(data);
+//                }
+//
+//            }
+//
+//            @Override
+//            public void onCancelled(@NonNull DatabaseError databaseError) {
+//
+//            }
+//        });
+//    }
+
+
+
     private void createDialog(String text) {
+        //final TextView input = new TextView(ScanQRMLKit.this);
+        //input.setSingleLine(true);
         AlertDialog.Builder builder = new AlertDialog.Builder(this);
         builder.setMessage(text)
+                //.setView(input)
                 .setPositiveButton("OK", new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialogInterface, int i) {
+                       // String f = input.getText().toString();
                         dialogInterface.dismiss();
 
                     }
                 });
         AlertDialog dialog = builder.create();
+
         dialog.show();
+
+
     }
+
+
 
     private FirebaseVisionImage getVisionImageFromFrame(Frame frame) {
 
@@ -166,7 +267,7 @@ public class ScanQRMLKit extends AppCompatActivity {
                 .setFormat(FirebaseVisionImageMetadata.IMAGE_FORMAT_NV21)
                 .setHeight(frame.getSize().getHeight())
                 .setWidth(frame.getSize().getWidth())
-                //    .setRotation(frame.getRotation()) // Only use it if you work on Land scape mode - for portrail , don't use it
+               // .setRotation(frame.getRotation()) // Only use it if you work on Land scape mode - for portrail , don't use it
                 .build();
         return FirebaseVisionImage.fromByteArray(data,metadata);
     }

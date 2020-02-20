@@ -14,12 +14,23 @@
             android:layout_height="wrap_content"
             android:orientation="vertical">
 
+
+            <ImageButton
+                android:id="@+id/ib_exitfn3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="530dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginTop="8dp"
+                android:background="@color/background_fnsafety3"
+                android:src="@android:drawable/ic_delete" />
+
             <TextView
                 android:id="@+id/datefn3"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="380dp"
-                android:layout_marginTop="40dp"
+                android:layout_marginTop="20dp"
                 android:layout_marginRight="30dp"
                 android:background="@drawable/frame_background_white"
                 android:gravity="center"
@@ -33,7 +44,8 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="25dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
                 android:layout_marginTop="20dp"
                 android:text="หมายเลขจุดติดตั้ง"
                 android:textColor="@color/colorBlack"
@@ -43,8 +55,8 @@
             <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="60dp"
-                android:layout_marginLeft="25dp"
-                android:layout_marginRight="150dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
                 android:background="@drawable/frame_background_white"
 
                 android:theme="@style/spinnerItemStyle">
@@ -64,8 +76,9 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="25dp"
-                android:layout_marginTop="20dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginTop="12dp"
                 android:text="สถานที่ติดตั้ง"
                 android:textColor="@color/colorBlack"
                 android:textSize="32dp"
@@ -74,8 +87,8 @@
             <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="60dp"
-                android:layout_marginLeft="25dp"
-                android:layout_marginRight="150dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
                 android:background="@drawable/frame_background_white"
 
                 android:theme="@style/spinnerItemStyle">
@@ -95,8 +108,9 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="25dp"
-                android:layout_marginTop="20dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginTop="12dp"
                 android:text="ชนิดของอุปกรณ์"
                 android:textColor="@color/colorBlack"
                 android:textSize="32dp"
@@ -105,8 +119,8 @@
             <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="60dp"
-                android:layout_marginLeft="25dp"
-                android:layout_marginRight="150dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
                 android:background="@drawable/frame_background_white"
                 android:theme="@style/spinnerItemStyle">
 
@@ -124,8 +138,9 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="25dp"
-                android:layout_marginTop="20dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginTop="12dp"
                 android:text="ไม่มีสิ่งกีดขวางทางเข้า"
                 android:textColor="@color/colorBlack"
                 android:textSize="32dp"
@@ -134,8 +149,8 @@
             <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="60dp"
-                android:layout_marginLeft="25dp"
-                android:layout_marginRight="320dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
                 android:background="@drawable/frame_background_white"
                 android:theme="@style/spinnerItemStyle">
 
@@ -154,8 +169,9 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="25dp"
-                android:layout_marginTop="20dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginTop="12dp"
                 android:text="อยู่ในที่แขวน/ติดตั้ง"
                 android:textColor="@color/colorBlack"
                 android:textSize="32dp"
@@ -164,8 +180,8 @@
             <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="60dp"
-                android:layout_marginLeft="25dp"
-                android:layout_marginRight="320dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
                 android:background="@drawable/frame_background_white"
                 android:theme="@style/spinnerItemStyle">
 
@@ -184,8 +200,9 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="25dp"
-                android:layout_marginTop="20dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginTop="12dp"
                 android:text="ตัวยึดมั่นคง แข็งแรง"
                 android:textColor="@color/colorBlack"
                 android:textSize="32dp"
@@ -194,8 +211,8 @@
             <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="60dp"
-                android:layout_marginLeft="25dp"
-                android:layout_marginRight="320dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
                 android:background="@drawable/frame_background_white"
                 android:theme="@style/spinnerItemStyle">
 
@@ -213,8 +230,9 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="25dp"
-                android:layout_marginTop="20dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginTop="12dp"
                 android:text="หัวฉีดไม่มีสิ่งอุดตัน"
                 android:textColor="@color/colorBlack"
                 android:textSize="32dp"
@@ -223,8 +241,8 @@
             <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="60dp"
-                android:layout_marginLeft="25dp"
-                android:layout_marginRight="320dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
                 android:background="@drawable/frame_background_white"
                 android:theme="@style/spinnerItemStyle">
 
@@ -242,8 +260,9 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="25dp"
-                android:layout_marginTop="20dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginTop="12dp"
                 android:text="สลักและสายรัด"
                 android:textColor="@color/colorBlack"
                 android:textSize="32dp"
@@ -252,8 +271,8 @@
             <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="60dp"
-                android:layout_marginLeft="25dp"
-                android:layout_marginRight="320dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
                 android:background="@drawable/frame_background_white"
                 android:theme="@style/spinnerItemStyle">
 
@@ -271,8 +290,9 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="25dp"
-                android:layout_marginTop="20dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginTop="12dp"
                 android:text="แรงดันปกติ"
                 android:textColor="@color/colorBlack"
                 android:textSize="32dp"
@@ -281,8 +301,8 @@
             <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="60dp"
-                android:layout_marginLeft="25dp"
-                android:layout_marginRight="320dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
                 android:background="@drawable/frame_background_white"
                 android:theme="@style/spinnerItemStyle">
 
@@ -300,7 +320,7 @@
             <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="25dp"
+                android:layout_marginLeft="30dp"
                 android:layout_marginTop="40dp"
                 android:layout_marginRight="240dp"
                 android:background="@drawable/frame_background_white">
@@ -309,7 +329,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="15dp"
-                    android:paddingLeft="10dp"
+                    android:paddingLeft="12dp"
                     android:paddingTop="0dp"
                     android:text="ลงชื่อผู้ตรวจ"
                     android:textColor="@color/colorBlack"
@@ -331,7 +351,7 @@
             <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="25dp"
+                android:layout_marginLeft="30dp"
                 android:layout_marginTop="15dp"
                 android:layout_marginRight="240dp"
                 android:background="@drawable/frame_background_white">
@@ -340,7 +360,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="15dp"
-                    android:paddingLeft="7dp"
+                    android:paddingLeft="10dp"
                     android:paddingTop="0dp"
                     android:text="ลงชื่อผู้ตรวจสอบ"
                     android:textColor="@color/colorBlack"

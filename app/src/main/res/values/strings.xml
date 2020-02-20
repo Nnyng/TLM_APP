@@ -193,8 +193,8 @@
     </string-array>
     // Function safety 4
     // สถานที่ติดตั้ง
-    <string-array name="Location_fire_exit">
-        <item>-SELECT-</item>
+    <string-array name="Location_fire_exitFn4">
+        <item></item>
         <item>ท้ายไลน์ TT-E</item>
         <item>ท้ายไลน์ TT-D</item>
         <item>ท้ายไลน์ TT-G</item>
@@ -204,8 +204,8 @@
         <item>MC Store ฝั่ง KCE</item>
     </string-array>
     // ชนิดของป้ายทางหนีไฟ
-    <string-array name="Type_fire_exit">
-        <item>-SELECT-</item>
+    <string-array name="Type_fire_exitFn4">
+        <item></item>
         <item>Exit sign board</item>
         <item>Exit sign board</item>
         <item>Exit sign board</item>
@@ -215,8 +215,8 @@
         <item>Exit sign board</item>
     </string-array>
     // สภาพของป้ายทางหนีไฟ
-    <string-array name="generality_fire_exit">
-        <item>-SELECT-</item>
+    <string-array name="generality_fire_exitFn4">
+        <item></item>
         <item>หลอดไฟติด</item>
         <item>หลอดไม่ไฟติด</item>
         <item>การทดสอบการผลักออก OK</item>
@@ -227,7 +227,7 @@
     // Function Safety5
     //หมายเลขอุปกรณ์
     <string-array name="id_devicefire_cabinetfn5">
-        <item>-SELECT-</item>
+        <item></item>
         <item>HOSE REEL BOX NO.1</item>
         <item>HOSE REEL BOX NO.2</item>
         <item>HOSE REEL BOX NO.3</item>
@@ -248,7 +248,7 @@
     </string-array>
     // ชนิดของอุปกรณ์
     <string-array name="deviceType_Fire_cabinetFn5">
-        <item>-SELECT-</item>
+        <item></item>
         <item>ตู้หัวจ่ายสาย 1 1/2 นิ้ว</item>
         <item>สาย 2.5 นิ้ว 2 เส้น</item>
         <item>สาย 1.5 นิ้ว 1 เส้น</item>
@@ -260,7 +260,7 @@
     </string-array>
     // สถานที่ติดตั้งอุปกรณ์
     <string-array name="locationFire_cabinetfn5">
-        <item>-SELECT-</item>
+        <item></item>
         <item>ระเบียงหน้าสำนักงาน</item>
         <item>บริเวณพื้นที่ Work shop แผนก MT</item>
         <item>ทางเดินอาคาร ด้าน TT-D</item>
@@ -281,7 +281,7 @@
     </string-array>
     // สภาพทั่วไป
     <string-array name="generalityFire_cabinetfn5">
-        <item>-SELECT-</item>
+        <item></item>
         <item>มี</item>
         <item>ไม่มี</item>
         <item>ใช่</item>
@@ -290,7 +290,7 @@
     // Funtion Safety6
     //สถานที่ติดตั้ง
     <string-array name="locat_EyeShower">
-        <item>-SELECT-</item>
+        <item></item>
         <item>กำแพงตรงข้ามประตูมางเข้าห้อง Mixing</item>
         <item>จุด Tank Load น้ำยาเคมี</item>
         <item>กำแพงด้านขวาเครื่อง TT #F</item>
@@ -299,7 +299,7 @@
     </string-array>
     // ชนิดของอุปกรณ์
     <string-array name="device_Type_EyeShower">
-        <item>-SELECT-</item>
+        <item></item>
         <item>Eye Washes No.1</item>
         <item>Eye Washes and Showers No.2</item>
         <item>Eye Washes No.3</item>
@@ -308,7 +308,7 @@
     </string-array>
     // สภาพทั่วไป
     <string-array name="generality_EyeShower">
-        <item>-SELECT-</item>
+        <item></item>
         <item>ใช่</item>
         <item>ไม่ใช่</item>
         <item>ปกติ</item>
@@ -317,7 +317,7 @@
     // Function Safety7
     //ชนิดของอุปกรณ์
     <string-array name="Device_Foam_Fire">
-        <item>-SELECT-</item>
+        <item></item>
         <item>Valve 1</item>
         <item>Valve 2</item>
         <item>Valve 3</item>
@@ -349,7 +349,7 @@
     </string-array>
     //สถานที่ติดตั้ง
     <string-array name="location_Device_Foam_Fire">
-        <item>-SELECT-</item>
+        <item></item>
         <item>Main Valve</item>
         <item>Main Valve Sprinkler Resin Tank5</item>
         <item>Valve Sprinkler Resin Tank5</item>
@@ -381,14 +381,14 @@
     </string-array>
     //สภาพทั่วไป
     <string-array name="generality_Device_Foam">
-        <item>-SELECT-</item>
+        <item></item>
         <item>ใช่</item>
         <item>ไม่ใช่</item>
     </string-array>
     // Function Safety8
     //หมายเลขอุปกรณ์
     <string-array name="id_deviceFn8">
-        <item>-SELECT-</item>
+        <item></item>
         <item>1</item>
         <item>2</item>
         <item>3</item>
@@ -401,7 +401,7 @@
     </string-array>
     //ชนิดของอุปกรณ์
     <string-array name="Device_Fn8">
-        <item>-SELECT-</item>
+        <item></item>
         <item>ทราย 1 ถัง + พลั่ว 1 อัน</item>
         <item>ทราย 2 ถัง + พลั่ว 1 อัน</item>
         <item>ทราย 2 ถัง + พลั่ว 1 อัน</item>
@@ -414,7 +414,7 @@
     </string-array>
     //สถานที่ติดตั้ง
     <string-array name="locat_Fn8">
-        <item>-SELECT-</item>
+        <item></item>
         <item>ติดกำแพงใกล้ MT Work shop</item>
         <item>หลังห้อง MIX</item>
         <item>หน้า Tank Farm</item>
@@ -427,7 +427,7 @@
     </string-array>
     // สภาพทั่วไป
     <string-array name="generality_Fn8">
-        <item>-SELECT-</item>
+        <item></item>
         <item>อยู่ครบ/ชำรุด</item>
         <item>ไม่ครบ/ชำรุด</item>
         <item>อยู่ครบ/ไม่ชำรุด</item>
@@ -436,13 +436,13 @@
     // Function Safety9
     // อุปกรณ์
     <string-array name="Device_CO2fn9">
-        <item>-SELECT-</item>
+        <item></item>
         <item>ระบบดับเพลิงอัตโนมัติ CO2</item>
         <item>ระบบดับเพลิง Manual CO2</item>
     </string-array>
     //สถานที่ติดตั้ง
     <string-array name="Locat_CO2fn9">
-        <item>-SELECT-</item>
+        <item></item>
         <item>ห้อง MIXING</item>
         <item>ห้อง C</item>
         <item>ห้อง D</item>
@@ -452,7 +452,7 @@
     </string-array>
     // สภาพทั่วไป
     <string-array name="Generality_fn9">
-        <item>-SELECT-</item>
+        <item></item>
         <item>ทำงาน</item>
         <item>ไม่ทำงาน</item>
         <item>ปกติ</item>
@@ -463,7 +463,7 @@
     //Function SAFETY10
     //หมายเลขวาล์ว
     <string-array name="id_valve">
-        <item>-SELECT-</item>
+        <item></item>
         <item>V1</item>
         <item>V2</item>
         <item>V3</item>
@@ -473,7 +473,7 @@
     </string-array>
     //สถานที่ติดตั้ง
     <string-array name="location_valve">
-        <item>-SELECT-</item>
+        <item></item>
         <item>ในห้อง Fire Pump</item>
         <item>ในห้อง Fire Pump</item>
         <item>หน้าห้อง Fire Pump</item>
@@ -484,7 +484,7 @@
     // สภาพทั่วไป
     //วาล่ว , กุญแจล็อควาล์ว
     <string-array name="generality_valve">
-        <item>-SELECT-</item>
+        <item></item>
         <item>ใช่</item>
         <item>ไม่ใช่</item>
     </string-array>
@@ -499,7 +499,7 @@
     // ระบบ Manual
     // ลำดับที่
     <string-array name="No_Manual">
-        <item>-SELECT-</item>
+        <item></item>
         <item>1</item>
         <item>2</item>
         <item>3</item>
@@ -516,7 +516,7 @@
     </string-array>
     // Zone
     <string-array name="Zone_Manual">
-        <item>-SELECT-</item>
+        <item></item>
         <item>Zone1</item>
         <item>Zone1</item>
         <item>Zone2</item>
@@ -533,7 +533,7 @@
     </string-array>
     // ตำแหน่งที่ตั้ง
     <string-array name="Locat_Manual">
-        <item>-SELECT-</item>
+        <item></item>
         <item>หน้าประตูทางเข้า Office</item>
         <item>ข้างห้องพยาบาล</item>
         <item>ข้างห้อง Meeting Room2(ชั้น2)</item>
@@ -550,19 +550,19 @@
     </string-array>
     // ผลการตรวจสภาพทั่วไป
     <string-array name="generality_Manual">
-        <item>-SELECT-</item>
+        <item></item>
         <item>OK</item>
         <item>NG</item>
     </string-array>
     //ผลการทำสอบการทำงาน
     <string-array name="testWork_Manual">
-        <item>-SELECT-</item>
+        <item></item>
         <item>OK</item>
         <item>NG</item>
     </string-array>
     //ระบบแจ้งเหตุอัตโนมัติ Heat Detector และ Smoke Detector (ตรวจสภาพทั่วไปทุกเดือน)
     <string-array name="no_Automatic_eMonths">
-        <item>-SELECT-</item>
+        <item></item>
         <item>1</item>
         <item>2</item>
         <item>3</item>
@@ -703,7 +703,7 @@
     </string-array>
     // Zone Automatic
     <string-array name="zone_Automatic_eMonths">
-        <item>-SELECT-</item>
+        <item></item>
         <item>Zone 1 ชั้นล่าง OFFICE</item>
         <item>Zone 2 ชั้นบน OFFICE</item>
         <item>Zone 4 ห้อง Fac</item>
@@ -719,7 +719,7 @@
     </string-array>
     // Location_Automatic
     <string-array name="Location_Automatic_eMonths">
-        <item>-SELECT-</item>
+        <item></item>
         <item>--- Zone 1 ชั้นล่าง OFFICE ---</item>
         <item>หน้าตู้ Board แสดง Fire Alarm (H)</item>
         <item>หน้าห้อง Meeting Room 3 (H)</item>
@@ -872,14 +872,14 @@
     </string-array>
     //ผลการตรวจสภาพทั่วไปAuto
     <string-array name="generality_Auto_eMonths">
-        <item>-SELECT-</item>
+        <item></item>
         <item>OK</item>
         <item>NG</item>
     </string-array>
 
     //ระบบแจ้งเหตุอัตโนมัติ Heat Detector และ Smoke Detector (ตรวจสภาพทั่วไปทุก3เดือน)
     <string-array name="no_Automatic_3Months">
-        <item>-SELECT-</item>
+        <item></item>
         <item>1</item>
         <item>2</item>
         <item>3</item>
@@ -1020,7 +1020,7 @@
     </string-array>
     // Zone Automatic
     <string-array name="zone_Automatic_3Months">
-        <item>-SELECT-</item>
+        <item></item>
         <item>Zone 1 ชั้นล่าง OFFICE</item>
         <item>Zone 2 ชั้นบน OFFICE</item>
         <item>Zone 4 ห้อง Fac</item>
@@ -1036,7 +1036,7 @@
     </string-array>
     // Location_Automatic
     <string-array name="Location_Automatic_3Months">
-        <item>-SELECT-</item>
+        <item></item>
         <item>--- Zone 1 ชั้นล่าง OFFICE ---</item>
         <item>หน้าตู้ Board แสดง Fire Alarm (H)</item>
         <item>หน้าห้อง Meeting Room 3 (H)</item>
@@ -1189,7 +1189,7 @@
     </string-array>
     // ผลการทดสอบการทำงาน
     <string-array name="testWork_Auto_3Months">
-        <item>-SELECT-</item>
+        <item></item>
         <item>OK</item>
         <item>NG</item>
     </string-array>
@@ -1198,7 +1198,7 @@
     //ระบบแจ้งเหตุอัตโนมัติ Smoke Detector ในตู้ควบคุมไฟฟ้าสำหรับแผนก Treater
     (ตรวจสภาพทั่วไปทุกเดือน)
     <string-array name="no_Auto_Smoke_eMonths">
-        <item>-SELECT-</item>
+        <item></item>
         <item>138</item>
         <item>139</item>
         <item>140</item>
@@ -1243,7 +1243,7 @@
     </string-array>
     // Zone Smoke Auto แผนก Treater
     <string-array name="Zone_Auto_Treater_eMonths">
-        <item>-SELECT-</item>
+        <item></item>
         <item>Zone 1</item>
         <item>Zone 2</item>
         <item>Zone 3</item>
@@ -1253,7 +1253,7 @@
     </string-array>
     //สถานที่ติดตั้ง Smoke Auto แผนก Treater
     <string-array name="locat_Auto_Treater_eMonths">
-        <item>-SELECT-</item>
+        <item></item>
         <item>--- Zone 1 ---</item>
         <item>TT-C ในห้องควบคุมไฟฟ้าชั้น2 (S)</item>
         <item>TT-C ภายในตู้ Control ด้านใน (S)</item>
@@ -1304,14 +1304,15 @@
     </string-array>
     //ผลการตรวจสภาพทั่วไป Smoke Auto แผนก Treater
     <string-array name="generality_auto_Treater_eMonths">
+        <item></item>
         <item>OK</item>
         <item>NG</item>
     </string-array>
 
     //ระบบแจ้งเหตุอัตโนมัติ Smoke Detector ในตู้ควบคุมไฟฟ้าสำหรับแผนก Treater
-    (ตรวจสภาพทั่วไปทุกเดือน)
+    (ตรวจสภาพทั่วไปทุก3เดือน)
     <string-array name="no_Auto_Smoke_3Months">
-        <item>-SELECT-</item>
+        <item></item>
         <item>138</item>
         <item>139</item>
         <item>140</item>
@@ -1356,7 +1357,7 @@
     </string-array>
     // Zone Smoke Auto แผนก Treater
     <string-array name="Zone_Auto_Treater_3Months">
-        <item>-SELECT-</item>
+        <item></item>
         <item>Zone 1</item>
         <item>Zone 2</item>
         <item>Zone 3</item>
@@ -1366,7 +1367,7 @@
     </string-array>
     //สถานที่ติดตั้ง Smoke Auto แผนก Treater
     <string-array name="locat_Auto_Treater_3Months">
-        <item>-SELECT-</item>
+        <item></item>
         <item>--- Zone 1 ---</item>
         <item>TT-C ในห้องควบคุมไฟฟ้าชั้น2 (S)</item>
         <item>TT-C ภายในตู้ Control ด้านใน (S)</item>
@@ -1417,7 +1418,7 @@
     </string-array>
     // ผลการทดสอบการทำงาน
     <string-array name="testWork_AutoTreater_3Months">
-        <item>-SELECT-</item>
+        <item></item>
         <item>OK</item>
         <item>NG</item>
     </string-array>
@@ -1727,4 +1728,21 @@
         <item>User</item>
         <item>Guest</item>
     </array>
+
+
+    /// /test dialog ////
+    <string name="label1">ความต้องการ</string>
+    <string name="label2">หัวข้อที่ 2</string>
+    <string name="label3">หัวข้อที่ 3</string>
+    <string name="label4">หัวข้อที่ 4</string>
+    <string name="label5">หัวข้อที่ 5</string>
+
+    <string name="label6">ความต้องการ</string>
+    <string name="label7">รู้สึก</string>
+    <string name="label8">คำถาม</string>
+    <string name="label9">เร่งดวน</string>
+
+    <string name="title1">หน้าหลัก</string>
+    <string name="choose_gender">เลือกเพศ</string>
+
 </resources>

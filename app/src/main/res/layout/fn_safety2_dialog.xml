@@ -12,12 +12,22 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical">
+
+            <ImageButton
+                android:id="@+id/ib_exitfn2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="530dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginTop="8dp"
+                android:background="@color/background_fnsafety2"
+                android:src="@android:drawable/ic_delete" />
             <TextView
                 android:id="@+id/datefn2"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="380dp"
-                android:layout_marginTop="40dp"
+                android:layout_marginTop="20dp"
                 android:layout_marginRight="30dp"
                 android:background="@drawable/frame_background_white"
                 android:gravity="center"
@@ -31,7 +41,8 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="25dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
                 android:layout_marginTop="20dp"
                 android:text="สถานที่ติดตั้ง"
                 android:textColor="@color/colorBlack"
@@ -41,9 +52,9 @@
             <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="60dp"
-                android:layout_marginLeft="25dp"
+                android:layout_marginLeft="30dp"
                 android:theme="@style/spinnerItemStyle"
-                android:layout_marginRight="150dp"
+                android:layout_marginRight="30dp"
                 android:background="@drawable/frame_background_white">
 
                 <Spinner
@@ -61,8 +72,9 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="25dp"
-                android:layout_marginTop="20dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginTop="12dp"
                 android:text="ชนิดของไฟฉุกเฉิน"
                 android:textColor="@color/colorBlack"
                 android:textSize="32dp"
@@ -71,8 +83,8 @@
             <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="60dp"
-                android:layout_marginLeft="25dp"
-                android:layout_marginRight="150dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
                 android:theme="@style/spinnerItemStyle"
                 android:background="@drawable/frame_background_white">
 
@@ -91,8 +103,9 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="25dp"
-                android:layout_marginTop="20dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginTop="12dp"
                 android:text="สภาพของไฟฉุกเฉิน"
                 android:textColor="@color/colorBlack"
                 android:textSize="32dp"
@@ -101,9 +114,9 @@
             <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="60dp"
-                android:layout_marginLeft="25dp"
+                android:layout_marginLeft="30dp"
                 android:theme="@style/spinnerItemStyle"
-                android:layout_marginRight="150dp"
+                android:layout_marginRight="30dp"
                 android:background="@drawable/frame_background_white">
 
                 <Spinner
@@ -121,7 +134,8 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="25dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
                 android:layout_marginTop="20dp"
                 android:text="หมายเหตุ"
                 android:textColor="@color/colorBlack"
@@ -131,8 +145,8 @@
             <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="25dp"
-                android:layout_marginRight="25dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
                 android:background="@drawable/frame_background_white">
 
                 <EditText
@@ -150,7 +164,7 @@
             <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="60dp"
-                android:layout_marginLeft="25dp"
+                android:layout_marginLeft="30dp"
                 android:layout_marginTop="40dp"
                 android:layout_marginRight="240dp"
                 android:theme="@style/spinnerItemStyle"
@@ -160,7 +174,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="15dp"
-                    android:paddingLeft="10dp"
+                    android:paddingLeft="12dp"
                     android:paddingTop="3dp"
                     android:text="ลงชื่อผู้ตรวจ"
                     android:textColor="@color/colorBlack"
@@ -182,7 +196,7 @@
             <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="60dp"
-                android:layout_marginLeft="25dp"
+                android:layout_marginLeft="30dp"
                 android:layout_marginTop="15dp"
                 android:theme="@style/spinnerItemStyle"
                 android:layout_marginRight="240dp"
@@ -192,7 +206,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="15dp"
-                    android:paddingLeft="7dp"
+                    android:paddingLeft="10dp"
                     android:paddingTop="3dp"
                     android:text="ลงชื่อผู้ตรวจสอบ"
                     android:textColor="@color/colorBlack"

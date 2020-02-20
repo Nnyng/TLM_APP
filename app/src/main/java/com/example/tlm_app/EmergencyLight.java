@@ -1,14 +1,15 @@
 package com.example.tlm_app;
 
 public class EmergencyLight {
-    String id_fn2;
-    String date_fn2;
-    String locat_fn2;
-    String type_EmergencyLight_fn2;
-    String generality_fn2;
-    String notation_fn2;
-    String Signfn2;
-    String edSignfn2;
+     private String id_fn2;
+     private String date_fn2;
+     private String locat_fn2;
+     private String type_EmergencyLight_fn2;
+     private String generality_fn2;
+     private String notation_fn2;
+     private String Signfn2;
+     private String edSignfn2;
+     private String manufacturer_fn2;
 
     public EmergencyLight() {
     }
@@ -51,6 +52,14 @@ public class EmergencyLight {
 
     public void setGenerality_fn2(String generality_fn2) {
         this.generality_fn2 = generality_fn2;
+    }
+
+    public String getManufacturer_fn2() {
+        return manufacturer_fn2;
+    }
+
+    public void setManufacturer_fn2(String manufacturer_fn2) {
+        this.manufacturer_fn2 = manufacturer_fn2;
     }
 
     public String getNotation_fn2() {

@@ -38,7 +38,7 @@ public class User_Login extends AppCompatActivity {
             startActivity(new Intent(User_Login.this, Fn_Safety.class));
             finish();
         }
-        setContentView(R.layout.user_login);
+
 
         input_email = (EditText) findViewById(R.id.email);
         input_Password = (EditText) findViewById(R.id.password);

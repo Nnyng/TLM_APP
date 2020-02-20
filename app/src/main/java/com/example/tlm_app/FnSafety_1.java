@@ -9,6 +9,7 @@ import android.view.View;
 import android.widget.AdapterView;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.ListView;
 import android.widget.Spinner;
@@ -32,10 +33,10 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class FnSafety_1 extends AppCompatActivity {
-    private EditText notationFnSafety1,ed_Signature,position_ed_Signature,ed_Signinspector,position_ed_Signinspector ;
-    private Spinner  spinner_deviceType,spinner_fntotalType,spinner_fntotal,spinner_fnlocation, spinner_fngenerality;
-    private TextView date,manufacturer;
-    private Button  btn_save;
+    private EditText notationFnSafety1, ed_Signature, position_ed_Signature, ed_Signinspector, position_ed_Signinspector;
+    private Spinner spinner_deviceType, spinner_fntotalType, spinner_fntotal, spinner_fnlocation, spinner_fngenerality;
+    private TextView date, manufacturer;
+    private Button btn_save;
     private ListView listViewSafety1;
     private List<FireFightingEquipment> fireFightingEquipment;
     private SafetyFn1Adapter safetyFn1Adapter;
@@ -56,15 +57,15 @@ public class FnSafety_1 extends AppCompatActivity {
         setContentView(R.layout.fn_safety_1);
 
 
-          initInstances();
-          initFirebase();
-          showData();
+        initInstances();
+        initFirebase();
+        showData();
 
-        Thread t = new Thread(){
+        Thread t = new Thread() {
             @Override
             public void run() {
                 try {
-                    while (!isInterrupted()){
+                    while (!isInterrupted()) {
                         Thread.sleep(1000);
                         runOnUiThread(new Runnable() {
                             @Override
@@ -128,61 +129,61 @@ public class FnSafety_1 extends AppCompatActivity {
                 String namedevice = manufacturer.getText().toString();
                 String notation = notationFnSafety1.getText().toString();
 
-                if(TextUtils.isEmpty(location)){
-                    Toast.makeText(getApplicationContext(),"กรุณากรอกข้อมูลให้ครบ!",Toast.LENGTH_SHORT).show();
+                if (TextUtils.isEmpty(location)) {
+                    Toast.makeText(getApplicationContext(), "กรุณากรอกข้อมูลให้ครบ!", Toast.LENGTH_SHORT).show();
                     return;
                 }
-                if(TextUtils.isEmpty(device)){
-                    Toast.makeText(getApplicationContext(),"กรุณากรอกข้อมูลให้ครบ!",Toast.LENGTH_SHORT).show();
+                if (TextUtils.isEmpty(device)) {
+                    Toast.makeText(getApplicationContext(), "กรุณากรอกข้อมูลให้ครบ!", Toast.LENGTH_SHORT).show();
                     return;
                 }
-                if(TextUtils.isEmpty(total)){
-                    Toast.makeText(getApplicationContext(),"กรุณากรอกข้อมูลให้ครบ!",Toast.LENGTH_SHORT).show();
+                if (TextUtils.isEmpty(total)) {
+                    Toast.makeText(getApplicationContext(), "กรุณากรอกข้อมูลให้ครบ!", Toast.LENGTH_SHORT).show();
                     return;
                 }
-                if(TextUtils.isEmpty(totalType)){
-                    Toast.makeText(getApplicationContext(),"กรุณากรอกข้อมูลให้ครบ!",Toast.LENGTH_SHORT).show();
+                if (TextUtils.isEmpty(totalType)) {
+                    Toast.makeText(getApplicationContext(), "กรุณากรอกข้อมูลให้ครบ!", Toast.LENGTH_SHORT).show();
                     return;
                 }
-                if(TextUtils.isEmpty(gennerality)){
-                    Toast.makeText(getApplicationContext(),"กรุณากรอกข้อมูลให้ครบ!",Toast.LENGTH_SHORT).show();
+                if (TextUtils.isEmpty(gennerality)) {
+                    Toast.makeText(getApplicationContext(), "กรุณากรอกข้อมูลให้ครบ!", Toast.LENGTH_SHORT).show();
                     return;
                 }
-                if(TextUtils.isEmpty(notation)){
-                    Toast.makeText(getApplicationContext(),"กรุณากรอกข้อมูลให้ครบ!",Toast.LENGTH_SHORT).show();
+                if (TextUtils.isEmpty(notation)) {
+                    Toast.makeText(getApplicationContext(), "กรุณากรอกข้อมูลให้ครบ!", Toast.LENGTH_SHORT).show();
                     return;
                 }
 
-                if  (v == btn_save) {
+                if (v == btn_save) {
                     addDataFn1();
+                    Intent intent = new Intent(FnSafety_1.this, Fn_Safety.class);
+                    startActivity(intent);
+                    finish();
                 }
             }
         });
-
-        listViewSafety1 = (ListView) findViewById(R.id.listViewSafety1);
-        listViewSafety1.setOnItemLongClickListener(new AdapterView.OnItemLongClickListener() {
-            @Override
-            public boolean onItemLongClick(AdapterView<?> adapterView, View view, int i, long l) {
-                FireFightingEquipment fire = fireFightingEquipment.get(i);
-                showDialog(fire);
-                return false;
-            }
-        });
+//
+//        listViewSafety1 = (ListView) findViewById(R.id.listViewSafety1);
+//        listViewSafety1.setOnItemLongClickListener(new AdapterView.OnItemLongClickListener() {
+//            @Override
+//            public boolean onItemLongClick(AdapterView<?> adapterView, View view, int i, long l) {
+//                FireFightingEquipment fire = fireFightingEquipment.get(i);
+//                showDialog(fire);
+//                return false;
+//            }
+//        });
 
         fireFightingEquipment = new ArrayList<>();
-
-
 
 
     }
 
 
-    private  void addDataFn1(){
-
+    private void addDataFn1() {
 
 
         //DeviceModel= android.os.Build.MODEL;
-        DeviceName= Build.MANUFACTURER;
+        DeviceName = Build.MANUFACTURER;
         //manufacturer.setText(DeviceModel);
         manufacturer.setText(DeviceName);
 
@@ -192,16 +193,13 @@ public class FnSafety_1 extends AppCompatActivity {
         String positEdSign = position_ed_Signature.getText().toString();
         String edSignSpector = ed_Signinspector.getText().toString();
         String positEdSignSpector = position_ed_Signinspector.getText().toString();
-        String manufacturerfn =  manufacturer.getText().toString();
+        String manufacturerfn = manufacturer.getText().toString();
         String note = notationFnSafety1.getText().toString();
         String device = spinner_deviceType.getSelectedItem().toString();
         String total = spinner_fntotal.getSelectedItem().toString();
         String totalType = spinner_fntotalType.getSelectedItem().toString();
         String generality = spinner_fngenerality.getSelectedItem().toString();
         String location = spinner_fnlocation.getSelectedItem().toString();
-
-
-
 
 
 //        Build.BOARD = MSM8974
@@ -235,20 +233,18 @@ public class FnSafety_1 extends AppCompatActivity {
 //        }
 
 
-
-
         //checking if the value is provided
-        if (!TextUtils.isEmpty(location)){
+        if (!TextUtils.isEmpty(location)) {
             String id = firebaseReference.child("CheckFireFightingEquipmentFn1").push().getKey();
 
             FireFightingEquipment fire = new FireFightingEquipment();
 
             //osVersion = android.os.Build.VERSION.RELEASE;
             //DeviceModel= android.os.Build.MODEL;
-            DeviceName= Build.MANUFACTURER;
+            DeviceName = Build.MANUFACTURER;
 
-           // manufacturer.setText(DeviceModel);
-              manufacturer.setText(DeviceName);
+            // manufacturer.setText(DeviceModel);
+            manufacturer.setText(DeviceName);
 
 
             fire.setId_fn1(id);
@@ -270,7 +266,7 @@ public class FnSafety_1 extends AppCompatActivity {
 
             Toast.makeText(this, "Checking Successful", Toast.LENGTH_LONG).show();
 
-        }else {
+        } else {
             //if the value is not given displaying a toast
             Toast.makeText(this, "Please fill your information completely", Toast.LENGTH_LONG).show();
         }
@@ -296,8 +292,8 @@ public class FnSafety_1 extends AppCompatActivity {
                     FireFightingEquipment fire = postSnapshot.getValue(FireFightingEquipment.class);
                     fireFightingEquipment.add(fire);
                 }
-                safetyFn1Adapter = new SafetyFn1Adapter(fireFightingEquipment);
-                listViewSafety1.setAdapter(safetyFn1Adapter);
+//                safetyFn1Adapter = new SafetyFn1Adapter(fireFightingEquipment);
+//                listViewSafety1.setAdapter(safetyFn1Adapter);
             }
 
             @Override
@@ -306,129 +302,140 @@ public class FnSafety_1 extends AppCompatActivity {
             }
         });
     }
-
-    private boolean updateData(String id, String date, String locat, String device,String total, String totalType, String generality, String manufacturer,String notation, String Sign, String positionSign, String edSignSpec, String positionEdSignSpec){
-        //updating
-        FireFightingEquipment fire = new FireFightingEquipment();
-        fire.setId_fn1(id);
-        fire.setDate_fn1(date);
-        fire.setLocat_fn1(locat);
-        fire.setDevice_fn1(device);
-        fire.setTotal_fn1(total);
-        fire.setTotal_type_fn1(totalType);
-        fire.setGenerality_fn1(generality);
-        fire.setManufacturer_fn1(manufacturer);
-        fire.setNonation_fn1(notation);
-        fire.setSignature_fn1(Sign);
-        fire.setPosition_signature_fn1(positionSign);
-        fire.setEd_signspector_fn1(edSignSpec);
-        fire.setPosition_ed_signspector_fn1(positionEdSignSpec);
-
-
-        firebaseReference.child("CheckFireFightingEquipmentFn1").child(id).setValue(fire);
-        Toast.makeText(this, "Data Updated", Toast.LENGTH_LONG).show();
-        return true;
-    }
-
-        private boolean deleteData(String id) {
-            // removing
-            firebaseReference.child("CheckFireFightingEquipmentFn1").child(id).removeValue();
-
-            Toast.makeText(this, "Data Deleted", Toast.LENGTH_LONG).show();
-
-            return true;
-    }
-
-    private int getIndex(Spinner spinner, String myString) {
-        int index = 0;
-
-        for (int i = 0; i < spinner.getCount(); i++) {
-            if (spinner.getItemAtPosition(i).toString().equalsIgnoreCase(myString)) {
-                index = i;
-                break;
-            }
-        }
-        return index;
-    }
-
-    private void showDialog(final FireFightingEquipment fire){
-
-        AlertDialog.Builder dialogBuilder = new AlertDialog.Builder(this);
-        LayoutInflater inflater = this.getLayoutInflater();
-        final View dialogView = inflater.inflate(R.layout.fn_safety1_dialog,null);
-        dialogBuilder.setView(dialogView);
-
-        final TextView datetime = (TextView) dialogView.findViewById(R.id.date);
-        final Spinner spinnerlocat = (Spinner) dialogView.findViewById(R.id.spinner_locatfn1);
-        final Spinner spinnerdevice = (Spinner) dialogView.findViewById(R.id.spinner_devicefn1);
-        final Spinner spinnertotal = (Spinner) dialogView.findViewById(R.id.spinner_totalfn1);
-        final Spinner spinnertotalTypr = (Spinner) dialogView.findViewById(R.id.spinner_totalTypefn1);
-        final Spinner spinnergenerality = (Spinner) dialogView.findViewById(R.id.spinner_generalityfn1);
-        final TextView manufacturer = (TextView) dialogView.findViewById(R.id.manufacturer);
-        final EditText note = (EditText) dialogView.findViewById(R.id.notefn1);
-        final EditText sign = (EditText) dialogView.findViewById(R.id.Signfn1);
-        final EditText postiSign = (EditText) dialogView.findViewById(R.id.positionSignfn1);
-        final EditText edSigninspector = (EditText) dialogView.findViewById(R.id.ed_Signinspectorfn1);
-        final EditText positionedSignspector = (EditText) dialogView.findViewById(R.id.position_ed_Signinspectorfn1);
-        final Button btnUpdate = (Button) dialogView.findViewById(R.id.btnUpdate);
-        final Button btnDelete = (Button) dialogView.findViewById(R.id.btnDelete);
-
-
-        dialogBuilder.setTitle(fire.getDate_fn1());
-        datetime.setText(fire.getDate_fn1());
-        spinnerlocat.setSelection(getIndex(spinnerlocat,fire.getLocat_fn1()));
-        spinnerdevice.setSelection(getIndex(spinnerdevice,fire.getDevice_fn1()));
-        spinnertotal.setSelection(getIndex(spinnertotal,fire.getTotal_fn1()));
-        spinnertotalTypr.setSelection(getIndex(spinnertotalTypr,fire.getTotal_type_fn1()));
-        spinnergenerality.setSelection(getIndex(spinnergenerality,fire.getGenerality_fn1()));
-        dialogBuilder.setTitle(fire.getManufacturer_fn1());
-        manufacturer.setText(fire.getManufacturer_fn1());
-        dialogBuilder.setTitle(fire.getNonation_fn1());
-        note.setText(fire.getNonation_fn1());
-        dialogBuilder.setTitle(fire.getSignature_fn1());
-        sign.setText(fire.getSignature_fn1());
-        dialogBuilder.setTitle(fire.getPosition_signature_fn1());
-        postiSign.setText(fire.getPosition_signature_fn1());
-        dialogBuilder.setTitle(fire.getEd_signspector_fn1());
-        edSigninspector.setText(fire.getEd_signspector_fn1());
-        dialogBuilder.setTitle(fire.getPosition_ed_signspector_fn1());
-        positionedSignspector.setText(fire.getPosition_ed_signspector_fn1());
-        final AlertDialog alertDialog = dialogBuilder.create();
-        alertDialog.show();
-
-        btnUpdate.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                String date = datetime.getText().toString();
-                String locat = spinnerlocat.getSelectedItem().toString();
-                String device = spinnerdevice.getSelectedItem().toString();
-                String total = spinnertotal.getSelectedItem().toString();
-                String totalType = spinner_fntotalType.getSelectedItem().toString();
-                String generality = spinnergenerality.getSelectedItem().toString();
-                String manufacturerfn = manufacturer.getText().toString();
-                String notation = note.getText().toString();
-                String signature = sign.getText().toString();
-                String positonsignature = postiSign.getText().toString();
-                String edSign = edSigninspector.getText().toString();
-                String positionedSign = positionedSignspector.getText().toString();
-                if (!TextUtils.isEmpty(locat)){
-                    updateData(fire.getId_fn1(), date,locat,device,total,totalType,generality,manufacturerfn,notation,signature,positonsignature,edSign,positionedSign);
-                    alertDialog.dismiss();
-                }
-            }
-        });
-
-        btnDelete.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                deleteData(fire.getId_fn1());
-                alertDialog.dismiss();
-            }
-        });
-
-    }
-
 }
+//    private boolean updateData(String id, String date, String locat, String device,String total, String totalType, String generality, String manufacturer,String notation, String Sign, String positionSign, String edSignSpec, String positionEdSignSpec){
+//        //updating
+//        FireFightingEquipment fire = new FireFightingEquipment();
+//        fire.setId_fn1(id);
+//        fire.setDate_fn1(date);
+//        fire.setLocat_fn1(locat);
+//        fire.setDevice_fn1(device);
+//        fire.setTotal_fn1(total);
+//        fire.setTotal_type_fn1(totalType);
+//        fire.setGenerality_fn1(generality);
+//        fire.setManufacturer_fn1(manufacturer);
+//        fire.setNonation_fn1(notation);
+//        fire.setSignature_fn1(Sign);
+//        fire.setPosition_signature_fn1(positionSign);
+//        fire.setEd_signspector_fn1(edSignSpec);
+//        fire.setPosition_ed_signspector_fn1(positionEdSignSpec);
+//
+//
+//        firebaseReference.child("CheckFireFightingEquipmentFn1").child(id).setValue(fire);
+//        Toast.makeText(this, "Data Updated", Toast.LENGTH_LONG).show();
+//        return true;
+//    }
+//
+//        private boolean deleteData(String id) {
+//            // removing
+//            firebaseReference.child("CheckFireFightingEquipmentFn1").child(id).removeValue();
+//
+//            Toast.makeText(this, "Data Deleted", Toast.LENGTH_LONG).show();
+//
+//            return true;
+//    }
+//
+//    private int getIndex(Spinner spinner, String myString) {
+//        int index = 0;
+//
+//        for (int i = 0; i < spinner.getCount(); i++) {
+//            if (spinner.getItemAtPosition(i).toString().equalsIgnoreCase(myString)) {
+//                index = i;
+//                break;
+//            }
+//        }
+//        return index;
+//    }
+//
+//    private void showDialog(final FireFightingEquipment fire){
+//
+//        AlertDialog.Builder dialogBuilder = new AlertDialog.Builder(this);
+//        LayoutInflater inflater = this.getLayoutInflater();
+//        final View dialogView = inflater.inflate(R.layout.fn_safety1_dialog,null);
+//        dialogBuilder.setView(dialogView);
+//
+//        final ImageButton ib_exit = (ImageButton) dialogView.findViewById(R.id.ib_exitfn1);
+//        final TextView datetime = (TextView) dialogView.findViewById(R.id.date);
+//        final Spinner spinnerlocat = (Spinner) dialogView.findViewById(R.id.spinner_locatfn1);
+//        final Spinner spinnerdevice = (Spinner) dialogView.findViewById(R.id.spinner_devicefn1);
+//        final Spinner spinnertotal = (Spinner) dialogView.findViewById(R.id.spinner_totalfn1);
+//        final Spinner spinnertotalTypr = (Spinner) dialogView.findViewById(R.id.spinner_totalTypefn1);
+//        final Spinner spinnergenerality = (Spinner) dialogView.findViewById(R.id.spinner_generalityfn1);
+//        final TextView manufacturer = (TextView) dialogView.findViewById(R.id.manufacturer);
+//        final EditText note = (EditText) dialogView.findViewById(R.id.notefn1);
+//        final EditText sign = (EditText) dialogView.findViewById(R.id.Signfn1);
+//        final EditText postiSign = (EditText) dialogView.findViewById(R.id.positionSignfn1);
+//        final EditText edSigninspector = (EditText) dialogView.findViewById(R.id.ed_Signinspectorfn1);
+//        final EditText positionedSignspector = (EditText) dialogView.findViewById(R.id.position_ed_Signinspectorfn1);
+//        final Button btnUpdate = (Button) dialogView.findViewById(R.id.btnUpdate);
+//        final Button btnDelete = (Button) dialogView.findViewById(R.id.btnDelete);
+//
+//
+//        dialogBuilder.setTitle(fire.getDate_fn1());
+//        datetime.setText(fire.getDate_fn1());
+//        spinnerlocat.setSelection(getIndex(spinnerlocat,fire.getLocat_fn1()));
+//        spinnerdevice.setSelection(getIndex(spinnerdevice,fire.getDevice_fn1()));
+//        spinnertotal.setSelection(getIndex(spinnertotal,fire.getTotal_fn1()));
+//        spinnertotalTypr.setSelection(getIndex(spinnertotalTypr,fire.getTotal_type_fn1()));
+//        spinnergenerality.setSelection(getIndex(spinnergenerality,fire.getGenerality_fn1()));
+//        dialogBuilder.setTitle(fire.getManufacturer_fn1());
+//        manufacturer.setText(fire.getManufacturer_fn1());
+//        dialogBuilder.setTitle(fire.getNonation_fn1());
+//        note.setText(fire.getNonation_fn1());
+//        dialogBuilder.setTitle(fire.getSignature_fn1());
+//        sign.setText(fire.getSignature_fn1());
+//        dialogBuilder.setTitle(fire.getPosition_signature_fn1());
+//        postiSign.setText(fire.getPosition_signature_fn1());
+//        dialogBuilder.setTitle(fire.getEd_signspector_fn1());
+//        edSigninspector.setText(fire.getEd_signspector_fn1());
+//        dialogBuilder.setTitle(fire.getPosition_ed_signspector_fn1());
+//        positionedSignspector.setText(fire.getPosition_ed_signspector_fn1());
+//        final AlertDialog alertDialog = dialogBuilder.create();
+//        alertDialog.show();
+//
+//
+//        ib_exit.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                Intent intent = new Intent(FnSafety_1.this, FnSafety_1.class);
+//                startActivity(intent);
+//                finish();
+//            }
+//        });
+//
+//        btnUpdate.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                String date = datetime.getText().toString();
+//                String locat = spinnerlocat.getSelectedItem().toString();
+//                String device = spinnerdevice.getSelectedItem().toString();
+//                String total = spinnertotal.getSelectedItem().toString();
+//                String totalType = spinner_fntotalType.getSelectedItem().toString();
+//                String generality = spinnergenerality.getSelectedItem().toString();
+//                String manufacturerfn = manufacturer.getText().toString();
+//                String notation = note.getText().toString();
+//                String signature = sign.getText().toString();
+//                String positonsignature = postiSign.getText().toString();
+//                String edSign = edSigninspector.getText().toString();
+//                String positionedSign = positionedSignspector.getText().toString();
+//                if (!TextUtils.isEmpty(locat)){
+//                    updateData(fire.getId_fn1(), date,locat,device,total,totalType,generality,manufacturerfn,notation,signature,positonsignature,edSign,positionedSign);
+//                    alertDialog.dismiss();
+//                }
+//            }
+//        });
+//
+//        btnDelete.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                deleteData(fire.getId_fn1());
+//                alertDialog.dismiss();
+//            }
+//        });
+//
+//    }
+//
+//}
 
 
 

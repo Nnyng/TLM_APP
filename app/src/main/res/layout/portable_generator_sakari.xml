@@ -42,7 +42,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="380dp"
-                android:layout_marginTop="40dp"
+                android:layout_marginTop="20dp"
                 android:layout_marginRight="30dp"
                 android:background="@drawable/frame_background_white"
                 android:gravity="center"
@@ -56,7 +56,8 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="25dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
                 android:layout_marginTop="23dp"
                 android:text="เครื่องยนต์"
                 android:textColor="@color/colorBlack"
@@ -66,7 +67,7 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="2dp"
-                android:layout_marginLeft="25dp"
+                android:layout_marginLeft="30dp"
                 android:layout_marginRight="478dp"
                 android:background="@color/colorBlack"
                 android:textAppearance="@style/MyFont" />
@@ -74,7 +75,8 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="25dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
                 android:layout_marginTop="23dp"
                 android:text="น้ำมันเชื้อเพลิง  น้ำมันเชื้อเพลิงในถังต้ม  เต็มถังเสมอ"
                 android:textColor="@color/colorBlack"
@@ -82,11 +84,11 @@
                 android:theme="@style/MyFont" />
 
             <RelativeLayout
-                android:layout_width="188dp"
+                android:layout_width="match_parent"
                 android:layout_height="60dp"
-                android:layout_marginLeft="25dp"
+                android:layout_marginLeft="30dp"
                 android:layout_marginTop="5dp"
-                android:layout_marginRight="280dp"
+                android:layout_marginRight="30dp"
                 android:background="@drawable/frame_background_white"
                 android:theme="@style/spinnerItemStyle">
 
@@ -95,7 +97,8 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="20dp"
-                    android:layout_marginTop="5dp"
+                    android:layout_marginTop="12dp"
+                    android:entries="@array/choice_Fn12"
                     android:theme="@style/spinnerItemStyle" />
 
             </RelativeLayout>
@@ -103,7 +106,8 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="25dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
                 android:layout_marginTop="20dp"
                 android:text="หมายเหตุ"
                 android:textColor="@color/colorBlack"
@@ -113,11 +117,12 @@
             <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="25dp"
-                android:layout_marginRight="25dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
                 android:background="@drawable/frame_background_white">
 
                 <EditText
+                    android:id="@+id/notationfn12_5_1"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:maxLines="2"
@@ -131,8 +136,8 @@
                 android:layout_marginTop="25dp"
                 android:layout_width="match_parent"
                 android:layout_height="1dp"
-                android:layout_marginLeft="20dp"
-                android:layout_marginRight="20dp"
+                android:layout_marginLeft="25dp"
+                android:layout_marginRight="25dp"
                 android:background="@color/colorBlack"
                 android:textAppearance="@style/MyFont" />
 
@@ -140,7 +145,8 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="25dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
                 android:layout_marginTop="23dp"
                 android:text="น้ำมันเครื่อง  น้ำมันเครื่องต้องอยู่ในระดับขีดบน "
                 android:textColor="@color/colorBlack"
@@ -148,11 +154,11 @@
                 android:theme="@style/MyFont" />
 
             <RelativeLayout
-                android:layout_width="188dp"
+                android:layout_width="match_parent"
                 android:layout_height="60dp"
-                android:layout_marginLeft="25dp"
+                android:layout_marginLeft="30dp"
                 android:layout_marginTop="5dp"
-                android:layout_marginRight="280dp"
+                android:layout_marginRight="30dp"
                 android:background="@drawable/frame_background_white"
                 android:theme="@style/spinnerItemStyle">
 
@@ -161,7 +167,8 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="20dp"
-                    android:layout_marginTop="5dp"
+                    android:layout_marginTop="12dp"
+                    android:entries="@array/choice_Fn12"
                     android:theme="@style/spinnerItemStyle" />
 
             </RelativeLayout>
@@ -169,7 +176,8 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="25dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
                 android:layout_marginTop="20dp"
                 android:text="หมายเหตุ"
                 android:textColor="@color/colorBlack"
@@ -179,11 +187,12 @@
             <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="25dp"
-                android:layout_marginRight="25dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
                 android:background="@drawable/frame_background_white">
 
                 <EditText
+                    android:id="@+id/notationfn12_5_2"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:maxLines="2"
@@ -197,15 +206,16 @@
                 android:layout_marginTop="25dp"
                 android:layout_width="match_parent"
                 android:layout_height="1dp"
-                android:layout_marginLeft="20dp"
-                android:layout_marginRight="20dp"
+                android:layout_marginLeft="25dp"
+                android:layout_marginRight="25dp"
                 android:background="@color/colorBlack"
                 android:textAppearance="@style/MyFont" />
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="25dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
                 android:layout_marginTop="23dp"
                 android:text="หลอดไฟแสดงสถานะ
                                                         หลอดไฟต้องแสดงสถานะทุกหลอด"
@@ -214,11 +224,11 @@
                 android:theme="@style/MyFont" />
 
             <RelativeLayout
-                android:layout_width="188dp"
+                android:layout_width="match_parent"
                 android:layout_height="60dp"
-                android:layout_marginLeft="25dp"
+                android:layout_marginLeft="30dp"
                 android:layout_marginTop="5dp"
-                android:layout_marginRight="280dp"
+                android:layout_marginRight="30dp"
                 android:background="@drawable/frame_background_white"
                 android:theme="@style/spinnerItemStyle">
 
@@ -227,7 +237,8 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="20dp"
-                    android:layout_marginTop="5dp"
+                    android:layout_marginTop="12dp"
+                    android:entries="@array/choice_Fn12"
                     android:theme="@style/spinnerItemStyle" />
 
             </RelativeLayout>
@@ -235,7 +246,8 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="25dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
                 android:layout_marginTop="20dp"
                 android:text="หมายเหตุ"
                 android:textColor="@color/colorBlack"
@@ -245,11 +257,12 @@
             <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="25dp"
-                android:layout_marginRight="25dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
                 android:background="@drawable/frame_background_white">
 
                 <EditText
+                    android:id="@+id/notationfn12_5_3"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:maxLines="2"
@@ -263,8 +276,8 @@
                 android:layout_marginTop="25dp"
                 android:layout_width="match_parent"
                 android:layout_height="1dp"
-                android:layout_marginLeft="20dp"
-                android:layout_marginRight="20dp"
+                android:layout_marginLeft="25dp"
+                android:layout_marginRight="25dp"
                 android:background="@color/colorBlack"
                 android:textAppearance="@style/MyFont" />
 
@@ -273,7 +286,8 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="25dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
                 android:layout_marginTop="23dp"
                 android:text="หัวเทียนเครื่องยนต์
                                                            ความสกปรก  ระยะห่าง gap ชำรุด"
@@ -282,11 +296,11 @@
                 android:theme="@style/MyFont" />
 
             <RelativeLayout
-                android:layout_width="188dp"
+                android:layout_width="match_parent"
                 android:layout_height="60dp"
-                android:layout_marginLeft="25dp"
+                android:layout_marginLeft="30dp"
                 android:layout_marginTop="5dp"
-                android:layout_marginRight="280dp"
+                android:layout_marginRight="30dp"
                 android:background="@drawable/frame_background_white"
                 android:theme="@style/spinnerItemStyle">
 
@@ -295,7 +309,8 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="20dp"
-                    android:layout_marginTop="5dp"
+                    android:layout_marginTop="12dp"
+                    android:entries="@array/choice_Fn12"
                     android:theme="@style/spinnerItemStyle" />
 
             </RelativeLayout>
@@ -303,7 +318,8 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="25dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
                 android:layout_marginTop="20dp"
                 android:text="หมายเหตุ"
                 android:textColor="@color/colorBlack"
@@ -313,11 +329,12 @@
             <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="25dp"
-                android:layout_marginRight="25dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
                 android:background="@drawable/frame_background_white">
 
                 <EditText
+                    android:id="@+id/notationfn12_5_4"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:maxLines="2"
@@ -331,8 +348,8 @@
                 android:layout_marginTop="25dp"
                 android:layout_width="match_parent"
                 android:layout_height="1dp"
-                android:layout_marginLeft="20dp"
-                android:layout_marginRight="20dp"
+                android:layout_marginLeft="25dp"
+                android:layout_marginRight="25dp"
                 android:background="@color/colorBlack"
                 android:textAppearance="@style/MyFont" />
 
@@ -340,7 +357,8 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="25dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
                 android:layout_marginTop="23dp"
                 android:text="ระบบเชื้อเพลิง  อาการรั่วซึมจากท่อและจุดต่อ"
                 android:textColor="@color/colorBlack"
@@ -348,11 +366,11 @@
                 android:theme="@style/MyFont" />
 
             <RelativeLayout
-                android:layout_width="188dp"
+                android:layout_width="match_parent"
                 android:layout_height="60dp"
-                android:layout_marginLeft="25dp"
+                android:layout_marginLeft="30dp"
                 android:layout_marginTop="5dp"
-                android:layout_marginRight="280dp"
+                android:layout_marginRight="30dp"
                 android:background="@drawable/frame_background_white"
                 android:theme="@style/spinnerItemStyle">
 
@@ -361,7 +379,8 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="20dp"
-                    android:layout_marginTop="5dp"
+                    android:layout_marginTop="12dp"
+                    android:entries="@array/choice_Fn12"
                     android:theme="@style/spinnerItemStyle" />
 
             </RelativeLayout>
@@ -369,7 +388,8 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="25dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
                 android:layout_marginTop="20dp"
                 android:text="หมายเหตุ"
                 android:textColor="@color/colorBlack"
@@ -379,11 +399,12 @@
             <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="25dp"
-                android:layout_marginRight="25dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
                 android:background="@drawable/frame_background_white">
 
                 <EditText
+                    android:id="@+id/notationfn12_5_5"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:maxLines="2"
@@ -397,15 +418,16 @@
                 android:layout_marginTop="25dp"
                 android:layout_width="match_parent"
                 android:layout_height="1dp"
-                android:layout_marginLeft="20dp"
-                android:layout_marginRight="20dp"
+                android:layout_marginLeft="25dp"
+                android:layout_marginRight="25dp"
                 android:background="@color/colorBlack"
                 android:textAppearance="@style/MyFont" />
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="25dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
                 android:layout_marginTop="23dp"
                 android:text="เชือกสำหรับดึงสตาร์ท"
                 android:textColor="@color/colorBlack"
@@ -415,7 +437,7 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="2dp"
-                android:layout_marginLeft="25dp"
+                android:layout_marginLeft="30dp"
                 android:layout_marginRight="370dp"
                 android:background="@color/colorBlack"
                 android:textAppearance="@style/MyFont" />
@@ -423,7 +445,8 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="25dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
                 android:layout_marginTop="23dp"
                 android:text="การสวมใส่และชำรุด  เปลี่ยนใหม่ถ้าจำเป็น"
                 android:textColor="@color/colorBlack"
@@ -431,11 +454,11 @@
                 android:theme="@style/MyFont" />
 
             <RelativeLayout
-                android:layout_width="188dp"
+                android:layout_width="match_parent"
                 android:layout_height="60dp"
-                android:layout_marginLeft="25dp"
+                android:layout_marginLeft="30dp"
                 android:layout_marginTop="5dp"
-                android:layout_marginRight="280dp"
+                android:layout_marginRight="30dp"
                 android:background="@drawable/frame_background_white"
                 android:theme="@style/spinnerItemStyle">
 
@@ -444,7 +467,8 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="20dp"
-                    android:layout_marginTop="5dp"
+                    android:layout_marginTop="12dp"
+                    android:entries="@array/choice_Fn12"
                     android:theme="@style/spinnerItemStyle" />
 
             </RelativeLayout>
@@ -452,7 +476,8 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="25dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
                 android:layout_marginTop="20dp"
                 android:text="หมายเหตุ"
                 android:textColor="@color/colorBlack"
@@ -462,11 +487,12 @@
             <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="25dp"
-                android:layout_marginRight="25dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
                 android:background="@drawable/frame_background_white">
 
                 <EditText
+                    android:id="@+id/notationfn12_5_6"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:maxLines="2"
@@ -480,15 +506,16 @@
                 android:layout_marginTop="25dp"
                 android:layout_width="match_parent"
                 android:layout_height="1dp"
-                android:layout_marginLeft="20dp"
-                android:layout_marginRight="20dp"
+                android:layout_marginLeft="25dp"
+                android:layout_marginRight="25dp"
                 android:background="@color/colorBlack"
                 android:textAppearance="@style/MyFont" />
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="25dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
                 android:layout_marginTop="23dp"
                 android:text="ไดนาโม"
                 android:textColor="@color/colorBlack"
@@ -498,7 +525,7 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="2dp"
-                android:layout_marginLeft="25dp"
+                android:layout_marginLeft="30dp"
                 android:layout_marginRight="501dp"
                 android:background="@color/colorBlack"
                 android:textAppearance="@style/MyFont" />
@@ -506,7 +533,8 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="25dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginLeft="30dp"
                 android:layout_marginTop="23dp"
                 android:text="ไดนาโม  ต้องมีฝาครอบ"
                 android:textColor="@color/colorBlack"
@@ -514,11 +542,11 @@
                 android:theme="@style/MyFont" />
 
             <RelativeLayout
-                android:layout_width="188dp"
+                android:layout_width="match_parent"
                 android:layout_height="60dp"
-                android:layout_marginLeft="25dp"
+                android:layout_marginLeft="30dp"
                 android:layout_marginTop="5dp"
-                android:layout_marginRight="280dp"
+                android:layout_marginRight="30dp"
                 android:background="@drawable/frame_background_white"
                 android:theme="@style/spinnerItemStyle">
 
@@ -527,7 +555,8 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="20dp"
-                    android:layout_marginTop="5dp"
+                    android:layout_marginTop="12dp"
+                    android:entries="@array/choice_Fn12"
                     android:theme="@style/spinnerItemStyle" />
 
             </RelativeLayout>
@@ -535,7 +564,8 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="25dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
                 android:layout_marginTop="20dp"
                 android:text="หมายเหตุ"
                 android:textColor="@color/colorBlack"
@@ -545,11 +575,12 @@
             <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="25dp"
-                android:layout_marginRight="25dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
                 android:background="@drawable/frame_background_white">
 
                 <EditText
+                    android:id="@+id/notationfn12_5_7"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:maxLines="2"
@@ -563,8 +594,8 @@
                 android:layout_marginTop="25dp"
                 android:layout_width="match_parent"
                 android:layout_height="1dp"
-                android:layout_marginLeft="20dp"
-                android:layout_marginRight="20dp"
+                android:layout_marginLeft="25dp"
+                android:layout_marginRight="25dp"
                 android:background="@color/colorBlack"
                 android:textAppearance="@style/MyFont" />
 
@@ -572,7 +603,8 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="25dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
                 android:layout_marginTop="23dp"
                 android:text="คันเร่งเครื่องยนต์  ไม่ปรับแต่งตัวล็อคคันเร่ง"
                 android:textColor="@color/colorBlack"
@@ -580,11 +612,11 @@
                 android:theme="@style/MyFont" />
 
             <RelativeLayout
-                android:layout_width="188dp"
+                android:layout_width="match_parent"
                 android:layout_height="60dp"
-                android:layout_marginLeft="25dp"
+                android:layout_marginLeft="30dp"
                 android:layout_marginTop="5dp"
-                android:layout_marginRight="280dp"
+                android:layout_marginRight="30dp"
                 android:background="@drawable/frame_background_white"
                 android:theme="@style/spinnerItemStyle">
 
@@ -593,7 +625,8 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="20dp"
-                    android:layout_marginTop="5dp"
+                    android:layout_marginTop="12dp"
+                    android:entries="@array/choice_Fn12"
                     android:theme="@style/spinnerItemStyle" />
 
             </RelativeLayout>
@@ -601,7 +634,8 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="25dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
                 android:layout_marginTop="20dp"
                 android:text="หมายเหตุ"
                 android:textColor="@color/colorBlack"
@@ -611,11 +645,12 @@
             <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="25dp"
-                android:layout_marginRight="25dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
                 android:background="@drawable/frame_background_white">
 
                 <EditText
+                    android:id="@+id/notationfn12_5_8"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:maxLines="2"
@@ -629,8 +664,8 @@
                 android:layout_marginTop="25dp"
                 android:layout_width="match_parent"
                 android:layout_height="1dp"
-                android:layout_marginLeft="20dp"
-                android:layout_marginRight="20dp"
+                android:layout_marginLeft="25dp"
+                android:layout_marginRight="25dp"
                 android:background="@color/colorBlack"
                 android:textAppearance="@style/MyFont" />
 
@@ -638,7 +673,8 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="25dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
                 android:layout_marginTop="23dp"
                 android:text="ปลั๊กไฟ  ไม่มีอุปกรณ์ไฟฟ้าเสียคาอยู่และไม่ชำรุด"
                 android:textColor="@color/colorBlack"
@@ -646,11 +682,11 @@
                 android:theme="@style/MyFont" />
 
             <RelativeLayout
-                android:layout_width="188dp"
+                android:layout_width="match_parent"
                 android:layout_height="60dp"
-                android:layout_marginLeft="25dp"
+                android:layout_marginLeft="30dp"
                 android:layout_marginTop="5dp"
-                android:layout_marginRight="280dp"
+                android:layout_marginRight="30dp"
                 android:background="@drawable/frame_background_white"
                 android:theme="@style/spinnerItemStyle">
 
@@ -659,7 +695,8 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="20dp"
-                    android:layout_marginTop="5dp"
+                    android:layout_marginTop="12dp"
+                    android:entries="@array/choice_Fn12"
                     android:theme="@style/spinnerItemStyle" />
 
             </RelativeLayout>
@@ -667,7 +704,8 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="25dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
                 android:layout_marginTop="20dp"
                 android:text="หมายเหตุ"
                 android:textColor="@color/colorBlack"
@@ -677,11 +715,12 @@
             <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="25dp"
-                android:layout_marginRight="25dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
                 android:background="@drawable/frame_background_white">
 
                 <EditText
+                    android:id="@+id/notationfn12_5_9"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:maxLines="2"
@@ -695,8 +734,8 @@
                 android:layout_marginTop="25dp"
                 android:layout_width="match_parent"
                 android:layout_height="1dp"
-                android:layout_marginLeft="20dp"
-                android:layout_marginRight="20dp"
+                android:layout_marginLeft="25dp"
+                android:layout_marginRight="25dp"
                 android:background="@color/colorBlack"
                 android:textAppearance="@style/MyFont" />
 
@@ -704,7 +743,8 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="25dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
                 android:layout_marginTop="23dp"
                 android:text="ไฟแสดงสถานะ  หลอดไฟต้องแสดงสถานะ"
                 android:textColor="@color/colorBlack"
@@ -712,11 +752,11 @@
                 android:theme="@style/MyFont" />
 
             <RelativeLayout
-                android:layout_width="188dp"
+                android:layout_width="match_parent"
                 android:layout_height="60dp"
-                android:layout_marginLeft="25dp"
+                android:layout_marginLeft="30dp"
                 android:layout_marginTop="5dp"
-                android:layout_marginRight="280dp"
+                android:layout_marginRight="30dp"
                 android:background="@drawable/frame_background_white"
                 android:theme="@style/spinnerItemStyle">
 
@@ -725,7 +765,8 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="20dp"
-                    android:layout_marginTop="5dp"
+                    android:layout_marginTop="12dp"
+                    android:entries="@array/choice_Fn12"
                     android:theme="@style/spinnerItemStyle" />
 
             </RelativeLayout>
@@ -733,7 +774,8 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="25dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
                 android:layout_marginTop="20dp"
                 android:text="หมายเหตุ"
                 android:textColor="@color/colorBlack"
@@ -743,11 +785,12 @@
             <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="25dp"
-                android:layout_marginRight="25dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
                 android:background="@drawable/frame_background_white">
 
                 <EditText
+                    android:id="@+id/notationfn12_5_10"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:maxLines="2"
@@ -761,8 +804,8 @@
                 android:layout_marginTop="25dp"
                 android:layout_width="match_parent"
                 android:layout_height="1dp"
-                android:layout_marginLeft="20dp"
-                android:layout_marginRight="20dp"
+                android:layout_marginLeft="25dp"
+                android:layout_marginRight="25dp"
                 android:background="@color/colorBlack"
                 android:textAppearance="@style/MyFont" />
 
@@ -770,7 +813,8 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="25dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
                 android:layout_marginTop="23dp"
                 android:text="มาตรวัด  AC  220V   ไม่ชำรุด"
                 android:textColor="@color/colorBlack"
@@ -778,11 +822,11 @@
                 android:theme="@style/MyFont" />
 
             <RelativeLayout
-                android:layout_width="188dp"
+                android:layout_width="match_parent"
                 android:layout_height="60dp"
-                android:layout_marginLeft="25dp"
+                android:layout_marginLeft="30dp"
                 android:layout_marginTop="5dp"
-                android:layout_marginRight="280dp"
+                android:layout_marginRight="30dp"
                 android:background="@drawable/frame_background_white"
                 android:theme="@style/spinnerItemStyle">
 
@@ -791,7 +835,8 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="20dp"
-                    android:layout_marginTop="5dp"
+                    android:layout_marginTop="12dp"
+                    android:entries="@array/choice_Fn12"
                     android:theme="@style/spinnerItemStyle" />
 
             </RelativeLayout>
@@ -799,7 +844,8 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="25dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
                 android:layout_marginTop="20dp"
                 android:text="หมายเหตุ"
                 android:textColor="@color/colorBlack"
@@ -809,11 +855,12 @@
             <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="25dp"
-                android:layout_marginRight="25dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
                 android:background="@drawable/frame_background_white">
 
                 <EditText
+                    android:id="@+id/notationfn12_5_11"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:maxLines="2"
@@ -827,8 +874,8 @@
                 android:layout_marginTop="25dp"
                 android:layout_width="match_parent"
                 android:layout_height="1dp"
-                android:layout_marginLeft="20dp"
-                android:layout_marginRight="20dp"
+                android:layout_marginLeft="25dp"
+                android:layout_marginRight="25dp"
                 android:background="@color/colorBlack"
                 android:textAppearance="@style/MyFont" />
 
@@ -837,7 +884,8 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="25dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
                 android:layout_marginTop="23dp"
                 android:text="มาตรวัด  DC 12V (10A)   ไม่ชำรุด"
                 android:textColor="@color/colorBlack"
@@ -845,11 +893,11 @@
                 android:theme="@style/MyFont" />
 
             <RelativeLayout
-                android:layout_width="188dp"
+                android:layout_width="match_parent"
                 android:layout_height="60dp"
-                android:layout_marginLeft="25dp"
+                android:layout_marginLeft="30dp"
                 android:layout_marginTop="5dp"
-                android:layout_marginRight="280dp"
+                android:layout_marginRight="30dp"
                 android:background="@drawable/frame_background_white"
                 android:theme="@style/spinnerItemStyle">
 
@@ -858,7 +906,8 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="20dp"
-                    android:layout_marginTop="5dp"
+                    android:layout_marginTop="12dp"
+                    android:entries="@array/choice_Fn12"
                     android:theme="@style/spinnerItemStyle" />
 
             </RelativeLayout>
@@ -866,7 +915,8 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="25dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
                 android:layout_marginTop="20dp"
                 android:text="หมายเหตุ"
                 android:textColor="@color/colorBlack"
@@ -876,11 +926,12 @@
             <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="25dp"
-                android:layout_marginRight="25dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
                 android:background="@drawable/frame_background_white">
 
                 <EditText
+                    android:id="@+id/notationfn12_5_12"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:maxLines="2"
@@ -894,8 +945,8 @@
                 android:layout_marginTop="25dp"
                 android:layout_width="match_parent"
                 android:layout_height="1dp"
-                android:layout_marginLeft="20dp"
-                android:layout_marginRight="20dp"
+                android:layout_marginLeft="25dp"
+                android:layout_marginRight="25dp"
                 android:background="@color/colorBlack"
                 android:textAppearance="@style/MyFont" />
 
@@ -903,7 +954,8 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="25dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
                 android:layout_marginTop="23dp"
                 android:text="เบรคเกอร์  อยู่ในตำแหน่งปิดเสมอเมื่อไม่ใช้งาน"
                 android:textColor="@color/colorBlack"
@@ -911,11 +963,11 @@
                 android:theme="@style/MyFont" />
 
             <RelativeLayout
-                android:layout_width="188dp"
+                android:layout_width="match_parent"
                 android:layout_height="60dp"
-                android:layout_marginLeft="25dp"
+                android:layout_marginLeft="30dp"
                 android:layout_marginTop="5dp"
-                android:layout_marginRight="280dp"
+                android:layout_marginRight="30dp"
                 android:background="@drawable/frame_background_white"
                 android:theme="@style/spinnerItemStyle">
 
@@ -924,7 +976,8 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="20dp"
-                    android:layout_marginTop="5dp"
+                    android:layout_marginTop="12dp"
+                    android:entries="@array/choice_Fn12"
                     android:theme="@style/spinnerItemStyle" />
 
             </RelativeLayout>
@@ -932,7 +985,8 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="25dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
                 android:layout_marginTop="20dp"
                 android:text="หมายเหตุ"
                 android:textColor="@color/colorBlack"
@@ -942,11 +996,12 @@
             <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="25dp"
-                android:layout_marginRight="25dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
                 android:background="@drawable/frame_background_white">
 
                 <EditText
+                    android:id="@+id/notationfn12_5_13"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:maxLines="2"
@@ -960,8 +1015,8 @@
                 android:layout_marginTop="25dp"
                 android:layout_width="match_parent"
                 android:layout_height="1dp"
-                android:layout_marginLeft="20dp"
-                android:layout_marginRight="20dp"
+                android:layout_marginLeft="25dp"
+                android:layout_marginRight="25dp"
                 android:background="@color/colorBlack"
                 android:textAppearance="@style/MyFont" />
 
@@ -969,7 +1024,8 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="25dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
                 android:layout_marginTop="23dp"
                 android:text="Fuse  ไม่ขาด"
                 android:textColor="@color/colorBlack"
@@ -977,11 +1033,11 @@
                 android:theme="@style/MyFont" />
 
             <RelativeLayout
-                android:layout_width="188dp"
+                android:layout_width="match_parent"
                 android:layout_height="60dp"
-                android:layout_marginLeft="25dp"
+                android:layout_marginLeft="30dp"
                 android:layout_marginTop="5dp"
-                android:layout_marginRight="280dp"
+                android:layout_marginRight="30dp"
                 android:background="@drawable/frame_background_white"
                 android:theme="@style/spinnerItemStyle">
 
@@ -990,7 +1046,8 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="20dp"
-                    android:layout_marginTop="5dp"
+                    android:layout_marginTop="12dp"
+                    android:entries="@array/choice_Fn12"
                     android:theme="@style/spinnerItemStyle" />
 
             </RelativeLayout>
@@ -998,7 +1055,8 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="25dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
                 android:layout_marginTop="20dp"
                 android:text="หมายเหตุ"
                 android:textColor="@color/colorBlack"
@@ -1008,11 +1066,12 @@
             <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="25dp"
-                android:layout_marginRight="25dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
                 android:background="@drawable/frame_background_white">
 
                 <EditText
+                    android:id="@+id/notationfn12_5_14"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:maxLines="2"
@@ -1026,8 +1085,8 @@
                 android:layout_marginTop="25dp"
                 android:layout_width="match_parent"
                 android:layout_height="1dp"
-                android:layout_marginLeft="20dp"
-                android:layout_marginRight="20dp"
+                android:layout_marginLeft="25dp"
+                android:layout_marginRight="25dp"
                 android:background="@color/colorBlack"
                 android:textAppearance="@style/MyFont" />
 
@@ -1036,7 +1095,8 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="25dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
                 android:layout_marginTop="23dp"
                 android:text="ความสะอาด"
                 android:textColor="@color/colorBlack"
@@ -1046,7 +1106,7 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="2dp"
-                android:layout_marginLeft="25dp"
+                android:layout_marginLeft="30dp"
                 android:layout_marginRight="455dp"
                 android:background="@color/colorBlack"
                 android:textAppearance="@style/MyFont" />
@@ -1055,7 +1115,8 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="25dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
                 android:layout_marginTop="23dp"
                 android:text="ฝุ่น  ทำความสะอาดเดือนละ 1 ครั้ง"
                 android:textColor="@color/colorBlack"
@@ -1063,11 +1124,11 @@
                 android:theme="@style/MyFont" />
 
             <RelativeLayout
-                android:layout_width="188dp"
+                android:layout_width="match_parent"
                 android:layout_height="60dp"
-                android:layout_marginLeft="25dp"
+                android:layout_marginLeft="30dp"
                 android:layout_marginTop="5dp"
-                android:layout_marginRight="280dp"
+                android:layout_marginRight="30dp"
                 android:background="@drawable/frame_background_white"
                 android:theme="@style/spinnerItemStyle">
 
@@ -1076,7 +1137,8 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="20dp"
-                    android:layout_marginTop="5dp"
+                    android:layout_marginTop="12dp"
+                    android:entries="@array/choice_Fn12"
                     android:theme="@style/spinnerItemStyle" />
 
             </RelativeLayout>
@@ -1084,7 +1146,8 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="25dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
                 android:layout_marginTop="20dp"
                 android:text="หมายเหตุ"
                 android:textColor="@color/colorBlack"
@@ -1094,11 +1157,12 @@
             <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="25dp"
-                android:layout_marginRight="25dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
                 android:background="@drawable/frame_background_white">
 
                 <EditText
+                    android:id="@+id/notationfn12_5_15"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:maxLines="2"
@@ -1112,8 +1176,8 @@
                 android:layout_marginTop="25dp"
                 android:layout_width="match_parent"
                 android:layout_height="1dp"
-                android:layout_marginLeft="20dp"
-                android:layout_marginRight="20dp"
+                android:layout_marginLeft="25dp"
+                android:layout_marginRight="25dp"
                 android:background="@color/colorBlack"
                 android:textAppearance="@style/MyFont" />
 
@@ -1121,7 +1185,8 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="25dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
                 android:layout_marginTop="23dp"
                 android:text="การทดสอบการทำงาน"
                 android:textColor="@color/colorBlack"
@@ -1131,7 +1196,7 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="2dp"
-                android:layout_marginLeft="25dp"
+                android:layout_marginLeft="30dp"
                 android:layout_marginRight="370dp"
                 android:background="@color/colorBlack"
                 android:textAppearance="@style/MyFont" />
@@ -1139,7 +1204,8 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="25dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
                 android:layout_marginTop="23dp"
                 android:text="สวิทช์   หมุนสวิทช์ไปที่ตำแหน่ง ON "
                 android:textColor="@color/colorBlack"
@@ -1147,11 +1213,11 @@
                 android:theme="@style/MyFont" />
 
             <RelativeLayout
-                android:layout_width="188dp"
+                android:layout_width="match_parent"
                 android:layout_height="60dp"
-                android:layout_marginLeft="25dp"
+                android:layout_marginLeft="30dp"
                 android:layout_marginTop="5dp"
-                android:layout_marginRight="280dp"
+                android:layout_marginRight="30dp"
                 android:background="@drawable/frame_background_white"
                 android:theme="@style/spinnerItemStyle">
 
@@ -1160,7 +1226,8 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="20dp"
-                    android:layout_marginTop="5dp"
+                    android:layout_marginTop="12dp"
+                    android:entries="@array/choice_Fn12"
                     android:theme="@style/spinnerItemStyle" />
 
             </RelativeLayout>
@@ -1168,7 +1235,8 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="25dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
                 android:layout_marginTop="20dp"
                 android:text="หมายเหตุ"
                 android:textColor="@color/colorBlack"
@@ -1178,11 +1246,12 @@
             <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="25dp"
-                android:layout_marginRight="25dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
                 android:background="@drawable/frame_background_white">
 
                 <EditText
+                    android:id="@+id/notationfn12_5_16"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:maxLines="2"
@@ -1196,8 +1265,8 @@
                 android:layout_marginTop="25dp"
                 android:layout_width="match_parent"
                 android:layout_height="1dp"
-                android:layout_marginLeft="20dp"
-                android:layout_marginRight="20dp"
+                android:layout_marginLeft="25dp"
+                android:layout_marginRight="25dp"
                 android:background="@color/colorBlack"
                 android:textAppearance="@style/MyFont" />
 
@@ -1205,7 +1274,8 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="25dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
                 android:layout_marginTop="23dp"
                 android:text="โช๊ค  ดันโช๊คไปทางซ้ายก่อนเริ่มสตาร์ท"
                 android:textColor="@color/colorBlack"
@@ -1213,11 +1283,11 @@
                 android:theme="@style/MyFont" />
 
             <RelativeLayout
-                android:layout_width="188dp"
+                android:layout_width="match_parent"
                 android:layout_height="60dp"
-                android:layout_marginLeft="25dp"
+                android:layout_marginLeft="30dp"
                 android:layout_marginTop="5dp"
-                android:layout_marginRight="280dp"
+                android:layout_marginRight="30dp"
                 android:background="@drawable/frame_background_white"
                 android:theme="@style/spinnerItemStyle">
 
@@ -1226,7 +1296,8 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="20dp"
-                    android:layout_marginTop="5dp"
+                    android:layout_marginTop="12dp"
+                    android:entries="@array/choice_Fn12"
                     android:theme="@style/spinnerItemStyle" />
 
             </RelativeLayout>
@@ -1234,7 +1305,8 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="25dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
                 android:layout_marginTop="20dp"
                 android:text="หมายเหตุ"
                 android:textColor="@color/colorBlack"
@@ -1244,11 +1316,12 @@
             <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="25dp"
-                android:layout_marginRight="25dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
                 android:background="@drawable/frame_background_white">
 
                 <EditText
+                    android:id="@+id/notationfn12_5_17"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:maxLines="2"
@@ -1262,8 +1335,8 @@
                 android:layout_marginTop="25dp"
                 android:layout_width="match_parent"
                 android:layout_height="1dp"
-                android:layout_marginLeft="20dp"
-                android:layout_marginRight="20dp"
+                android:layout_marginLeft="25dp"
+                android:layout_marginRight="25dp"
                 android:background="@color/colorBlack"
                 android:textAppearance="@style/MyFont" />
 
@@ -1271,7 +1344,8 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="25dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
                 android:layout_marginTop="23dp"
                 android:text="หลังจากเครื่องติดแล้วให้โยกไปทางขวา
                                                                       ดึงเชือกเพื่อสตาร์ท"
@@ -1280,11 +1354,11 @@
                 android:theme="@style/MyFont" />
 
             <RelativeLayout
-                android:layout_width="188dp"
+                android:layout_width="match_parent"
                 android:layout_height="60dp"
-                android:layout_marginLeft="25dp"
+                android:layout_marginLeft="30dp"
                 android:layout_marginTop="5dp"
-                android:layout_marginRight="280dp"
+                android:layout_marginRight="30dp"
                 android:background="@drawable/frame_background_white"
                 android:theme="@style/spinnerItemStyle">
 
@@ -1293,7 +1367,8 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="20dp"
-                    android:layout_marginTop="5dp"
+                    android:layout_marginTop="12dp"
+                    android:entries="@array/choice_Fn12"
                     android:theme="@style/spinnerItemStyle" />
 
             </RelativeLayout>
@@ -1301,7 +1376,8 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="25dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
                 android:layout_marginTop="20dp"
                 android:text="หมายเหตุ"
                 android:textColor="@color/colorBlack"
@@ -1311,11 +1387,12 @@
             <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="25dp"
-                android:layout_marginRight="25dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
                 android:background="@drawable/frame_background_white">
 
                 <EditText
+                    android:id="@+id/notationfn12_5_18"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:maxLines="2"
@@ -1329,8 +1406,8 @@
                 android:layout_marginTop="25dp"
                 android:layout_width="match_parent"
                 android:layout_height="1dp"
-                android:layout_marginLeft="20dp"
-                android:layout_marginRight="20dp"
+                android:layout_marginLeft="25dp"
+                android:layout_marginRight="25dp"
                 android:background="@color/colorBlack"
                 android:textAppearance="@style/MyFont" />
 
@@ -1338,7 +1415,8 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="25dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
                 android:layout_marginTop="23dp"
                 android:text="หมุนสวิทช์ไปที่ตำแหน่ง  OFF  เพื่อหยุดเครื่อง"
                 android:textColor="@color/colorBlack"
@@ -1346,11 +1424,11 @@
                 android:theme="@style/MyFont" />
 
             <RelativeLayout
-                android:layout_width="188dp"
+                android:layout_width="match_parent"
                 android:layout_height="60dp"
-                android:layout_marginLeft="25dp"
+                android:layout_marginLeft="30dp"
                 android:layout_marginTop="5dp"
-                android:layout_marginRight="280dp"
+                android:layout_marginRight="30dp"
                 android:background="@drawable/frame_background_white"
                 android:theme="@style/spinnerItemStyle">
 
@@ -1359,7 +1437,8 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="20dp"
-                    android:layout_marginTop="5dp"
+                    android:layout_marginTop="12dp"
+                    android:entries="@array/choice_Fn12"
                     android:theme="@style/spinnerItemStyle" />
 
             </RelativeLayout>
@@ -1367,7 +1446,8 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="25dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginLeft="30dp"
                 android:layout_marginTop="20dp"
                 android:text="หมายเหตุ"
                 android:textColor="@color/colorBlack"
@@ -1377,11 +1457,12 @@
             <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="25dp"
-                android:layout_marginRight="25dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
                 android:background="@drawable/frame_background_white">
 
                 <EditText
+                    android:id="@+id/notationfn12_5_19"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:maxLines="2"
@@ -1395,15 +1476,16 @@
                 android:layout_marginTop="25dp"
                 android:layout_width="match_parent"
                 android:layout_height="1dp"
-                android:layout_marginLeft="20dp"
-                android:layout_marginRight="20dp"
+                android:layout_marginLeft="25dp"
+                android:layout_marginRight="25dp"
                 android:background="@color/colorBlack"
                 android:textAppearance="@style/MyFont" />
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="25dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
                 android:layout_marginTop="23dp"
                 android:text="สตาร์ทเครื่องเดือนละ 1 ครั้ง / 30 นาที"
                 android:textColor="@color/colorBlack"
@@ -1411,11 +1493,11 @@
                 android:theme="@style/MyFont" />
 
             <RelativeLayout
-                android:layout_width="188dp"
+                android:layout_width="match_parent"
                 android:layout_height="60dp"
-                android:layout_marginLeft="25dp"
+                android:layout_marginLeft="30dp"
                 android:layout_marginTop="5dp"
-                android:layout_marginRight="280dp"
+                android:layout_marginRight="30dp"
                 android:background="@drawable/frame_background_white"
                 android:theme="@style/spinnerItemStyle">
 
@@ -1424,7 +1506,8 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="20dp"
-                    android:layout_marginTop="5dp"
+                    android:layout_marginTop="12dp"
+                    android:entries="@array/choice_Fn12"
                     android:theme="@style/spinnerItemStyle" />
 
             </RelativeLayout>
@@ -1432,7 +1515,8 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="25dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
                 android:layout_marginTop="20dp"
                 android:text="หมายเหตุ"
                 android:textColor="@color/colorBlack"
@@ -1442,11 +1526,12 @@
             <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="25dp"
-                android:layout_marginRight="25dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
                 android:background="@drawable/frame_background_white">
 
                 <EditText
+                    android:id="@+id/notationfn12_5_20"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:maxLines="2"
@@ -1460,8 +1545,8 @@
                 android:layout_marginTop="25dp"
                 android:layout_width="match_parent"
                 android:layout_height="1dp"
-                android:layout_marginLeft="20dp"
-                android:layout_marginRight="20dp"
+                android:layout_marginLeft="25dp"
+                android:layout_marginRight="25dp"
                 android:background="@color/colorBlack"
                 android:textAppearance="@style/MyFont" />
 
@@ -1469,7 +1554,7 @@
             <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="25dp"
+                android:layout_marginLeft="30dp"
                 android:layout_marginTop="40dp"
                 android:layout_marginRight="240dp"
                 android:background="@drawable/frame_background_white"
@@ -1479,7 +1564,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="15dp"
-                    android:paddingLeft="10dp"
+                    android:paddingLeft="12dp"
                     android:paddingTop="0dp"
                     android:text="ลงชื่อผู้ตรวจ"
                     android:textColor="@color/colorBlack"
@@ -1487,6 +1572,7 @@
                     android:theme="@style/MyFont" />
 
                 <EditText
+                    android:id="@+id/Signaturefn12_5"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_marginLeft="120dp"
@@ -1500,7 +1586,7 @@
             <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="25dp"
+                android:layout_marginLeft="30dp"
                 android:layout_marginTop="15dp"
                 android:layout_marginRight="240dp"
                 android:background="@drawable/frame_background_white">
@@ -1509,7 +1595,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="15dp"
-                    android:paddingLeft="7dp"
+                    android:paddingLeft="10dp"
                     android:paddingTop="0dp"
                     android:text="ลงชื่อผู้ตรวจสอบ"
                     android:textColor="@color/colorBlack"
@@ -1517,6 +1603,7 @@
                     android:theme="@style/MyFont" />
 
                 <EditText
+                    android:id="@+id/ed_Signspectorfn12_5"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_marginLeft="156dp"

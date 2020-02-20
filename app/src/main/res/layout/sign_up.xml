@@ -27,7 +27,7 @@
             android:layout_height="wrap_content"
             android:text="REGISTER"
             android:textColor="@color/colorBlack"
-            android:textSize="28dp"
+            android:textSize="35dp"
             android:theme="@style/MyFont" />
 
     </androidx.appcompat.widget.Toolbar>
@@ -35,7 +35,7 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="80dp"
+        android:layout_marginTop="40dp"
         android:gravity="center"
         android:orientation="vertical"
         android:padding="@dimen/activity_horizontal_margin">
@@ -45,13 +45,13 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
-            app:srcCompat="@drawable/ic_logo" />
+            app:srcCompat="@drawable/ic_logotlmtest" />
     </LinearLayout>
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginRight="40dp"
-        android:layout_marginLeft="40dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginLeft="20dp"
         android:layout_marginTop="100dp"
         android:orientation="horizontal">
 
@@ -61,7 +61,7 @@
             android:layout_height="match_parent"
             android:adjustViewBounds="true"
             android:scaleType="centerInside"
-            android:src="@drawable/ic_userlogin50"
+            android:src="@drawable/ic_userlogin40"
             android:layout_marginLeft="15dp" />
 
         <EditText
@@ -73,7 +73,7 @@
             android:inputType="textEmailAddress"
             android:maxLines="1"
             android:singleLine="true"
-            android:textSize="25dp"
+            android:textSize="28dp"
             android:textColor="@android:color/black"
             android:textColorHint="@color/colorBlack"/>
 
@@ -83,8 +83,8 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginRight="40dp"
-        android:layout_marginLeft="40dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginLeft="20dp"
         android:layout_marginTop="20dp"
         android:orientation="horizontal">
 
@@ -94,7 +94,7 @@
             android:layout_height="match_parent"
             android:adjustViewBounds="true"
             android:scaleType="centerInside"
-            android:src="@drawable/ic_password50"
+            android:src="@drawable/ic_password40"
             android:layout_marginLeft="15dp" />
 
         <EditText
@@ -110,20 +110,20 @@
             android:singleLine="true"
             android:textColor="@android:color/black"
             android:textColorHint="@color/colorBlack"
-            android:textSize="25dp"/>
+            android:textSize="28dp"/>
     </LinearLayout>
 
     <Button
-        android:layout_marginRight="40dp"
-        android:layout_marginLeft="40dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginLeft="30dp"
         android:id="@+id/sign_up_button"
         android:layout_width="match_parent"
-        android:layout_height="60dp"
-        android:layout_marginTop="60dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="70dp"
         android:background="@drawable/frame_btn_signup"
         android:text="@string/action_sign_in_short"
         android:textColor="@android:color/black"
-        android:textSize="22dp"/>
+        android:textSize="30dp"/>
 
 
     <ProgressBar

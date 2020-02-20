@@ -2,19 +2,20 @@ package com.example.tlm_app;
 
 public class FireExtinguisher {
 
-    String id_fn3;
-    String date_fn3;
-    String num_locatfn3;
-    String locat_fn3;
-    String type_devicefn3;
-    String generalityfn3_1;
-    String generalityfn3_2;
-    String generalityfn3_3;
-    String generalityfn3_4;
-    String generalityfn3_5;
-    String generalityfn3_6;
-    String Signfn3;
-    String edSignfn3;
+    private String id_fn3;
+    private String date_fn3;
+    private String num_locatfn3;
+    private String locat_fn3;
+    private String type_devicefn3;
+    private String generalityfn3_1;
+    private String generalityfn3_2;
+    private String generalityfn3_3;
+    private String generalityfn3_4;
+    private String generalityfn3_5;
+    private String generalityfn3_6;
+    private String manufacturer_fn3;
+    private String Signfn3;
+    private String edSignfn3;
 
     public FireExtinguisher() {
     }
@@ -105,6 +106,14 @@ public class FireExtinguisher {
 
     public void setGeneralityfn3_6(String generalityfn3_6) {
         this.generalityfn3_6 = generalityfn3_6;
+    }
+
+    public String getManufacturer_fn3() {
+        return manufacturer_fn3;
+    }
+
+    public void setManufacturer_fn3(String manufacturer_fn3) {
+        this.manufacturer_fn3 = manufacturer_fn3;
     }
 
     public String getSignfn3() {
