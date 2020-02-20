@@ -86,9 +86,9 @@ public class Safety_11_5 extends AppCompatActivity {
         spinnerzone = (Spinner) findViewById(R.id.spinner_fnsafety11_5_1);
         spinnerlocat = (Spinner) findViewById(R.id.spinner_fnsafety11_5_2);
         spinnermainboard = (Spinner) findViewById(R.id.spinner_fnsafety11_5_3);
-        nameDevicefn11_5 = (TextView) findViewById(R.id.nameDevicefn11_5);
-        Sign = (EditText) findViewById(R.id.Signaturefn11_5);
-        ed_Sign = (EditText) findViewById(R.id.ed_Signinspectorfn11_5);
+        //nameDevicefn11_5 = (TextView) findViewById(R.id.nameDevicefn11_5);
+        //Sign = (EditText) findViewById(R.id.Signaturefn11_5);
+        //ed_Sign = (EditText) findViewById(R.id.ed_Signinspectorfn11_5);
         im_back_arrowfn11_5 = (ImageView) findViewById(R.id.im_back_arrowfn11_5);
         im_back_arrowfn11_5.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -150,9 +150,9 @@ public class Safety_11_5 extends AppCompatActivity {
         String zone = spinnerzone.getSelectedItem().toString();
         String locat = spinnerlocat.getSelectedItem().toString();
         String mainboard = spinnermainboard.getSelectedItem().toString();
-        String nameDevice = nameDevicefn11_5.getText().toString();
-        String Signfn11_5 = Sign.getText().toString();
-        String ed_Signfn11_5 = ed_Sign.getText().toString();
+       // String nameDevice = nameDevicefn11_5.getText().toString();
+       // String Signfn11_5 = Sign.getText().toString();
+        //String ed_Signfn11_5 = ed_Sign.getText().toString();
 
         if(!TextUtils.isEmpty(no)){
             String id = firebaseReference.child("CheckAutoTreater3MonthFn11_5").push().getKey();
@@ -163,9 +163,9 @@ public class Safety_11_5 extends AppCompatActivity {
             autofn11_5.setZone_fn11_5(zone);
             autofn11_5.setLocat_fn11_5(locat);
             autofn11_5.setTestWork_mainboard_fn11_5(mainboard);
-            autofn11_5.setDeviceName_fn11_5(nameDevice);
-            autofn11_5.setSignature_fn11_5(Signfn11_5);
-            autofn11_5.setEd_Signspector_fn11_5(ed_Signfn11_5);
+            //autofn11_5.setDeviceName_fn11_5(nameDevice);
+            //autofn11_5.setSignature_fn11_5(Signfn11_5);
+            //autofn11_5.setEd_Signspector_fn11_5(ed_Signfn11_5);
 
             firebaseReference.child("CheckAutoTreater3MonthFn11_5").child(id).setValue(autofn11_5);
             Toast.makeText(this,"Checking Successful",Toast.LENGTH_LONG).show();

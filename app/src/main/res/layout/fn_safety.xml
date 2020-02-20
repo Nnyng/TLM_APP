@@ -33,7 +33,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="SAFETY"
-                    android:textSize="50dp"
+                    android:textSize="35dp"
                     android:fontFamily="@font/thsarabunnewbold"
                     android:layout_marginTop="5dp"
                     android:textColor="@color/colorBlack"
@@ -59,7 +59,7 @@
             <RelativeLayout
                 android:id="@+id/safety1"
                 android:layout_width="match_parent"
-                android:layout_height="80dp"
+                android:layout_height="60dp"
                 android:layout_marginLeft="20dp"
                 android:layout_marginTop="35dp"
                 android:layout_marginRight="20dp"
@@ -68,9 +68,9 @@
                 <ImageView
                     android:id="@+id/im_safety1"
                     android:layout_width="wrap_content"
-                    android:layout_height="64dp"
-                    android:layout_marginLeft="15dp"
-                    android:layout_marginTop="7dp"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="3dp"
                     android:adjustViewBounds="true"
                     android:scaleType="centerInside"
                     android:src="@drawable/ic_safety1_1_100" />
@@ -79,14 +79,15 @@
                     android:id="@+id/textSafety1"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="70dp"
-                    android:layout_marginTop="20dp"
+                    android:layout_marginLeft="22dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_marginTop="12dp"
                     android:layout_toRightOf="@+id/im_safety1"
                     android:gravity="center"
                     android:text="ตรวจเช็คอุปกรณ์ผจญเพลิง"
                     android:textAppearance="@style/MyFont"
                     android:textColor="@android:color/black"
-                    android:textSize="35dp" />
+                    android:textSize="32dp" />
 
                 <!--                <ImageView-->
                 <!--                    android:id="@+id/im_safety1_1"-->

@@ -85,9 +85,9 @@ public class Safety_11_2 extends AppCompatActivity {
         spinnerzone = (Spinner) findViewById(R.id.spinner_fnsafety11_2_1);
         spinnerlocat = (Spinner) findViewById(R.id.spinner_fnsafety11_2_2);
         spinnergener = (Spinner) findViewById(R.id.spinner_fnsafety11_2_3);
-        nameDevicefn11_2 = (TextView) findViewById(R.id.nameDevicefn11_2);
-        Sign = (EditText) findViewById(R.id.Signaturefn11_2);
-        ed_Sign = (EditText) findViewById(R.id.ed_Signinspectorfn11_2);
+        //nameDevicefn11_2 = (TextView) findViewById(R.id.nameDevicefn11_2);
+        //Sign = (EditText) findViewById(R.id.Signaturefn11_2);
+        //ed_Sign = (EditText) findViewById(R.id.ed_Signinspectorfn11_2);
         im_back_arrowfn11_2 = (ImageView) findViewById(R.id.im_back_arrowfn11_2);
         im_back_arrowfn11_2.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -147,9 +147,9 @@ public class Safety_11_2 extends AppCompatActivity {
         String zone = spinnerzone.getSelectedItem().toString();
         String locat = spinnerlocat.getSelectedItem().toString();
         String gener = spinnergener.getSelectedItem().toString();
-        String nameDevice = nameDevicefn11_2.getText().toString();
-        String Signfn11_2 = Sign.getText().toString();
-        String ed_Signfn11_2 = ed_Sign.getText().toString();
+       // String nameDevice = nameDevicefn11_2.getText().toString();
+        //String Signfn11_2 = Sign.getText().toString();
+       // String ed_Signfn11_2 = ed_Sign.getText().toString();
 
         if(!TextUtils.isEmpty(no)){
             String id = firebaseReference.child("CheckAutoEveryMonthFn11_2").push().getKey();
@@ -161,9 +161,9 @@ public class Safety_11_2 extends AppCompatActivity {
             autofn11_2.setZone_fn11_2(zone);
             autofn11_2.setLocat_fn11_2(locat);
             autofn11_2.setGenerality_fn11_2(gener);
-            autofn11_2.setDeviceName_fn11_2(nameDevice);
-            autofn11_2.setSignature_fn11_2(Signfn11_2);
-            autofn11_2.setSignature_fn11_2(ed_Signfn11_2);
+          //  autofn11_2.setDeviceName_fn11_2(nameDevice);
+           // autofn11_2.setSignature_fn11_2(Signfn11_2);
+           // autofn11_2.setSignature_fn11_2(ed_Signfn11_2);
 
             firebaseReference.child("CheckAutoEveryMonthFn11_2").child(id).setValue(autofn11_2);
             Toast.makeText(this,"Checking Successful",Toast.LENGTH_LONG).show();

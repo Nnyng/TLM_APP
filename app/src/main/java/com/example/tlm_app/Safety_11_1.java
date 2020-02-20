@@ -87,9 +87,9 @@ public class Safety_11_1 extends AppCompatActivity {
         spinnermainboard = (Spinner) findViewById(R.id.spinner_fnsafety11_1_4);
         spinneroffice = (Spinner) findViewById(R.id.spinner_fnsafety11_1_5);
         spinnerwalkway = (Spinner) findViewById(R.id.spinner_fnsafety11_1_6);
-        nameDevicefn11 = (TextView) findViewById(R.id.nameDevicefn11);
-        Sign = (EditText) findViewById(R.id.Signaturefn11_1);
-        ed_Sign = (EditText) findViewById(R.id.ed_Signinspectorfn11_1) ;
+        //nameDevicefn11 = (TextView) findViewById(R.id.nameDevicefn11);
+        //Sign = (EditText) findViewById(R.id.Signaturefn11_1);
+       // ed_Sign = (EditText) findViewById(R.id.ed_Signinspectorfn11_1) ;
         im_back_arrowfn11_1 = (ImageView) findViewById(R.id.im_back_arrowfn11_1);
         im_back_arrowfn11_1.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -166,9 +166,9 @@ public class Safety_11_1 extends AppCompatActivity {
         String mainboard = spinnermainboard.getSelectedItem().toString();
         String office = spinneroffice.getSelectedItem().toString();
         String walkway = spinnerwalkway.getSelectedItem().toString();
-        String nameDevice = nameDevicefn11.getText().toString();
-        String Signfn11_1 = Sign.getText().toString();
-        String ed_Signfn11_1 = ed_Sign.getText().toString();
+       // String nameDevice = nameDevicefn11.getText().toString();
+        //String Signfn11_1 = Sign.getText().toString();
+        //String ed_Signfn11_1 = ed_Sign.getText().toString();
 
         if(!TextUtils.isEmpty(no)){
             String id = firebaseReference.child("CheckManualEveryMonthFn11_1").push().getKey();
@@ -183,9 +183,9 @@ public class Safety_11_1 extends AppCompatActivity {
             manual.setTestwork_mainboad_fn11_1(mainboard);
             manual.setTestwork_office_fn11_1(office);
             manual.setTestwork_walkway_fn11_1(walkway);
-            manual.setDeviceName_fn11(nameDevice);
-            manual.setSignature_fn11_1(Signfn11_1);
-            manual.setEd_Signspector_fn11_1(ed_Signfn11_1);
+           //manual.setDeviceName_fn11(nameDevice);
+           // manual.setSignature_fn11_1(Signfn11_1);
+            //manual.setEd_Signspector_fn11_1(ed_Signfn11_1);
 
             firebaseReference.child("CheckManualEveryMonthFn11_1").child(id).setValue(manual);
             Toast.makeText(this,"Checking Successful",Toast.LENGTH_LONG).show();
