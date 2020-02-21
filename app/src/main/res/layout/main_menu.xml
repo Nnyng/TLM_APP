@@ -14,6 +14,8 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
         android:orientation="horizontal"
         android:layout_marginTop="40dp"
         android:weightSum="1">
@@ -38,7 +40,9 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        android:layout_marginTop="30dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="20dp"
         android:weightSum="1">
 
         <ImageView
@@ -60,7 +64,9 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        android:layout_marginTop="30dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="20dp"
         android:weightSum="1">
 
         <ImageView
@@ -82,20 +88,22 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        android:layout_marginTop="30dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="20dp"
         android:weightSum="1">
 
         <ImageView
             android:id="@+id/face1"
             android:layout_width="wrap_content"
-            android:layout_height="156dp"
+            android:layout_height="wrap_content"
             android:layout_weight="0.5"
             android:src="@drawable/frame_mainmenu" />
 
         <ImageView
             android:id="@+id/excrete1"
             android:layout_width="wrap_content"
-            android:layout_height="156dp"
+            android:layout_height="wrap_content"
             android:layout_weight="0.5"
             android:src="@drawable/frame_mainmenu" />
     </LinearLayout>
@@ -104,20 +112,22 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        android:layout_marginTop="30dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="20dp"
         android:weightSum="1">
 
         <ImageView
             android:id="@+id/face11"
             android:layout_width="wrap_content"
-            android:layout_height="156dp"
+            android:layout_height="wrap_content"
             android:layout_weight="0.5"
             android:src="@drawable/frame_mainmenu" />
 
         <ImageView
             android:id="@+id/excrete11"
             android:layout_width="wrap_content"
-            android:layout_height="156dp"
+            android:layout_height="wrap_content"
             android:layout_weight="0.5"
             android:src="@drawable/frame_mainmenu" />
     </LinearLayout>
@@ -126,20 +136,22 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        android:layout_marginTop="30dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="20dp"
         android:weightSum="1">
 
         <ImageView
             android:id="@+id/face"
             android:layout_width="wrap_content"
-            android:layout_height="156dp"
+            android:layout_height="wrap_content"
             android:layout_weight="0.5"
             android:src="@drawable/frame_mainmenu" />
 
         <ImageView
             android:id="@+id/excrete"
             android:layout_width="wrap_content"
-            android:layout_height="156dp"
+            android:layout_height="wrap_content"
             android:layout_weight="0.5"
             android:src="@drawable/frame_mainmenu" />
     </LinearLayout>

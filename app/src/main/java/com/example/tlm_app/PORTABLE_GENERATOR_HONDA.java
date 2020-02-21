@@ -129,8 +129,8 @@ public class PORTABLE_GENERATOR_HONDA extends AppCompatActivity {
         notatTestWork4 = (EditText) findViewById(R.id.notationfn12_4_19);
         generTestWork5 = (Spinner) findViewById(R.id.spinner_fnsafety12_GENERATOR_HONDA_TestWork5);
         notatTestWork5 = (EditText) findViewById(R.id.notationfn12_4_20);
-        Signfn12_4 = (EditText) findViewById(R.id.Signaturefn12_4);
-        ed_Signfn12_4 = (EditText) findViewById(R.id.ed_Signspectorfn12_4);
+        //Signfn12_4 = (EditText) findViewById(R.id.Signaturefn12_4);
+        //ed_Signfn12_4 = (EditText) findViewById(R.id.ed_Signspectorfn12_4);
 
         im_back_arrow_fnPORTABLE_GENERATOR_HONDA = (ImageView) findViewById(R.id.im_back_arrow_fnPORTABLE_GENERATOR_HONDA);
         im_back_arrow_fnPORTABLE_GENERATOR_HONDA.setOnClickListener(new View.OnClickListener() {
@@ -302,8 +302,8 @@ public class PORTABLE_GENERATOR_HONDA extends AppCompatActivity {
         String noteTestWork4 = notatTestWork4.getText().toString();
         String TestWork5 = generTestWork5.getSelectedItem().toString();
         String noteTestWork5 = notatTestWork5.getText().toString();
-        String Sign = Signfn12_4.getText().toString();
-        String ed_Sign = ed_Signfn12_4.getText().toString();
+        //String Sign = Signfn12_4.getText().toString();
+       // String ed_Sign = ed_Signfn12_4.getText().toString();
 
         if(!TextUtils.isEmpty(moter1)){
             String id = firebaseReference.child("CheckPortableHondaFn12_4").push().getKey();
@@ -351,8 +351,8 @@ public class PORTABLE_GENERATOR_HONDA extends AppCompatActivity {
             honda.setNotation_TestWork4(noteTestWork4);
             honda.setGenerality_TestWork5(TestWork5);
             honda.setNotation_TestWork5(noteTestWork5);
-            honda.setSignaturefn12_4(Sign);
-            honda.setEd_Signspectorfn12_4(ed_Sign);
+           // honda.setSignaturefn12_4(Sign);
+           // honda.setEd_Signspectorfn12_4(ed_Sign);
 
             firebaseReference.child("CheckPortableHondaFn12_4").child(id).setValue(honda);
             Toast.makeText(this,"Checking Successful",Toast.LENGTH_LONG).show();

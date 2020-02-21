@@ -96,9 +96,9 @@ public class Fn_Safety_2 extends AppCompatActivity {
         spinner_fnsafety2_electricity = (Spinner) findViewById(R.id.spinner_fnsafety2_2);
         spinner_fnsafety2_generality = (Spinner) findViewById(R.id.spinner_fnsafety2_3);
         ImageView im_back_arrowfn2 = (ImageView) findViewById(R.id.im_back_arrowfn2);
-        nameDevicefn2 = (TextView) findViewById(R.id.nameDevicefn2);
-        Sign = (EditText) findViewById(R.id.Signfn2);
-        ed_Signaturefn2 = (EditText) findViewById(R.id.ed_Signaturefn2);
+        //nameDevicefn2 = (TextView) findViewById(R.id.nameDevicefn2);
+       // Sign = (EditText) findViewById(R.id.Signfn2);
+       // ed_Signaturefn2 = (EditText) findViewById(R.id.ed_Signaturefn2);
         notationFnSafety2 = (EditText) findViewById(R.id.notationFnSafety2);
         btn_save_fn2 = (Button) findViewById(R.id.btn_save_fn2);
         im_back_arrowfn2.setOnClickListener(new View.OnClickListener() {
@@ -161,32 +161,32 @@ public class Fn_Safety_2 extends AppCompatActivity {
 
     private void addDataFn2(){
 
-
-        //DeviceModel= android.os.Build.MODEL;
-        DeviceName= Build.MANUFACTURER;
-        //manufacturer.setText(DeviceModel);
-        nameDevicefn2.setText(DeviceName);
+//
+//        //DeviceModel= android.os.Build.MODEL;
+//        DeviceName= Build.MANUFACTURER;
+//        //manufacturer.setText(DeviceModel);
+//        nameDevicefn2.setText(DeviceName);
 
 
        String btnfn2 = btn_save_fn2.getText().toString();
        String datetimefn2 = date.getText().toString();
-       String Signfn2 = Sign.getText().toString();
-       String edSign = ed_Signaturefn2.getText().toString();
+       //String Signfn2 = Sign.getText().toString();
+      // String edSign = ed_Signaturefn2.getText().toString();
        String notefn2 = notationFnSafety2.getText().toString();
        String locat = spinner_fnsafety2_locat.getSelectedItem().toString();
        String typeLight = spinner_fnsafety2_electricity.getSelectedItem().toString();
        String generafn2 = spinner_fnsafety2_generality.getSelectedItem().toString();
-       String nameDevice =  nameDevicefn2.getText().toString();
+      // String nameDevice =  nameDevicefn2.getText().toString();
 
         //checking if the value is provided
         if(!TextUtils.isEmpty(locat)){
             String id = firebaseReference.child("CheckEmergencyLightFn2").push().getKey();
             EmergencyLight light = new EmergencyLight();
 
-            DeviceName= Build.MANUFACTURER;
-
-            // manufacturer.setText(DeviceModel);
-            nameDevicefn2.setText(DeviceName);
+//            DeviceName= Build.MANUFACTURER;
+//
+//            // manufacturer.setText(DeviceModel);
+//            nameDevicefn2.setText(DeviceName);
 
 
             light.setId_fn2(id);
@@ -194,10 +194,10 @@ public class Fn_Safety_2 extends AppCompatActivity {
             light.setLocat_fn2(locat);
             light.settype_EmergencyLight_fn2(typeLight);
             light.setGenerality_fn2(generafn2);
-            light.setManufacturer_fn2(nameDevice);
+          //  light.setManufacturer_fn2(nameDevice);
             light.setNotation_fn2(notefn2);
-            light.setSignfn2(Signfn2);
-            light.setEdSignfn2(edSign);
+           // light.setSignfn2(Signfn2);
+           // light.setEdSignfn2(edSign);
 
 
             firebaseReference.child("CheckEmergencyLightFn2").child(id).setValue(light);

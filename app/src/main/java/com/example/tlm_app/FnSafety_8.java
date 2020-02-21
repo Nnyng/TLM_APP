@@ -86,12 +86,12 @@ public class FnSafety_8 extends AppCompatActivity {
         spinnerDtype = (Spinner) findViewById(R.id.spinner_fnsafety8_2);
         spinnerlocat = (Spinner) findViewById(R.id.spinner_fnsafety8_3);
         spinnergener = (Spinner) findViewById(R.id.spinner_fnsafety8_4);
-        nameDevicefn8 = (TextView) findViewById(R.id.nameDevicefn8);
+        //nameDevicefn8 = (TextView) findViewById(R.id.nameDevicefn8);
         notation = (EditText) findViewById(R.id.notationFnSafety8);
-        Sign = (EditText) findViewById(R.id.SignatureFn8);
-        positfn8 = (EditText) findViewById(R.id.position_Signaturefn8);
-        ed_Sign = (EditText) findViewById(R.id.ed_Signinspectorfn8);
-        posit_ed_Signfn8 = (EditText) findViewById(R.id.position_ed_Signinspectorfn8);
+        //Sign = (EditText) findViewById(R.id.SignatureFn8);
+        //positfn8 = (EditText) findViewById(R.id.position_Signaturefn8);
+        //ed_Sign = (EditText) findViewById(R.id.ed_Signinspectorfn8);
+        //posit_ed_Signfn8 = (EditText) findViewById(R.id.position_ed_Signinspectorfn8);
         im_back_arrowfn8 = (ImageView) findViewById(R.id.im_back_arrowfn8);
         im_back_arrowfn8.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -146,22 +146,22 @@ public class FnSafety_8 extends AppCompatActivity {
 
     private void addDataFn8(){
 
-        //DeviceModel= android.os.Build.MODEL;
-        DeviceName= android.os.Build.MANUFACTURER;
-        //manufacturer.setText(DeviceModel);
-        nameDevicefn8.setText(DeviceName);
+//        //DeviceModel= android.os.Build.MODEL;
+//        DeviceName= android.os.Build.MANUFACTURER;
+//        //manufacturer.setText(DeviceModel);
+//        nameDevicefn8.setText(DeviceName);
 
         String date = datetime.getText().toString();
         String numdevice = spinnernumdevice.getSelectedItem().toString();
         String Devicetype = spinnerDtype.getSelectedItem().toString();
         String locat = spinnerlocat.getSelectedItem().toString();
         String gener = spinnergener.getSelectedItem().toString();
-        String nameDevice = nameDevicefn8.getText().toString();
+        //String nameDevice = nameDevicefn8.getText().toString();
         String note = notation.getText().toString();
-        String Signfn8 = Sign.getText().toString();
-        String posit_Sign = posit_ed_Signfn8.getText().toString();
-        String ed_Signfn8 = ed_Sign.getText().toString();
-        String posit_EdSign = posit_ed_Signfn8.getText().toString();
+        //String Signfn8 = Sign.getText().toString();
+        //String posit_Sign = posit_ed_Signfn8.getText().toString();
+        //String ed_Signfn8 = ed_Sign.getText().toString();
+       // String posit_EdSign = posit_ed_Signfn8.getText().toString();
 
         if(!TextUtils.isEmpty(locat)){
             String id = firebaseReference.child("CheckFireFightingFn8").push().getKey();
@@ -173,12 +173,12 @@ public class FnSafety_8 extends AppCompatActivity {
             fire8.setDeviceType_fn8(Devicetype);
             fire8.setLocation_fn8(locat);
             fire8.setGenerality_fn8(gener);
-            fire8.setManufacturer_fn8(nameDevice);
+            //fire8.setManufacturer_fn8(nameDevice);
             fire8.setNotation_fn8(note);
-            fire8.setSignature_fn8(Signfn8);
-            fire8.setPosition_signature_fn8(posit_Sign);
-            fire8.setEd_signspector_fn8(ed_Signfn8);
-            fire8.setPosition_ed_signspector_fn8(posit_EdSign);
+           // fire8.setSignature_fn8(Signfn8);
+           // fire8.setPosition_signature_fn8(posit_Sign);
+            //fire8.setEd_signspector_fn8(ed_Signfn8);
+           // fire8.setPosition_ed_signspector_fn8(posit_EdSign);
 
              firebaseReference.child("CheckFireFightingFn8").child(id).setValue(fire8);
              Toast.makeText(this,"Checking Successful",Toast.LENGTH_LONG).show();

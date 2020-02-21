@@ -153,10 +153,10 @@ public class Safety_11_1 extends AppCompatActivity {
 
     private void addDataFn11_1(){
 
-        //DeviceModel= android.os.Build.MODEL;
-        DeviceName= android.os.Build.MANUFACTURER;
-        //manufacturer.setText(DeviceModel);
-        nameDevicefn11.setText(DeviceName);
+//        //DeviceModel= android.os.Build.MODEL;
+//        DeviceName= android.os.Build.MANUFACTURER;
+//        //manufacturer.setText(DeviceModel);
+//        nameDevicefn11.setText(DeviceName);
 
         String datetime = date.getText().toString();
         String no = spinnerno.getSelectedItem().toString();

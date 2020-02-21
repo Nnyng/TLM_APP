@@ -96,12 +96,12 @@ public class FnSafety_1 extends AppCompatActivity {
     private void initInstances() {
 
         btn_save = (Button) findViewById(R.id.btn_save);
-        manufacturer = (TextView) findViewById(R.id.manufacturer);
+        //manufacturer = (TextView) findViewById(R.id.manufacturer);
         date = (TextView) findViewById(R.id.date);
-        ed_Signature = (EditText) findViewById(R.id.ed_Signature);
-        position_ed_Signature = (EditText) findViewById(R.id.position_ed_Signature);
-        ed_Signinspector = (EditText) findViewById(R.id.ed_Signinspector);
-        position_ed_Signinspector = (EditText) findViewById(R.id.position_ed_Signinspector);
+       // ed_Signature = (EditText) findViewById(R.id.ed_Signature);
+        //position_ed_Signature = (EditText) findViewById(R.id.position_ed_Signature);
+        //ed_Signinspector = (EditText) findViewById(R.id.ed_Signinspector);
+        //position_ed_Signinspector = (EditText) findViewById(R.id.position_ed_Signinspector);
         notationFnSafety1 = (EditText) findViewById(R.id.notationFnSafety1);
         spinner_deviceType = (Spinner) findViewById(R.id.spinner_fnsafety1_2);
         spinner_fntotalType = (Spinner) findViewById(R.id.spinner_fnsafety1_3_1);
@@ -126,7 +126,7 @@ public class FnSafety_1 extends AppCompatActivity {
                 String total = spinner_fntotal.getSelectedItem().toString();
                 String totalType = spinner_fntotalType.getSelectedItem().toString();
                 String gennerality = spinner_fngenerality.getSelectedItem().toString();
-                String namedevice = manufacturer.getText().toString();
+                //String namedevice = manufacturer.getText().toString();
                 String notation = notationFnSafety1.getText().toString();
 
                 if (TextUtils.isEmpty(location)) {
@@ -182,18 +182,18 @@ public class FnSafety_1 extends AppCompatActivity {
     private void addDataFn1() {
 
 
-        //DeviceModel= android.os.Build.MODEL;
-        DeviceName = Build.MANUFACTURER;
-        //manufacturer.setText(DeviceModel);
-        manufacturer.setText(DeviceName);
+//        //DeviceModel= android.os.Build.MODEL;
+//        DeviceName = Build.MANUFACTURER;
+//        //manufacturer.setText(DeviceModel);
+//        manufacturer.setText(DeviceName);
 
         String btn = btn_save.getText().toString();
         String datetime = date.getText().toString();
-        String edSign = ed_Signature.getText().toString();
-        String positEdSign = position_ed_Signature.getText().toString();
-        String edSignSpector = ed_Signinspector.getText().toString();
-        String positEdSignSpector = position_ed_Signinspector.getText().toString();
-        String manufacturerfn = manufacturer.getText().toString();
+       // String edSign = ed_Signature.getText().toString();
+       // String positEdSign = position_ed_Signature.getText().toString();
+       // String edSignSpector = ed_Signinspector.getText().toString();
+        //String positEdSignSpector = position_ed_Signinspector.getText().toString();
+       // String manufacturerfn = manufacturer.getText().toString();
         String note = notationFnSafety1.getText().toString();
         String device = spinner_deviceType.getSelectedItem().toString();
         String total = spinner_fntotal.getSelectedItem().toString();
@@ -239,12 +239,12 @@ public class FnSafety_1 extends AppCompatActivity {
 
             FireFightingEquipment fire = new FireFightingEquipment();
 
-            //osVersion = android.os.Build.VERSION.RELEASE;
-            //DeviceModel= android.os.Build.MODEL;
-            DeviceName = Build.MANUFACTURER;
-
-            // manufacturer.setText(DeviceModel);
-            manufacturer.setText(DeviceName);
+//            //osVersion = android.os.Build.VERSION.RELEASE;
+//            //DeviceModel= android.os.Build.MODEL;
+//            DeviceName = Build.MANUFACTURER;
+//
+//            // manufacturer.setText(DeviceModel);
+//            manufacturer.setText(DeviceName);
 
 
             fire.setId_fn1(id);
@@ -254,12 +254,12 @@ public class FnSafety_1 extends AppCompatActivity {
             fire.setTotal_fn1(total);
             fire.setTotal_type_fn1(totalType);
             fire.setGenerality_fn1(generality);
-            fire.setManufacturer_fn1(manufacturerfn);
+           // fire.setManufacturer_fn1(manufacturerfn);
             fire.setNonation_fn1(note);
-            fire.setSignature_fn1(edSign);
-            fire.setPosition_signature_fn1(positEdSign);
-            fire.setEd_signspector_fn1(edSignSpector);
-            fire.setPosition_ed_signspector_fn1(positEdSignSpector);
+          //  fire.setSignature_fn1(edSign);
+           // fire.setPosition_signature_fn1(positEdSign);
+           // fire.setEd_signspector_fn1(edSignSpector);
+           // fire.setPosition_ed_signspector_fn1(positEdSignSpector);
 
 
             firebaseReference.child("CheckFireFightingEquipmentFn1").child(id).setValue(fire);

@@ -138,9 +138,9 @@ public class FnSafety_5 extends AppCompatActivity {
         spinner_gener5_5 = (Spinner)findViewById(R.id.spinner_fnsafety5_8);
         spinner_gener5_6 = (Spinner)findViewById(R.id.spinner_fnsafety5_9);
         CalendarText = (TextView)findViewById(R.id.tvCalendarTextFn5);
-        nameDevicefn5 = (TextView) findViewById(R.id.nameDevicefn5);
-        Signature = (EditText) findViewById(R.id.SignatureFn5);
-        ed_Signature = (EditText) findViewById(R.id.ed_SigninspectorFn5);
+        //nameDevicefn5 = (TextView) findViewById(R.id.nameDevicefn5);
+        //Signature = (EditText) findViewById(R.id.SignatureFn5);
+        //ed_Signature = (EditText) findViewById(R.id.ed_SigninspectorFn5);
         im_back_arrowfn5 = (ImageView) findViewById(R.id.im_back_arrowfn5);
         im_back_arrowfn5.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -255,10 +255,10 @@ public class FnSafety_5 extends AppCompatActivity {
 
     private void addDataFn5(){
 
-        //DeviceModel= android.os.Build.MODEL;
-        DeviceName= android.os.Build.MANUFACTURER;
-        //manufacturer.setText(DeviceModel);
-        nameDevicefn5.setText(DeviceName);
+//        //DeviceModel= android.os.Build.MODEL;
+//        DeviceName= android.os.Build.MANUFACTURER;
+//        //manufacturer.setText(DeviceModel);
+//        nameDevicefn5.setText(DeviceName);
 
         String datetime = dateAlert.getText().toString();
         String numdevice = spinner_numdevice.getSelectedItem().toString();
@@ -270,10 +270,10 @@ public class FnSafety_5 extends AppCompatActivity {
         String gener4 = spinner_gener5_4.getSelectedItem().toString();
         String gener5 = spinner_gener5_5.getSelectedItem().toString();
         String gener6 = spinner_gener5_6.getSelectedItem().toString();
-        String nameDevice = nameDevicefn5.getText().toString();
+      //  String nameDevice = nameDevicefn5.getText().toString();
         String tvcalendar = tvCalendarTextFn5.getText().toString();
-        String sign = Signature.getText().toString();
-        String ed_Sign = ed_Signature.getText().toString();
+      //  String sign = Signature.getText().toString();
+       // String ed_Sign = ed_Signature.getText().toString();
 
         //checking if the value is provided
         if(!TextUtils.isEmpty(locat)){
@@ -294,9 +294,9 @@ public class FnSafety_5 extends AppCompatActivity {
            fire5.setGenerality_fn5_5(gener5);
            fire5.setGenerality_fn5_6(gener6);
            fire5.setDateTest_fn5(tvcalendar);
-           fire5.setManufacturer_fn5(nameDevice);
-           fire5.setSignature_fn5(sign);
-           fire5.setEd_signspector_fn5(ed_Sign);
+          // fire5.setManufacturer_fn5(nameDevice);
+          // fire5.setSignature_fn5(sign);
+          // fire5.setEd_signspector_fn5(ed_Sign);
 
            firebaseReference.child("CHECKFIRECABINETSFn5").child(id).setValue(fire5);
             Toast.makeText(this,"Checking Successful",Toast.LENGTH_LONG).show();

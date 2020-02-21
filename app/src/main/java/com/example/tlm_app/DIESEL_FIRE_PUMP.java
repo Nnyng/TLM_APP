@@ -149,9 +149,9 @@ public class DIESEL_FIRE_PUMP extends AppCompatActivity {
         notetationFirePump3 = (EditText) findViewById(R.id.notationfn12_1_27);
         spinnerFirePump4 = (Spinner) findViewById(R.id.spinner_fnsafety12_DieselFirepump_Room_FirePump4);
         notetationFirePump4 = (EditText) findViewById(R.id.notationfn12_1_28);
-        nameDeviceDiesel = (TextView) findViewById(R.id.nameDeviceDiesel);
-        Sign = (EditText) findViewById(R.id.Signaturefn12_1) ;
-        ed_Sign = (EditText) findViewById(R.id.ed_Signspectorfn12_1);
+        //nameDeviceDiesel = (TextView) findViewById(R.id.nameDeviceDiesel);
+        //Sign = (EditText) findViewById(R.id.Signaturefn12_1) ;
+        //ed_Sign = (EditText) findViewById(R.id.ed_Signspectorfn12_1);
         im_back_arrow_Diesel_FirePump = (ImageView) findViewById(R.id.im_back_arrow_Diesel_FirePump);
         im_back_arrow_Diesel_FirePump.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -332,10 +332,10 @@ public class DIESEL_FIRE_PUMP extends AppCompatActivity {
     private void addDataFn12_1(){
 
 
-        //DeviceModel= android.os.Build.MODEL;
-        DeviceName= android.os.Build.MANUFACTURER;
-        //manufacturer.setText(DeviceModel);
-        nameDeviceDiesel.setText(DeviceName);
+//        //DeviceModel= android.os.Build.MODEL;
+//        DeviceName= android.os.Build.MANUFACTURER;
+//        //manufacturer.setText(DeviceModel);
+//        nameDeviceDiesel.setText(DeviceName);
 
         String datetime = date.getText().toString();
         String moter1 = spinnermoter1.getSelectedItem().toString();
@@ -401,9 +401,9 @@ public class DIESEL_FIRE_PUMP extends AppCompatActivity {
         String noteFirePump3 = notetationFirePump3.getText().toString();
         String FirePump4 = spinnerFirePump4.getSelectedItem().toString();
         String noteFirePump4 = notetationFirePump4.getText().toString();
-        String nameDevice = nameDeviceDiesel.getText().toString();
-        String Signfn12_1 = Sign.getText().toString();
-        String ed_Sign12_1 = ed_Sign.getText().toString();
+       // String nameDevice = nameDeviceDiesel.getText().toString();
+        //String Signfn12_1 = Sign.getText().toString();
+        //String ed_Sign12_1 = ed_Sign.getText().toString();
 
         if(!TextUtils.isEmpty(moter1)){
             String id = firebaseReference.child("CheckDieselFn12_1").push().getKey();
@@ -474,9 +474,9 @@ public class DIESEL_FIRE_PUMP extends AppCompatActivity {
             dieselfn12_1.setNotationFirePump3(noteFirePump3);
             dieselfn12_1.setGeneralityFirePump4(FirePump4);
             dieselfn12_1.setNotationFirePump4(noteFirePump4);
-            dieselfn12_1.setDeviceNameDiesel(nameDevice);
-            dieselfn12_1.setSignaturefn12_1(Signfn12_1);
-            dieselfn12_1.setEd_Signspectorfn12_1(ed_Sign12_1);
+            //dieselfn12_1.setDeviceNameDiesel(nameDevice);
+            //dieselfn12_1.setSignaturefn12_1(Signfn12_1);
+            //dieselfn12_1.setEd_Signspectorfn12_1(ed_Sign12_1);
 
             firebaseReference.child("CheckDieselFn12_1").child(id).setValue(dieselfn12_1);
             Toast.makeText(this,"Checking Successful",Toast.LENGTH_LONG).show();

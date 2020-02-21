@@ -106,8 +106,8 @@ public class PORTABLE_FIRE_PUMP extends AppCompatActivity {
         notatfn12_3_11 = (EditText) findViewById(R.id.notationfn12_3_11);
         generTest1 = (Spinner) findViewById(R.id.spinner_fn12_Portable_FirePump_TestWork1);
         notatfn12_3_12 = (EditText) findViewById(R.id.notationfn12_3_12);
-        Signfn12_3 = (EditText) findViewById(R.id.Signaturefn12_3);
-        ed_Signfn12_3 = (EditText) findViewById(R.id.ed_Signspectorfn12_3);
+        //Signfn12_3 = (EditText) findViewById(R.id.Signaturefn12_3);
+        //ed_Signfn12_3 = (EditText) findViewById(R.id.ed_Signspectorfn12_3);
         im_back_arrow_Portable_firePump = (ImageView) findViewById(R.id.im_back_arrow_Portable_firePump);
         im_back_arrow_Portable_firePump.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -221,8 +221,8 @@ public class PORTABLE_FIRE_PUMP extends AppCompatActivity {
         String noteMoter5 = notatfn12_3_11.getText().toString();
         String Test1 = generTest1.getSelectedItem().toString();
         String noteTest1 = notatfn12_3_12.getText().toString();
-        String Sign = Signfn12_3.getText().toString();
-        String ed_Sign = ed_Signfn12_3.getText().toString();
+        //String Sign = Signfn12_3.getText().toString();
+       // String ed_Sign = ed_Signfn12_3.getText().toString();
 
         if(!TextUtils.isEmpty(Battery1)){
             String id = firebaseReference.child("CheckPortableFn12_3").push().getKey();
@@ -254,8 +254,8 @@ public class PORTABLE_FIRE_PUMP extends AppCompatActivity {
             portablefn12_3.setNotation_fn12_3_11(noteMoter5);
             portablefn12_3.setGenerality_Test1(Test1);
             portablefn12_3.setNotation_fn12_3_12(noteTest1);
-            portablefn12_3.setSignaturefn12_3(Sign);
-            portablefn12_3.setEd_Signspectorfn12_3(ed_Sign);
+           // portablefn12_3.setSignaturefn12_3(Sign);
+           // portablefn12_3.setEd_Signspectorfn12_3(ed_Sign);
 
             firebaseReference.child("CheckPortableFn12_3").child(id).setValue(portablefn12_3);
             Toast.makeText(this,"Checking Successful",Toast.LENGTH_LONG).show();

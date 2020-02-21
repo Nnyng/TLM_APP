@@ -104,9 +104,9 @@ public class FnSafety_3 extends AppCompatActivity {
         generalityfn3_4 = (Spinner) findViewById(R.id.spinner_fnsafety3_6);
         generalityfn3_5 = (Spinner) findViewById(R.id.spinner_fnsafety3_7);
         generalityfn3_6  = (Spinner) findViewById(R.id.spinner_fnsafety3_8);
-        nameDevicefn3 = (TextView) findViewById(R.id.nameDevicefn3);
-        namesignfn3 = (EditText) findViewById(R.id.Signfn3);
-        nameEdSignfn3 = (EditText) findViewById(R.id.ed_Signaturefn3);
+        //nameDevicefn3 = (TextView) findViewById(R.id.nameDevicefn3);
+        //namesignfn3 = (EditText) findViewById(R.id.Signfn3);
+        //nameEdSignfn3 = (EditText) findViewById(R.id.ed_Signaturefn3);
         im_back_arrowfn3 = (ImageView) findViewById(R.id.im_back_arrowfn3);
         im_back_arrowfn3.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -191,10 +191,10 @@ public class FnSafety_3 extends AppCompatActivity {
 
     private void addDataFn3() {
 
-        //DeviceModel= android.os.Build.MODEL;
-        DeviceName= Build.MANUFACTURER;
-        //manufacturer.setText(DeviceModel);
-        nameDevicefn3.setText(DeviceName);
+//        //DeviceModel= android.os.Build.MODEL;
+//        DeviceName= Build.MANUFACTURER;
+//        //manufacturer.setText(DeviceModel);
+//        nameDevicefn3.setText(DeviceName);
 
 //        DeviceModel= android.os.Build.MODEL;
 //        DeviceName= android.os.Build.MANUFACTURER;
@@ -203,8 +203,8 @@ public class FnSafety_3 extends AppCompatActivity {
 
         String btn = btn_saveData.getText().toString();
         String datetime = date.getText().toString();
-        String Sign = namesignfn3.getText().toString();
-        String edSign = nameEdSignfn3.getText().toString();
+       // String Sign = namesignfn3.getText().toString();
+       // String edSign = nameEdSignfn3.getText().toString();
         String numlocat = numlocation.getSelectedItem().toString();
         String locat = locationfn3.getSelectedItem().toString();
         String type = typedevicefn3.getSelectedItem().toString();
@@ -214,7 +214,7 @@ public class FnSafety_3 extends AppCompatActivity {
         String genera4 = generalityfn3_4.getSelectedItem().toString();
         String genera5 = generalityfn3_5.getSelectedItem().toString();
         String genera6 = generalityfn3_6.getSelectedItem().toString();
-        String nameDevice =  nameDevicefn3.getText().toString();
+       // String nameDevice =  nameDevicefn3.getText().toString();
 
         //checking if the value is provided
         if (!TextUtils.isEmpty(locat)){
@@ -241,9 +241,9 @@ public class FnSafety_3 extends AppCompatActivity {
             uisher.setGeneralityfn3_4(genera4);
             uisher.setGeneralityfn3_5(genera5);
             uisher.setGeneralityfn3_6(genera6);
-            uisher.setManufacturer_fn3(nameDevice);
-            uisher.setSignfn3(Sign);
-            uisher.setEdSignfn3(edSign);
+           // uisher.setManufacturer_fn3(nameDevice);
+           // uisher.setSignfn3(Sign);
+            //uisher.setEdSignfn3(edSign);
 
             firebaseReference.child("CheckFireExtinguisherFn3").child(id).setValue(uisher);
 

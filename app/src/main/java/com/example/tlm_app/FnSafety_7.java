@@ -90,13 +90,13 @@ public class FnSafety_7 extends AppCompatActivity {
         spinnergener4 = (Spinner) findViewById(R.id.spinner_fnsafety7_6);
         spinnergener5 = (Spinner) findViewById(R.id.spinner_fnsafety7_7);
         spinnergener6 = (Spinner) findViewById(R.id.spinner_fnsafety7_8);
-        nameDevicefn7 = (TextView) findViewById(R.id.nameDevicefn7);
+       // nameDevicefn7 = (TextView) findViewById(R.id.nameDevicefn7);
         notation = (EditText) findViewById(R.id.notationFn7);
-        Sign = (EditText) findViewById(R.id.signature_fn7);
-        position_Signature = (EditText)findViewById(R.id.positionSignfn7);
-        ed_Sign = (EditText) findViewById(R.id.ed_signspector_fn7);
-        position_ed_Signinspector = (EditText) findViewById(R.id.positionEd_Signfn7);
-        im_back_arrowfn7 = (ImageView) findViewById(R.id.im_back_arrowfn7);
+        //Sign = (EditText) findViewById(R.id.signature_fn7);
+       // position_Signature = (EditText)findViewById(R.id.positionSignfn7);
+       // ed_Sign = (EditText) findViewById(R.id.ed_signspector_fn7);
+       // position_ed_Signinspector = (EditText) findViewById(R.id.positionEd_Signfn7);
+        //im_back_arrowfn7 = (ImageView) findViewById(R.id.im_back_arrowfn7);
         im_back_arrowfn7.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -168,10 +168,10 @@ public class FnSafety_7 extends AppCompatActivity {
 
     private void addDataFn7(){
 
-        //DeviceModel= android.os.Build.MODEL;
-        DeviceName= android.os.Build.MANUFACTURER;
-        //manufacturer.setText(DeviceModel);
-        nameDevicefn7.setText(DeviceName);
+//        //DeviceModel= android.os.Build.MODEL;
+//        DeviceName= android.os.Build.MANUFACTURER;
+//        //manufacturer.setText(DeviceModel);
+//        nameDevicefn7.setText(DeviceName);
 
         String date = datetime.getText().toString();
         String devicetype = spinnerDtype.getSelectedItem().toString();
@@ -182,12 +182,12 @@ public class FnSafety_7 extends AppCompatActivity {
         String gener4 = spinnergener4.getSelectedItem().toString();
         String gener5 = spinnergener5.getSelectedItem().toString();
         String gener6 = spinnergener6.getSelectedItem().toString();
-        String nameDevice = nameDevicefn7.getText().toString();
+      //  String nameDevice = nameDevicefn7.getText().toString();
         String note = notation.getText().toString();
-        String signfn7 = Sign.getText().toString();
-        String posit_Sign = position_Signature.getText().toString();
-        String ed_Signfn7 = ed_Sign.getText().toString();
-        String posit_EdSign = position_ed_Signinspector.getText().toString();
+       // String signfn7 = Sign.getText().toString();
+       // String posit_Sign = position_Signature.getText().toString();
+       // String ed_Signfn7 = ed_Sign.getText().toString();
+        //String posit_EdSign = position_ed_Signinspector.getText().toString();
 
         if(!TextUtils.isEmpty(locat)){
             String id = firebaseReference.child("CheckFoamFireFn7").push().getKey();
@@ -203,12 +203,12 @@ public class FnSafety_7 extends AppCompatActivity {
             fire7.setGeneralityfn_7_4(gener4);
             fire7.setGeneralityfn_7_5(gener5);
             fire7.setGeneralityfn_7_6(gener6);
-            fire7.setManufacturer_fn7(nameDevice);
+            //fire7.setManufacturer_fn7(nameDevice);
             fire7.setNotation_fn7(note);
-            fire7.setSignature_fn7(signfn7);
-            fire7.setPosition_signature_fn7(posit_Sign);
-            fire7.setEd_signspector_fn7(ed_Signfn7);
-            fire7.setPosition_ed_signspector_fn7(posit_EdSign);
+            //fire7.setSignature_fn7(signfn7);
+           // fire7.setPosition_signature_fn7(posit_Sign);
+           // fire7.setEd_signspector_fn7(ed_Signfn7);
+           // fire7.setPosition_ed_signspector_fn7(posit_EdSign);
 
             firebaseReference.child("CheckFoamFireFn7").child(id).setValue(fire7);
             Toast.makeText(this,"Checking Successful",Toast.LENGTH_LONG).show();

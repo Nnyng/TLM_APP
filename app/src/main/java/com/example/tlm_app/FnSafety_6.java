@@ -93,9 +93,9 @@ public class FnSafety_6 extends AppCompatActivity {
         spinner_generat3 = (Spinner) findViewById(R.id.spinner_fnsafety6_5);
         spinner_generat4 = (Spinner) findViewById(R.id.spinner_fnsafety6_6);
         spinner_generat5 = (Spinner) findViewById(R.id.spinner_fnsafety6_7);
-        nameDevicefn6 = (TextView) findViewById(R.id.nameDevicefn6);
-        Sign = (EditText) findViewById(R.id.signature_fn6);
-        ed_Sign = (EditText) findViewById(R.id.ed_signspector_fn6);
+        //nameDevicefn6 = (TextView) findViewById(R.id.nameDevicefn6);
+        //Sign = (EditText) findViewById(R.id.signature_fn6);
+        //ed_Sign = (EditText) findViewById(R.id.ed_signspector_fn6);
         im_back_arrowfn6 = (ImageView) findViewById(R.id.im_back_arrowfn6);
         im_back_arrowfn6.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -162,10 +162,10 @@ public class FnSafety_6 extends AppCompatActivity {
 
     private void  addDataFn6(){
 
-        //DeviceModel= android.os.Build.MODEL;
-        DeviceName= android.os.Build.MANUFACTURER;
-        //manufacturer.setText(DeviceModel);
-        nameDevicefn6.setText(DeviceName);
+//        //DeviceModel= android.os.Build.MODEL;
+//        DeviceName= android.os.Build.MANUFACTURER;
+//        //manufacturer.setText(DeviceModel);
+//        nameDevicefn6.setText(DeviceName);
 
         String date = datetime.getText().toString();
         String locat = spinner_locat.getSelectedItem().toString();
@@ -175,9 +175,9 @@ public class FnSafety_6 extends AppCompatActivity {
         String generat3 = spinner_generat3.getSelectedItem().toString();
         String generat4 = spinner_generat4.getSelectedItem().toString();
         String generat5 = spinner_generat5.getSelectedItem().toString();
-        String nameDevice = nameDevicefn6.getText().toString();
-        String Signature = Sign.getText().toString();
-        String Ed_signspector = ed_Sign.getText().toString();
+       // String nameDevice = nameDevicefn6.getText().toString();
+        //String Signature = Sign.getText().toString();
+        //String Ed_signspector = ed_Sign.getText().toString();
 
         if(!TextUtils.isEmpty(locat)){
             String id = firebaseReference.child("CheckEyeShowerFn6").push().getKey();
@@ -191,9 +191,9 @@ public class FnSafety_6 extends AppCompatActivity {
             eye6.setGeneralityfn6_3(generat3);
             eye6.setGeneralityfn6_4(generat4);
             eye6.setGeneralityfn6_5(generat5);
-            eye6.setManufacturer_fn6(nameDevice);
-            eye6.setSignature_fn6(Signature);
-            eye6.setEd_signspector_fn6(Ed_signspector);
+           // eye6.setManufacturer_fn6(nameDevice);
+           // eye6.setSignature_fn6(Signature);
+           // eye6.setEd_signspector_fn6(Ed_signspector);
 
             firebaseReference.child("CheckEyeShowerFn6").child(id).setValue(eye6);
             Toast.makeText(this,"Checking Successful",Toast.LENGTH_LONG).show();

@@ -94,10 +94,10 @@ public class FnSafety_9 extends AppCompatActivity {
         spinnergener3fn9 = (Spinner) findViewById(R.id.spinner_fnsafety9_5);
         spinnergener4fn9 = (Spinner) findViewById(R.id.spinner_fnsafety9_6);
         spinnergener5fn9 = (Spinner) findViewById(R.id.spinner_fnsafety9_7);
-        nameDevicefn9 = (TextView) findViewById(R.id.nameDevicefn9);
+        //nameDevicefn9 = (TextView) findViewById(R.id.nameDevicefn9);
         notation9 = (EditText) findViewById(R.id.notationFnSafety9);
-        Sign9 = (EditText) findViewById(R.id.Signaturefn9);
-        ed_Sign9 = (EditText) findViewById(R.id.ed_Signinspectorfn9);
+        //Sign9 = (EditText) findViewById(R.id.Signaturefn9);
+        //ed_Sign9 = (EditText) findViewById(R.id.ed_Signinspectorfn9);
         im_back_arrowfn9 = (ImageView) findViewById(R.id.im_back_arrowfn9);
         im_back_arrowfn9.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -162,10 +162,10 @@ public class FnSafety_9 extends AppCompatActivity {
 
     private void addDataFn9(){
 
-        //DeviceModel= android.os.Build.MODEL;
-        DeviceName= android.os.Build.MANUFACTURER;
-        //manufacturer.setText(DeviceModel);
-        nameDevicefn9.setText(DeviceName);
+//        //DeviceModel= android.os.Build.MODEL;
+//        DeviceName= android.os.Build.MANUFACTURER;
+//        //manufacturer.setText(DeviceModel);
+//        nameDevicefn9.setText(DeviceName);
 
         String date = datetime9.getText().toString();
         String Dtype = spinnerdevicefn9.getSelectedItem().toString();
@@ -175,10 +175,10 @@ public class FnSafety_9 extends AppCompatActivity {
         String gener3 = spinnergener3fn9.getSelectedItem().toString();
         String gener4 = spinnergener4fn9.getSelectedItem().toString();
         String gener5 = spinnergener5fn9.getSelectedItem().toString();
-        String nameDevice = nameDevicefn9.getText().toString();
+        //String nameDevice = nameDevicefn9.getText().toString();
         String note = notation9.getText().toString();
-        String Signfn9 = Sign9.getText().toString();
-        String ed_Signfn9 = ed_Sign9.getText().toString();
+        //String Signfn9 = Sign9.getText().toString();
+        //String ed_Signfn9 = ed_Sign9.getText().toString();
 
         if(!TextUtils.isEmpty(Dtype)){
             String id = firebaseReference.child("CheckAutomaticFireCO2Fn9").push().getKey();
@@ -193,10 +193,10 @@ public class FnSafety_9 extends AppCompatActivity {
             fire9.setGeneralityfn9_3(gener3);
             fire9.setGeneralityfn9_4(gener4);
             fire9.setGeneralityfn9_5(gener5);
-            fire9.setManufacturer_fn9(nameDevice);
+            //fire9.setManufacturer_fn9(nameDevice);
             fire9.setNonation_fn9(note);
-            fire9.setSignature_fn9(Signfn9);
-            fire9.setEd_signspector_fn9(ed_Signfn9);
+            //fire9.setSignature_fn9(Signfn9);
+            //fire9.setEd_signspector_fn9(ed_Signfn9);
 
             firebaseReference.child("CheckAutomaticFireCO2Fn9").child(id).setValue(fire9);
             Toast.makeText(this, "Checking Successful",Toast.LENGTH_LONG).show();

@@ -130,8 +130,8 @@ public class PORTABLE_GENERATOR_SAKARI extends AppCompatActivity {
         notatTestWork4 = (EditText) findViewById(R.id.notationfn12_5_19);
         generTestWork5 = (Spinner) findViewById(R.id.spinner_fnsafety12_GENERATOR_SAKARI_TestWork5);
         notatTestWork5 = (EditText) findViewById(R.id.notationfn12_5_20);
-        Signfn12_5 = (EditText) findViewById(R.id.Signaturefn12_5);
-        ed_Signfn12_5 = (EditText) findViewById(R.id.ed_Signspectorfn12_5);
+       // Signfn12_5 = (EditText) findViewById(R.id.Signaturefn12_5);
+        //ed_Signfn12_5 = (EditText) findViewById(R.id.ed_Signspectorfn12_5);
 
 
         im_back_arrow_fnPORTABLE_GENERATOR_SAKARI = (ImageView) findViewById(R.id.im_back_arrow_fnPORTABLE_GENERATOR_SAKARI);
@@ -306,8 +306,8 @@ public class PORTABLE_GENERATOR_SAKARI extends AppCompatActivity {
            String noteTestWork4 = notatTestWork4.getText().toString();
            String TestWork5 = generTestWork5.getSelectedItem().toString();
            String noteTestWork5 = notatTestWork5.getText().toString();
-           String Sign = Signfn12_5.getText().toString();
-           String ed_Sign = ed_Signfn12_5.getText().toString();
+          // String Sign = Signfn12_5.getText().toString();
+           //String ed_Sign = ed_Signfn12_5.getText().toString();
 
            if(!TextUtils.isEmpty(moter1)){
                String id = firebaseReference.child("CheckPortableSakariFn12_5").push().getKey();
@@ -356,8 +356,8 @@ public class PORTABLE_GENERATOR_SAKARI extends AppCompatActivity {
                sakari.setNotation_TestWork4(noteTestWork4);
                sakari.setGenerality_TestWork5(TestWork5);
                sakari.setNotation_TestWork5(noteTestWork5);
-               sakari.setSignaturefn12_5(Sign);
-               sakari.setEd_Signspectorfn12_5(ed_Sign);
+              // sakari.setSignaturefn12_5(Sign);
+               //sakari.setEd_Signspectorfn12_5(ed_Sign);
 
                firebaseReference.child("CheckPortableSakariFn12_5").child(id).setValue(sakari);
                Toast.makeText(this,"Checking Successful",Toast.LENGTH_LONG).show();

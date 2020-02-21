@@ -21,7 +21,7 @@
     </style>
 
     <style name="spinnerItemStyle">
-        <item name="android:textSize">30dp</item>
+        <item name="android:textSize">28dp</item>
         <item name="android:textStyle">bold</item>
         <item name="android:fontFamily">@font/thsarabunnewbold</item>
     </style>

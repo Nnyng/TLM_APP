@@ -142,10 +142,10 @@ public class Safety_11_3 extends AppCompatActivity {
 
     private void addDataFn11_3(){
 
-        //DeviceModel= android.os.Build.MODEL;
-        DeviceName= android.os.Build.MANUFACTURER;
-        //manufacturer.setText(DeviceModel);
-        nameDevicefn11_3.setText(DeviceName);
+//        //DeviceModel= android.os.Build.MODEL;
+//        DeviceName= android.os.Build.MANUFACTURER;
+//        //manufacturer.setText(DeviceModel);
+//        nameDevicefn11_3.setText(DeviceName);
 
 
         String datetime = date.getText().toString();

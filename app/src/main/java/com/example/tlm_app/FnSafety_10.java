@@ -92,12 +92,12 @@ public class FnSafety_10 extends AppCompatActivity {
         spinnergenervalve5 = (Spinner) findViewById(R.id.spinner_fnsafety10_7);
         spinnergenerKeyValve1 = (Spinner) findViewById(R.id.spinner_fnsafety10_8);
         spinnergenerKeyValve2 = (Spinner) findViewById(R.id.spinner_fnsafety10_9);
-        nameDevicefn10 = (TextView) findViewById(R.id.nameDevicefn10);
+       // nameDevicefn10 = (TextView) findViewById(R.id.nameDevicefn10);
         notation10 = (EditText) findViewById(R.id.notationFn10);
-        Sign10 = (EditText) findViewById(R.id.Signaturefn10);
-        posit_Sign10 = (EditText) findViewById(R.id.position_SignatureFn10);
-        ed_Sign10 = (EditText) findViewById(R.id.ed_Signinspectorfn10);
-        posit_ed_Sign10 = (EditText) findViewById(R.id.position_ed_Signinspectorfn10);
+        //Sign10 = (EditText) findViewById(R.id.Signaturefn10);
+        //posit_Sign10 = (EditText) findViewById(R.id.position_SignatureFn10);
+       // ed_Sign10 = (EditText) findViewById(R.id.ed_Signinspectorfn10);
+        //posit_ed_Sign10 = (EditText) findViewById(R.id.position_ed_Signinspectorfn10);
         im_back_arrowfn10 = (ImageView) findViewById(R.id.im_back_arrowfn10);
         im_back_arrowfn10.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -166,10 +166,10 @@ public class FnSafety_10 extends AppCompatActivity {
 
     private void addDataFn10(){
 
-        //DeviceModel= android.os.Build.MODEL;
-        DeviceName= android.os.Build.MANUFACTURER;
-        //manufacturer.setText(DeviceModel);
-        nameDevicefn10.setText(DeviceName);
+//        //DeviceModel= android.os.Build.MODEL;
+//        DeviceName= android.os.Build.MANUFACTURER;
+//        //manufacturer.setText(DeviceModel);
+//        nameDevicefn10.setText(DeviceName);
 
 
         String datetime = date.getText().toString();
@@ -182,12 +182,12 @@ public class FnSafety_10 extends AppCompatActivity {
         String genervalve5 = spinnergenervalve5.getSelectedItem().toString();
         String generKeyvalve1 = spinnergenerKeyValve1.getSelectedItem().toString();
         String generKeyvalve2 = spinnergenerKeyValve2.getSelectedItem().toString();
-        String nameDevice = nameDevicefn10.getText().toString();
+        //String nameDevice = nameDevicefn10.getText().toString();
         String note = notation10.getText().toString();
-        String sign = Sign10.getText().toString();
-        String positSign = posit_Sign10.getText().toString();
-        String ed_Sign = ed_Sign10.getText().toString();
-        String posited_Sign = posit_ed_Sign10.getText().toString();
+       // String sign = Sign10.getText().toString();
+       // String positSign = posit_Sign10.getText().toString();
+       // String ed_Sign = ed_Sign10.getText().toString();
+       // String posited_Sign = posit_ed_Sign10.getText().toString();
 
 
         if(!TextUtils.isEmpty(num)){
@@ -205,12 +205,12 @@ public class FnSafety_10 extends AppCompatActivity {
             fire10.setGeneralityValve_5(genervalve5);
             fire10.setGeneralityKey_Valve1(generKeyvalve1);
             fire10.setGeneralityKey_Valve2(generKeyvalve2);
-            fire10.setManufacturer_fn10(nameDevice);
+            //fire10.setManufacturer_fn10(nameDevice);
             fire10.setNotation_fn10(note);
-            fire10.setSignature_fn10(sign);
-            fire10.setPosition_signature_fn10(positSign);
-            fire10.setEd_Signspector_fn10(ed_Sign);
-            fire10.setGetPosition_ed_Signspector_fn10(posited_Sign);
+           // fire10.setSignature_fn10(sign);
+            //fire10.setPosition_signature_fn10(positSign);
+            //fire10.setEd_Signspector_fn10(ed_Sign);
+            //fire10.setGetPosition_ed_Signspector_fn10(posited_Sign);
 
             firebaseReference.child("CheckValveFireFn10").child(id).setValue(fire10);
             Toast.makeText(this,"Checking Successful",Toast.LENGTH_LONG).show();

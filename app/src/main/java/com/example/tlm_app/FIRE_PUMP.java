@@ -151,9 +151,9 @@ public class FIRE_PUMP extends AppCompatActivity {
         notatFirePump3 = (EditText) findViewById(R.id.notationfn12_2_31);
         spinFirePump4 = (Spinner) findViewById(R.id.spinner_fnsafety12_Firepump_RoomFirePump4);
         notatFirePump4 = (EditText) findViewById(R.id.notationfn12_2_32);
-        nameDeviceFire = (TextView) findViewById(R.id.nameDeviceFire);
-        Signfn12_2 = (EditText) findViewById(R.id.Signaturefn12_2);
-        ed_Signfn12_2 = (EditText) findViewById(R.id.ed_Signspectorfn12_2);
+        //nameDeviceFire = (TextView) findViewById(R.id.nameDeviceFire);
+        //Signfn12_2 = (EditText) findViewById(R.id.Signaturefn12_2);
+        //ed_Signfn12_2 = (EditText) findViewById(R.id.ed_Signspectorfn12_2);
         im_back_arrow_FirePump = (ImageView) findViewById(R.id.im_back_arrow_FirePump);
         im_back_arrow_FirePump.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -346,10 +346,10 @@ public class FIRE_PUMP extends AppCompatActivity {
 
     private void addDataFn12_2(){
 
-        //DeviceModel= android.os.Build.MODEL;
-        DeviceName= android.os.Build.MANUFACTURER;
-        //manufacturer.setText(DeviceModel);
-        nameDeviceFire.setText(DeviceName);
+//        //DeviceModel= android.os.Build.MODEL;
+//        DeviceName= android.os.Build.MANUFACTURER;
+//        //manufacturer.setText(DeviceModel);
+//        nameDeviceFire.setText(DeviceName);
 
 
         String datetime  = date.getText().toString();
@@ -417,9 +417,9 @@ public class FIRE_PUMP extends AppCompatActivity {
         String noteFirePump3 = notatFirePump3.getText().toString();
         String FirePump4 = spinFirePump4.getSelectedItem().toString();
         String noteFirePump4 = notatFirePump4.getText().toString();
-        String nameDevice = nameDeviceFire.getText().toString();
-        String Sign = Signfn12_2.getText().toString();
-        String ed_Sign = ed_Signfn12_2.getText().toString();
+        //String nameDevice = nameDeviceFire.getText().toString();
+        //String Sign = Signfn12_2.getText().toString();
+        //String ed_Sign = ed_Signfn12_2.getText().toString();
 
         if(!TextUtils.isEmpty(Battery1)){
             String id = firebaseReference.child("CheckFireFn12_2").push().getKey();
@@ -491,9 +491,9 @@ public class FIRE_PUMP extends AppCompatActivity {
             firefn12_2.setNotation_FirePump3(noteFirePump3);
             firefn12_2.setSpinnerFirePump4(FirePump4);
             firefn12_2.setNotation_FirePump4(noteFirePump4);
-            firefn12_2.setDeviceNameFire(nameDevice);
-            firefn12_2.setSignature_fn12_2(Sign);
-            firefn12_2.setEd_Signspector_fn12_2(ed_Sign);
+            //firefn12_2.setDeviceNameFire(nameDevice);
+           // firefn12_2.setSignature_fn12_2(Sign);
+            //firefn12_2.setEd_Signspector_fn12_2(ed_Sign);
 
             firebaseReference.child("CheckFireFn12_2").child(id).setValue(firefn12_2);
             Toast.makeText(this,"Checking Successful",Toast.LENGTH_LONG).show();

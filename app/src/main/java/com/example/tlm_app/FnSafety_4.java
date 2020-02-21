@@ -96,10 +96,10 @@ public class FnSafety_4 extends AppCompatActivity {
         spinner_location = (Spinner) findViewById(R.id.spinner_fnsafety4_1);
         spinner_type = (Spinner) findViewById(R.id.spinner_fnsafety4_2);
         spinner_generality = (Spinner) findViewById(R.id.spinner_fnsafety4_3);
-        nameDevicefn4 = (TextView) findViewById(R.id.nameDevicefn4);
+        //nameDevicefn4 = (TextView) findViewById(R.id.nameDevicefn4);
         notationFnSafety4 = (EditText) findViewById(R.id.notationFn4) ;
-        Sign = (EditText) findViewById(R.id.SignatureFn4);
-        ed_Sign = (EditText)findViewById(R.id.ed_SigninspectorFn4);
+        //Sign = (EditText) findViewById(R.id.SignatureFn4);
+        //ed_Sign = (EditText)findViewById(R.id.ed_SigninspectorFn4);
         im_back_arrowfn4 = (ImageView) findViewById(R.id.im_back_arrowfn4);
         im_back_arrowfn4.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -161,10 +161,10 @@ public class FnSafety_4 extends AppCompatActivity {
 
     private void addDataFn4(){
 
-        //DeviceModel= android.os.Build.MODEL;
-        DeviceName= android.os.Build.MANUFACTURER;
-        //manufacturer.setText(DeviceModel);
-        nameDevicefn4.setText(DeviceName);
+//        //DeviceModel= android.os.Build.MODEL;
+//        DeviceName= android.os.Build.MANUFACTURER;
+//        //manufacturer.setText(DeviceModel);
+//        nameDevicefn4.setText(DeviceName);
 
 
 
@@ -173,10 +173,10 @@ public class FnSafety_4 extends AppCompatActivity {
         String location = spinner_location.getSelectedItem().toString();
         String type = spinner_type.getSelectedItem().toString();
         String generality = spinner_generality.getSelectedItem().toString();
-        String nameDevice = nameDevicefn4.getText().toString();
+       // String nameDevice = nameDevicefn4.getText().toString();
         String note = notationFnSafety4.getText().toString();
-        String signfn4 = Sign.getText().toString();
-        String ed_signfn4  = ed_Sign.getText().toString();
+        //String signfn4 = Sign.getText().toString();
+        //String ed_signfn4  = ed_Sign.getText().toString();
 
         if (!TextUtils.isEmpty(location)){
             String id = firebaseReference.child("CheckFireExitDoors").push().getKey();
@@ -195,10 +195,10 @@ public class FnSafety_4 extends AppCompatActivity {
             fire4.setLocat_fn4(location);
             fire4.setType_fn4(type);
             fire4.setGenerality_fn4(generality);
-            fire4.setManufacturer_fn4(nameDevice);
+           // fire4.setManufacturer_fn4(nameDevice);
             fire4.setNonation_fn4(note);
-            fire4.setSignature_fn4(signfn4);
-            fire4.setEd_signspector_fn4(ed_signfn4);
+           // fire4.setSignature_fn4(signfn4);
+           // fire4.setEd_signspector_fn4(ed_signfn4);
 
             firebaseReference.child("CheckFireExitDoorsFn4").child(id).setValue(fire4);
 

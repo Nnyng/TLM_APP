@@ -490,8 +490,10 @@
     </string-array>
 
     // Fn Fire Alarm
-    <string name="fnFire_Alarm">ระบบแจ้งเหตุอัตโนมัติ Heat Detecter และ Smoke Detecter (ตรวจทุกเดือน)</string>
-    <string name="fnFire_Alarm3">ระบบแจ้งเหตุอัตโนมัติ Heat Detecter และ Smoke Detecter (ตรวจทุก 3 เดือน)</string>
+    <string name="fnFire_Alarm">ระบบแจ้งเหตุอัตโนมัติ Heat Detecter
+        และ Smoke Detecter (ตรวจทุกเดือน)</string>
+    <string name="fnFire_Alarm3">ระบบแจ้งเหตุอัตโนมัติ Heat Detecter
+        และ Smoke Detecter(ตรวจทุก 3 เดือน)</string>
     <string name="fnFire_Alarm4">ระบบแจ้งเหตุอัตโนมัติ Smoke Detecter ติดตั้งในตู้ควบคุมไฟฟ้าสำหรับแผนก Treater (ตรวจทุกเดือน)</string>
     <string name="fnFire_Alarm5">ระบบแจ้งเหตุอัตโนมัติ Smoke Detecter ติดตั้งในตู้ควบคุมไฟฟ้าสำหรับแผนก Treater (ตรวจทุก3เดือน)</string>
 

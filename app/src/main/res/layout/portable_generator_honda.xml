@@ -33,19 +33,21 @@
                    android:layout_height="wrap_content"
                    android:text=" PORTABLE  GENERATOR  HONDA"
                    android:textColor="@color/colorBlack"
-                   android:textSize="38dp"/>
+                   android:textSize="30dp"/>
             </androidx.appcompat.widget.Toolbar>
 
             <TextView
                 android:id="@+id/datefn12_PORTABLE_GENERATOR_HONDA"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="380dp"
+                android:layout_marginLeft="300dp"
                 android:layout_marginTop="20dp"
-                android:layout_marginRight="30dp"
+                android:layout_marginRight="8dp"
                 android:background="@drawable/frame_background_white"
                 android:gravity="center"
-                android:paddingTop="8dp"
+                android:paddingTop="5dp"
+                android:paddingLeft="4dp"
+                android:paddingRight="4dp"
                 android:paddingBottom="5dp"
                 android:text="DATE/TIME"
                 android:textColor="@color/colorBlack"
@@ -57,17 +59,17 @@
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="30dp"
                 android:layout_marginRight="30dp"
-                android:layout_marginTop="23dp"
+                android:layout_marginTop="20dp"
                 android:text="เครื่องยนต์"
                 android:textColor="@color/colorBlack"
-                android:textSize="33dp"
+                android:textSize="30dp"
                 android:theme="@style/MyFont" />
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="2dp"
                 android:layout_marginLeft="30dp"
-                android:layout_marginRight="475dp"
+                android:layout_marginRight="315dp"
                 android:background="@color/colorBlack"
                 android:textAppearance="@style/MyFont" />
 
@@ -77,14 +79,15 @@
                 android:layout_marginLeft="30dp"
                 android:layout_marginRight="30dp"
                 android:layout_marginTop="23dp"
-                android:text="น้ำมันเชื้อเพลิง  น้ำมันเชื้อเพลิงในถังต้ม  เต็มถังเสมอ"
+                android:text="น้ำมันเชื้อเพลิง  น้ำมันเชื้อเพลิงในถังต้ม
+                        เต็มถังเสมอ"
                 android:textColor="@color/colorBlack"
-                android:textSize="32dp"
+                android:textSize="28dp"
                 android:theme="@style/MyFont" />
 
             <RelativeLayout
                 android:layout_width="match_parent"
-                android:layout_height="60dp"
+                android:layout_height="wrap_content"
                 android:layout_marginLeft="30dp"
                 android:layout_marginTop="5dp"
                 android:layout_marginRight="30dp"
@@ -93,10 +96,10 @@
 
                 <Spinner
                     android:id="@+id/spinner_fnsafety12_GENERATOR_HONDA_Motor1"
-                    android:layout_width="wrap_content"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="20dp"
-                    android:layout_marginTop="12dp"
+                    android:layout_marginTop="7dp"
                     android:entries="@array/choice_Fn12"
                     android:theme="@style/spinnerItemStyle" />
             </RelativeLayout>
@@ -108,7 +111,7 @@
                 android:layout_marginTop="20dp"
                 android:text="หมายเหตุ"
                 android:textColor="@color/colorBlack"
-                android:textSize="32dp"
+                android:textSize="28dp"
                 android:theme="@style/MyFont" />
 
             <RelativeLayout
@@ -121,12 +124,12 @@
                 <EditText
                     android:id="@+id/notationfn12_4_1"
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent"
+                    android:layout_height="wrap_content"
                     android:maxLines="2"
                     android:paddingLeft="10dp"
                     android:theme="@style/MyFont"
                     android:textColor="@color/colorBlack"
-                    android:textSize="28dp" />
+                    android:textSize="20dp" />
             </RelativeLayout>
 
             <TextView
@@ -147,12 +150,12 @@
                 android:layout_marginTop="23dp"
                 android:text="น้ำมันเครื่อง  น้ำมันเครื่องต้องอยู่ในระดับขีดบน "
                 android:textColor="@color/colorBlack"
-                android:textSize="32dp"
+                android:textSize="28dp"
                 android:theme="@style/MyFont" />
 
             <RelativeLayout
                 android:layout_width="match_parent"
-                android:layout_height="60dp"
+                android:layout_height="wrap_content"
                 android:layout_marginLeft="30dp"
                 android:layout_marginTop="5dp"
                 android:layout_marginRight="30dp"
@@ -161,10 +164,10 @@
 
                 <Spinner
                     android:id="@+id/spinner_fnsafety12_GENERATOR_HONDA_Motor2"
-                    android:layout_width="wrap_content"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="20dp"
-                    android:layout_marginTop="12dp"
+                    android:layout_marginTop="7dp"
                     android:entries="@array/choice_Fn12"
                     android:theme="@style/spinnerItemStyle" />
             </RelativeLayout>
@@ -177,7 +180,7 @@
                 android:layout_marginTop="20dp"
                 android:text="หมายเหตุ"
                 android:textColor="@color/colorBlack"
-                android:textSize="32dp"
+                android:textSize="28dp"
                 android:theme="@style/MyFont" />
 
             <RelativeLayout
@@ -190,12 +193,12 @@
                 <EditText
                     android:id="@+id/notationfn12_4_2"
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent"
+                    android:layout_height="wrap_content"
                     android:maxLines="2"
                     android:paddingLeft="10dp"
                     android:theme="@style/MyFont"
                     android:textColor="@color/colorBlack"
-                    android:textSize="28dp" />
+                    android:textSize="20dp" />
             </RelativeLayout>
 
             <TextView
@@ -213,14 +216,15 @@
                 android:layout_marginLeft="30dp"
                 android:layout_marginRight="30dp"
                 android:layout_marginTop="23dp"
-                android:text="หลอดไฟแสดงสถานะ    หลอดไฟต้องแสดงสถานะทุกหลอด"
+                android:text="หลอดไฟแสดงสถานะ
+                            หลอดไฟต้องแสดงสถานะทุกหลอด"
                 android:textColor="@color/colorBlack"
-                android:textSize="32dp"
+                android:textSize="28dp"
                 android:theme="@style/MyFont" />
 
             <RelativeLayout
                 android:layout_width="match_parent"
-                android:layout_height="60dp"
+                android:layout_height="wrap_content"
                 android:layout_marginLeft="30dp"
                 android:layout_marginTop="5dp"
                 android:layout_marginRight="30dp"
@@ -229,10 +233,10 @@
 
                 <Spinner
                     android:id="@+id/spinner_fnsafety12_GENERATOR_HONDA_Motor3"
-                    android:layout_width="wrap_content"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="20dp"
-                    android:layout_marginTop="12dp"
+                    android:layout_marginTop="7dp"
                     android:entries="@array/choice_Fn12"
                     android:theme="@style/spinnerItemStyle" />
 
@@ -246,7 +250,7 @@
                 android:layout_marginTop="20dp"
                 android:text="หมายเหตุ"
                 android:textColor="@color/colorBlack"
-                android:textSize="32dp"
+                android:textSize="28dp"
                 android:theme="@style/MyFont" />
 
             <RelativeLayout
@@ -259,12 +263,12 @@
                 <EditText
                     android:id="@+id/notationfn12_4_3"
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent"
+                    android:layout_height="wrap_content"
                     android:maxLines="2"
                     android:paddingLeft="10dp"
                     android:theme="@style/MyFont"
                     android:textColor="@color/colorBlack"
-                    android:textSize="28dp" />
+                    android:textSize="20dp" />
             </RelativeLayout>
 
             <TextView
@@ -282,14 +286,15 @@
                 android:layout_marginLeft="30dp"
                 android:layout_marginRight="30dp"
                 android:layout_marginTop="23dp"
-                android:text="หัวเทียนเครื่องยนต์    ความสกปรก  ระยะห่าง gap ชำรุด"
+                android:text="หัวเทียนเครื่องยนต์   ความสกปรก
+                          ระยะห่าง gap ชำรุด"
                 android:textColor="@color/colorBlack"
-                android:textSize="32dp"
+                android:textSize="28dp"
                 android:theme="@style/MyFont" />
 
             <RelativeLayout
                 android:layout_width="match_parent"
-                android:layout_height="60dp"
+                android:layout_height="wrap_content"
                 android:layout_marginLeft="30dp"
                 android:layout_marginTop="5dp"
                 android:layout_marginRight="30dp"
@@ -298,10 +303,10 @@
 
                 <Spinner
                     android:id="@+id/spinner_fnsafety12_GENERATOR_HONDA_Motor4"
-                    android:layout_width="wrap_content"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="20dp"
-                    android:layout_marginTop="12dp"
+                    android:layout_marginTop="7dp"
                     android:entries="@array/choice_Fn12"
                     android:theme="@style/spinnerItemStyle" />
 
@@ -315,7 +320,7 @@
                 android:layout_marginTop="20dp"
                 android:text="หมายเหตุ"
                 android:textColor="@color/colorBlack"
-                android:textSize="32dp"
+                android:textSize="28dp"
                 android:theme="@style/MyFont" />
 
             <RelativeLayout
@@ -328,11 +333,11 @@
                 <EditText
                     android:id="@+id/notationfn12_4_4"
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent"
+                    android:layout_height="wrap_content"
                     android:maxLines="2"
                     android:paddingLeft="10dp"
                     android:textColor="@color/colorBlack"
-                    android:textSize="28dp"
+                    android:textSize="20dp"
                     android:theme="@style/MyFont" />
             </RelativeLayout>
 
@@ -352,14 +357,14 @@
                 android:layout_marginLeft="30dp"
                 android:layout_marginRight="30dp"
                 android:layout_marginTop="23dp"
-                android:text="ระบบเชื้อเพลิง  อาการรั่วซึมจากท่อและจุดต่อ"
+                android:text="ระบบเชื้อเพลิง อาการรั่วซึมจากท่อและจุดต่อ"
                 android:textColor="@color/colorBlack"
-                android:textSize="32dp"
+                android:textSize="28dp"
                 android:theme="@style/MyFont" />
 
             <RelativeLayout
                 android:layout_width="match_parent"
-                android:layout_height="60dp"
+                android:layout_height="wrap_content"
                 android:layout_marginLeft="30dp"
                 android:layout_marginTop="5dp"
                 android:layout_marginRight="30dp"
@@ -368,10 +373,10 @@
 
                 <Spinner
                     android:id="@+id/spinner_fnsafety12_GENERATOR_HONDA_Motor5"
-                    android:layout_width="wrap_content"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="20dp"
-                    android:layout_marginTop="12dp"
+                    android:layout_marginTop="7dp"
                     android:entries="@array/choice_Fn12"
                     android:theme="@style/spinnerItemStyle" />
 
@@ -385,7 +390,7 @@
                 android:layout_marginTop="20dp"
                 android:text="หมายเหตุ"
                 android:textColor="@color/colorBlack"
-                android:textSize="32dp"
+                android:textSize="28dp"
                 android:theme="@style/MyFont" />
 
             <RelativeLayout
@@ -398,12 +403,12 @@
                 <EditText
                     android:id="@+id/notationfn12_4_5"
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent"
+                    android:layout_height="wrap_content"
                     android:maxLines="2"
                     android:paddingLeft="10dp"
                     android:theme="@style/MyFont"
                     android:textColor="@color/colorBlack"
-                    android:textSize="28dp" />
+                    android:textSize="20dp" />
             </RelativeLayout>
 
             <TextView
@@ -423,14 +428,14 @@
                 android:layout_marginTop="23dp"
                 android:text="เชือกสำหรับดึงสตาร์ท"
                 android:textColor="@color/colorBlack"
-                android:textSize="33dp"
+                android:textSize="30dp"
                 android:theme="@style/MyFont" />
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="2dp"
                 android:layout_marginLeft="30dp"
-                android:layout_marginRight="368dp"
+                android:layout_marginRight="220dp"
                 android:background="@color/colorBlack"
                 android:textAppearance="@style/MyFont" />
 
@@ -442,12 +447,12 @@
                 android:layout_marginTop="23dp"
                 android:text="การสวมใส่และชำรุด  เปลี่ยนใหม่ถ้าจำเป็น"
                 android:textColor="@color/colorBlack"
-                android:textSize="32dp"
+                android:textSize="28dp"
                 android:theme="@style/MyFont" />
 
             <RelativeLayout
                 android:layout_width="match_parent"
-                android:layout_height="60dp"
+                android:layout_height="wrap_content"
                 android:layout_marginLeft="30dp"
                 android:layout_marginTop="5dp"
                 android:layout_marginRight="30dp"
@@ -456,10 +461,10 @@
 
                 <Spinner
                     android:id="@+id/spinner_fnsafety12_GENERATOR_HONDA_PullRope1"
-                    android:layout_width="wrap_content"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="20dp"
-                    android:layout_marginTop="12dp"
+                    android:layout_marginTop="7dp"
                     android:entries="@array/choice_Fn12"
                     android:theme="@style/spinnerItemStyle" />
 
@@ -473,7 +478,7 @@
                 android:layout_marginTop="20dp"
                 android:text="หมายเหตุ"
                 android:textColor="@color/colorBlack"
-                android:textSize="32dp"
+                android:textSize="28dp"
                 android:theme="@style/MyFont" />
 
             <RelativeLayout
@@ -486,12 +491,12 @@
                 <EditText
                     android:id="@+id/notationfn12_4_6"
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent"
+                    android:layout_height="wrap_content"
                     android:maxLines="2"
                     android:paddingLeft="10dp"
                     android:theme="@style/MyFont"
                     android:textColor="@color/colorBlack"
-                    android:textSize="28dp" />
+                    android:textSize="20dp" />
             </RelativeLayout>
 
             <TextView
@@ -511,14 +516,14 @@
                 android:layout_marginTop="23dp"
                 android:text="ไดนาโม"
                 android:textColor="@color/colorBlack"
-                android:textSize="33dp"
+                android:textSize="30dp"
                 android:theme="@style/MyFont" />
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="2dp"
                 android:layout_marginLeft="30dp"
-                android:layout_marginRight="500dp"
+                android:layout_marginRight="340dp"
                 android:background="@color/colorBlack"
                 android:textAppearance="@style/MyFont" />
 
@@ -530,12 +535,12 @@
                 android:layout_marginTop="23dp"
                 android:text="ไดนาโม  ต้องมีฝาครอบ"
                 android:textColor="@color/colorBlack"
-                android:textSize="32dp"
+                android:textSize="28dp"
                 android:theme="@style/MyFont" />
 
             <RelativeLayout
                 android:layout_width="match_parent"
-                android:layout_height="60dp"
+                android:layout_height="wrap_content"
                 android:layout_marginLeft="30dp"
                 android:layout_marginTop="5dp"
                 android:layout_marginRight="30dp"
@@ -544,10 +549,10 @@
 
                 <Spinner
                     android:id="@+id/spinner_fnsafety12_GENERATOR_HONDA_Dynamo1"
-                    android:layout_width="wrap_content"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="20dp"
-                    android:layout_marginTop="12dp"
+                    android:layout_marginTop="7dp"
                     android:entries="@array/choice_Fn12"
                     android:theme="@style/spinnerItemStyle" />
 
@@ -561,7 +566,7 @@
                 android:layout_marginTop="20dp"
                 android:text="หมายเหตุ"
                 android:textColor="@color/colorBlack"
-                android:textSize="32dp"
+                android:textSize="28dp"
                 android:theme="@style/MyFont" />
 
             <RelativeLayout
@@ -574,12 +579,12 @@
                 <EditText
                     android:id="@+id/notationfn12_4_7"
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent"
+                    android:layout_height="wrap_content"
                     android:maxLines="2"
                     android:paddingLeft="10dp"
                     android:theme="@style/MyFont"
                     android:textColor="@color/colorBlack"
-                    android:textSize="28dp" />
+                    android:textSize="20dp" />
             </RelativeLayout>
 
             <TextView
@@ -599,12 +604,12 @@
                 android:layout_marginTop="23dp"
                 android:text="คันเร่งเครื่องยนต์  ไม่ปรับแต่งตัวล็อคคันเร่ง"
                 android:textColor="@color/colorBlack"
-                android:textSize="32dp"
+                android:textSize="28dp"
                 android:theme="@style/MyFont" />
 
             <RelativeLayout
                 android:layout_width="match_parent"
-                android:layout_height="60dp"
+                android:layout_height="wrap_content"
                 android:layout_marginLeft="30dp"
                 android:layout_marginTop="5dp"
                 android:layout_marginRight="30dp"
@@ -613,10 +618,10 @@
 
                 <Spinner
                     android:id="@+id/spinner_fnsafety12_GENERATOR_HONDA_Dynamo2"
-                    android:layout_width="wrap_content"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="20dp"
-                    android:layout_marginTop="12dp"
+                    android:layout_marginTop="7dp"
                     android:entries="@array/choice_Fn12"
                     android:theme="@style/spinnerItemStyle" />
 
@@ -630,7 +635,7 @@
                 android:layout_marginTop="20dp"
                 android:text="หมายเหตุ"
                 android:textColor="@color/colorBlack"
-                android:textSize="32dp"
+                android:textSize="28dp"
                 android:theme="@style/MyFont" />
 
             <RelativeLayout
@@ -643,12 +648,12 @@
                 <EditText
                     android:id="@+id/notationfn12_4_8"
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent"
+                    android:layout_height="wrap_content"
                     android:maxLines="2"
                     android:paddingLeft="10dp"
                     android:theme="@style/MyFont"
                     android:textColor="@color/colorBlack"
-                    android:textSize="28dp" />
+                    android:textSize="20dp" />
             </RelativeLayout>
 
             <TextView
@@ -666,14 +671,14 @@
                 android:layout_marginLeft="30dp"
                 android:layout_marginRight="30dp"
                 android:layout_marginTop="23dp"
-                android:text="ปลั๊กไฟ  ไม่มีอุปกรณ์ไฟฟ้าเสียคาอยู่และไม่ชำรุด"
+                android:text="ปลั๊กไฟ ไม่มีอุปกรณ์ไฟฟ้าเสียคาอยู่และไม่ชำรุด"
                 android:textColor="@color/colorBlack"
-                android:textSize="32dp"
+                android:textSize="28dp"
                 android:theme="@style/MyFont" />
 
             <RelativeLayout
                 android:layout_width="match_parent"
-                android:layout_height="60dp"
+                android:layout_height="wrap_content"
                 android:layout_marginLeft="30dp"
                 android:layout_marginTop="5dp"
                 android:layout_marginRight="30dp"
@@ -682,10 +687,10 @@
 
                 <Spinner
                     android:id="@+id/spinner_fnsafety12_GENERATOR_HONDA_Dynamo3"
-                    android:layout_width="wrap_content"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="20dp"
-                    android:layout_marginTop="12dp"
+                    android:layout_marginTop="7dp"
                     android:entries="@array/choice_Fn12"
                     android:theme="@style/spinnerItemStyle" />
 
@@ -699,7 +704,7 @@
                 android:layout_marginTop="20dp"
                 android:text="หมายเหตุ"
                 android:textColor="@color/colorBlack"
-                android:textSize="32dp"
+                android:textSize="28dp"
                 android:theme="@style/MyFont" />
 
             <RelativeLayout
@@ -712,12 +717,12 @@
                 <EditText
                     android:id="@+id/notationfn12_4_9"
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent"
+                    android:layout_height="wrap_content"
                     android:maxLines="2"
                     android:paddingLeft="10dp"
                     android:theme="@style/MyFont"
                     android:textColor="@color/colorBlack"
-                    android:textSize="28dp" />
+                    android:textSize="20dp" />
             </RelativeLayout>
 
             <TextView
@@ -737,12 +742,12 @@
                 android:layout_marginTop="23dp"
                 android:text="ไฟแสดงสถานะ  หลอดไฟต้องแสดงสถานะ"
                 android:textColor="@color/colorBlack"
-                android:textSize="32dp"
+                android:textSize="28dp"
                 android:theme="@style/MyFont" />
 
             <RelativeLayout
                 android:layout_width="match_parent"
-                android:layout_height="60dp"
+                android:layout_height="wrap_content"
                 android:layout_marginLeft="30dp"
                 android:layout_marginTop="5dp"
                 android:layout_marginRight="30dp"
@@ -751,10 +756,10 @@
 
                 <Spinner
                     android:id="@+id/spinner_fnsafety12_GENERATOR_HONDA_Dynamo4"
-                    android:layout_width="wrap_content"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="20dp"
-                    android:layout_marginTop="12dp"
+                    android:layout_marginTop="7dp"
                     android:entries="@array/choice_Fn12"
                     android:theme="@style/spinnerItemStyle" />
 
@@ -768,7 +773,7 @@
                 android:layout_marginTop="20dp"
                 android:text="หมายเหตุ"
                 android:textColor="@color/colorBlack"
-                android:textSize="32dp"
+                android:textSize="28dp"
                 android:theme="@style/MyFont" />
 
             <RelativeLayout
@@ -781,12 +786,12 @@
                 <EditText
                     android:id="@+id/notationfn12_4_10"
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent"
+                    android:layout_height="wrap_content"
                     android:maxLines="2"
                     android:paddingLeft="10dp"
                     android:theme="@style/MyFont"
                     android:textColor="@color/colorBlack"
-                    android:textSize="28dp" />
+                    android:textSize="20dp" />
             </RelativeLayout>
 
             <TextView
@@ -807,12 +812,12 @@
                 android:layout_marginTop="23dp"
                 android:text="มาตรวัด  AC  220V   ไม่ชำรุด"
                 android:textColor="@color/colorBlack"
-                android:textSize="32dp"
+                android:textSize="28dp"
                 android:theme="@style/MyFont" />
 
             <RelativeLayout
                 android:layout_width="match_parent"
-                android:layout_height="60dp"
+                android:layout_height="wrap_content"
                 android:layout_marginLeft="30dp"
                 android:layout_marginTop="5dp"
                 android:layout_marginRight="30dp"
@@ -821,10 +826,10 @@
 
                 <Spinner
                     android:id="@+id/spinner_fnsafety12_GENERATOR_HONDA_Dynamo5"
-                    android:layout_width="wrap_content"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="20dp"
-                    android:layout_marginTop="12dp"
+                    android:layout_marginTop="7dp"
                     android:entries="@array/choice_Fn12"
                     android:theme="@style/spinnerItemStyle" />
 
@@ -838,7 +843,7 @@
                 android:layout_marginTop="20dp"
                 android:text="หมายเหตุ"
                 android:textColor="@color/colorBlack"
-                android:textSize="32dp"
+                android:textSize="28dp"
                 android:theme="@style/MyFont" />
 
             <RelativeLayout
@@ -851,12 +856,12 @@
                 <EditText
                     android:id="@+id/notationfn12_4_11"
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent"
+                    android:layout_height="wrap_content"
                     android:maxLines="2"
                     android:paddingLeft="10dp"
                     android:theme="@style/MyFont"
                     android:textColor="@color/colorBlack"
-                    android:textSize="28dp" />
+                    android:textSize="20dp" />
             </RelativeLayout>
 
             <TextView
@@ -875,14 +880,14 @@
                 android:layout_marginLeft="30dp"
                 android:layout_marginRight="30dp"
                 android:layout_marginTop="23dp"
-                android:text="มาตรวัด  DC 12V (10A)   ไม่ชำรุด"
+                android:text="มาตรวัด DC 12V (10A)  ไม่ชำรุด"
                 android:textColor="@color/colorBlack"
-                android:textSize="32dp"
+                android:textSize="28dp"
                 android:theme="@style/MyFont" />
 
             <RelativeLayout
                 android:layout_width="match_parent"
-                android:layout_height="60dp"
+                android:layout_height="wrap_content"
                 android:layout_marginLeft="30dp"
                 android:layout_marginTop="5dp"
                 android:layout_marginRight="30dp"
@@ -891,10 +896,10 @@
 
                 <Spinner
                     android:id="@+id/spinner_fnsafety12_GENERATOR_HONDA_Dynamo6"
-                    android:layout_width="wrap_content"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="20dp"
-                    android:layout_marginTop="12dp"
+                    android:layout_marginTop="7dp"
                     android:entries="@array/choice_Fn12"
                     android:theme="@style/spinnerItemStyle" />
 
@@ -908,7 +913,7 @@
                 android:layout_marginTop="20dp"
                 android:text="หมายเหตุ"
                 android:textColor="@color/colorBlack"
-                android:textSize="32dp"
+                android:textSize="28dp"
                 android:theme="@style/MyFont" />
 
             <RelativeLayout
@@ -921,12 +926,12 @@
                 <EditText
                     android:id="@+id/notationfn12_4_12"
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent"
+                    android:layout_height="wrap_content"
                     android:maxLines="2"
                     android:paddingLeft="10dp"
                     android:theme="@style/MyFont"
                     android:textColor="@color/colorBlack"
-                    android:textSize="28dp" />
+                    android:textSize="20dp" />
             </RelativeLayout>
 
             <TextView
@@ -947,12 +952,12 @@
                 android:layout_marginTop="23dp"
                 android:text="เบรคเกอร์  อยู่ในตำแหน่งปิดเสมอเมื่อไม่ใช้งาน"
                 android:textColor="@color/colorBlack"
-                android:textSize="32dp"
+                android:textSize="28dp"
                 android:theme="@style/MyFont" />
 
             <RelativeLayout
                 android:layout_width="match_parent"
-                android:layout_height="60dp"
+                android:layout_height="wrap_content"
                 android:layout_marginLeft="30dp"
                 android:layout_marginTop="5dp"
                 android:layout_marginRight="30dp"
@@ -961,10 +966,10 @@
 
                 <Spinner
                     android:id="@+id/spinner_fnsafety12_GENERATOR_HONDA_Dynamo7"
-                    android:layout_width="wrap_content"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="20dp"
-                    android:layout_marginTop="12dp"
+                    android:layout_marginTop="7dp"
                     android:entries="@array/choice_Fn12"
                     android:theme="@style/spinnerItemStyle" />
 
@@ -978,7 +983,7 @@
                 android:layout_marginTop="20dp"
                 android:text="หมายเหตุ"
                 android:textColor="@color/colorBlack"
-                android:textSize="32dp"
+                android:textSize="28dp"
                 android:theme="@style/MyFont" />
 
             <RelativeLayout
@@ -991,12 +996,12 @@
                 <EditText
                     android:id="@+id/notationfn12_4_13"
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent"
+                    android:layout_height="wrap_content"
                     android:maxLines="2"
                     android:paddingLeft="10dp"
                     android:theme="@style/MyFont"
                     android:textColor="@color/colorBlack"
-                    android:textSize="28dp" />
+                    android:textSize="20dp" />
             </RelativeLayout>
 
             <TextView
@@ -1017,12 +1022,12 @@
                 android:layout_marginTop="23dp"
                 android:text="Fuse  ไม่ขาด"
                 android:textColor="@color/colorBlack"
-                android:textSize="32dp"
+                android:textSize="28dp"
                 android:theme="@style/MyFont" />
 
             <RelativeLayout
                 android:layout_width="match_parent"
-                android:layout_height="60dp"
+                android:layout_height="wrap_content"
                 android:layout_marginLeft="30dp"
                 android:layout_marginTop="5dp"
                 android:layout_marginRight="30dp"
@@ -1031,10 +1036,10 @@
 
                 <Spinner
                     android:id="@+id/spinner_fnsafety12_GENERATOR_HONDA_Dynamo8"
-                    android:layout_width="wrap_content"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="20dp"
-                    android:layout_marginTop="12dp"
+                    android:layout_marginTop="7dp"
                     android:entries="@array/choice_Fn12"
                     android:theme="@style/spinnerItemStyle" />
 
@@ -1048,7 +1053,7 @@
                 android:layout_marginTop="20dp"
                 android:text="หมายเหตุ"
                 android:textColor="@color/colorBlack"
-                android:textSize="32dp"
+                android:textSize="28dp"
                 android:theme="@style/MyFont" />
 
             <RelativeLayout
@@ -1061,12 +1066,12 @@
                 <EditText
                     android:id="@+id/notationfn12_4_14"
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent"
+                    android:layout_height="wrap_content"
                     android:maxLines="2"
                     android:paddingLeft="10dp"
                     android:theme="@style/MyFont"
                     android:textColor="@color/colorBlack"
-                    android:textSize="28dp" />
+                    android:textSize="20dp" />
             </RelativeLayout>
 
             <TextView
@@ -1087,14 +1092,14 @@
                 android:layout_marginTop="23dp"
                 android:text="ความสะอาด"
                 android:textColor="@color/colorBlack"
-                android:textSize="33dp"
+                android:textSize="30dp"
                 android:theme="@style/MyFont" />
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="2dp"
                 android:layout_marginLeft="30dp"
-                android:layout_marginRight="455dp"
+                android:layout_marginRight="295dp"
                 android:background="@color/colorBlack"
                 android:textAppearance="@style/MyFont" />
 
@@ -1107,12 +1112,12 @@
                 android:layout_marginTop="23dp"
                 android:text="ฝุ่น  ทำความสะอาดเดือนละ 1 ครั้ง"
                 android:textColor="@color/colorBlack"
-                android:textSize="32dp"
+                android:textSize="28dp"
                 android:theme="@style/MyFont" />
 
             <RelativeLayout
                 android:layout_width="match_parent"
-                android:layout_height="60dp"
+                android:layout_height="wrap_content"
                 android:layout_marginLeft="30dp"
                 android:layout_marginTop="5dp"
                 android:layout_marginRight="30dp"
@@ -1121,10 +1126,10 @@
 
                 <Spinner
                     android:id="@+id/spinner_fnsafety12_GENERATOR_HONDA_Clean1"
-                    android:layout_width="wrap_content"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="20dp"
-                    android:layout_marginTop="12dp"
+                    android:layout_marginTop="7dp"
                     android:entries="@array/choice_Fn12"
                     android:theme="@style/spinnerItemStyle" />
 
@@ -1138,7 +1143,7 @@
                 android:layout_marginTop="20dp"
                 android:text="หมายเหตุ"
                 android:textColor="@color/colorBlack"
-                android:textSize="32dp"
+                android:textSize="28dp"
                 android:theme="@style/MyFont" />
 
             <RelativeLayout
@@ -1151,12 +1156,12 @@
                 <EditText
                     android:id="@+id/notationfn12_4_15"
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent"
+                    android:layout_height="wrap_content"
                     android:maxLines="2"
                     android:paddingLeft="10dp"
                     android:theme="@style/MyFont"
                     android:textColor="@color/colorBlack"
-                    android:textSize="28dp" />
+                    android:textSize="20dp" />
             </RelativeLayout>
 
             <TextView
@@ -1177,14 +1182,14 @@
                 android:layout_marginTop="23dp"
                 android:text="การทดสอบการทำงาน"
                 android:textColor="@color/colorBlack"
-                android:textSize="33dp"
+                android:textSize="30dp"
                 android:theme="@style/MyFont" />
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="2dp"
                 android:layout_marginLeft="30dp"
-                android:layout_marginRight="371dp"
+                android:layout_marginRight="220dp"
                 android:background="@color/colorBlack"
                 android:textAppearance="@style/MyFont" />
 
@@ -1196,12 +1201,12 @@
                 android:layout_marginTop="23dp"
                 android:text="สวิทช์   หมุนสวิทช์ไปที่ตำแหน่ง ON "
                 android:textColor="@color/colorBlack"
-                android:textSize="32dp"
+                android:textSize="28dp"
                 android:theme="@style/MyFont" />
 
             <RelativeLayout
                 android:layout_width="match_parent"
-                android:layout_height="60dp"
+                android:layout_height="wrap_content"
                 android:layout_marginLeft="30dp"
                 android:layout_marginTop="5dp"
                 android:layout_marginRight="30dp"
@@ -1210,10 +1215,10 @@
 
                 <Spinner
                     android:id="@+id/spinner_fnsafety12_GENERATOR_HONDA_TestWork1"
-                    android:layout_width="wrap_content"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="20dp"
-                    android:layout_marginTop="12dp"
+                    android:layout_marginTop="7dp"
                     android:entries="@array/choice_Fn12"
                     android:theme="@style/spinnerItemStyle" />
 
@@ -1227,7 +1232,7 @@
                 android:layout_marginTop="20dp"
                 android:text="หมายเหตุ"
                 android:textColor="@color/colorBlack"
-                android:textSize="32dp"
+                android:textSize="28dp"
                 android:theme="@style/MyFont" />
 
             <RelativeLayout
@@ -1240,12 +1245,12 @@
                 <EditText
                     android:id="@+id/notationfn12_4_16"
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent"
+                    android:layout_height="wrap_content"
                     android:maxLines="2"
                     android:paddingLeft="10dp"
                     android:theme="@style/MyFont"
                     android:textColor="@color/colorBlack"
-                    android:textSize="28dp" />
+                    android:textSize="20dp" />
             </RelativeLayout>
 
             <TextView
@@ -1265,12 +1270,12 @@
                 android:layout_marginTop="23dp"
                 android:text="โช๊ค  ดันโช๊คไปทางซ้ายก่อนเริ่มสตาร์ท"
                 android:textColor="@color/colorBlack"
-                android:textSize="32dp"
+                android:textSize="28dp"
                 android:theme="@style/MyFont" />
 
             <RelativeLayout
                 android:layout_width="match_parent"
-                android:layout_height="60dp"
+                android:layout_height="wrap_content"
                 android:layout_marginLeft="30dp"
                 android:layout_marginTop="5dp"
                 android:layout_marginRight="30dp"
@@ -1279,10 +1284,10 @@
 
                 <Spinner
                     android:id="@+id/spinner_fnsafety12_GENERATOR_HONDA_TestWork2"
-                    android:layout_width="wrap_content"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="20dp"
-                    android:layout_marginTop="12dp"
+                    android:layout_marginTop="7dp"
                     android:entries="@array/choice_Fn12"
                     android:theme="@style/spinnerItemStyle" />
 
@@ -1296,7 +1301,7 @@
                 android:layout_marginTop="20dp"
                 android:text="หมายเหตุ"
                 android:textColor="@color/colorBlack"
-                android:textSize="32dp"
+                android:textSize="28dp"
                 android:theme="@style/MyFont" />
 
             <RelativeLayout
@@ -1309,12 +1314,12 @@
                 <EditText
                     android:id="@+id/notationfn12_4_17"
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent"
+                    android:layout_height="wrap_content"
                     android:maxLines="2"
                     android:paddingLeft="10dp"
                     android:theme="@style/MyFont"
                     android:textColor="@color/colorBlack"
-                    android:textSize="28dp" />
+                    android:textSize="20dp" />
             </RelativeLayout>
 
             <TextView
@@ -1333,14 +1338,15 @@
                 android:layout_marginLeft="30dp"
                 android:layout_marginRight="30dp"
                 android:layout_marginTop="23dp"
-                android:text="หลังจากเครื่องติดแล้วให้โยกไปทางขวา ดึงเชือกเพื่อสตาร์ท"
+                android:text="หลังจากเครื่องติดแล้วให้โยกไปทางขวา
+                        ดึงเชือกเพื่อสตาร์ท"
                 android:textColor="@color/colorBlack"
-                android:textSize="32dp"
+                android:textSize="28dp"
                 android:theme="@style/MyFont" />
 
             <RelativeLayout
                 android:layout_width="match_parent"
-                android:layout_height="60dp"
+                android:layout_height="wrap_content"
                 android:layout_marginLeft="30dp"
                 android:layout_marginTop="5dp"
                 android:layout_marginRight="30dp"
@@ -1349,10 +1355,10 @@
 
                 <Spinner
                     android:id="@+id/spinner_fnsafety12_GENERATOR_HONDA_TestWork3"
-                    android:layout_width="wrap_content"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="20dp"
-                    android:layout_marginTop="12dp"
+                    android:layout_marginTop="7dp"
                     android:entries="@array/choice_Fn12"
                     android:theme="@style/spinnerItemStyle" />
 
@@ -1366,7 +1372,7 @@
                 android:layout_marginTop="20dp"
                 android:text="หมายเหตุ"
                 android:textColor="@color/colorBlack"
-                android:textSize="32dp"
+                android:textSize="28dp"
                 android:theme="@style/MyFont" />
 
             <RelativeLayout
@@ -1379,12 +1385,12 @@
                 <EditText
                     android:id="@+id/notationfn12_4_18"
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent"
+                    android:layout_height="wrap_content"
                     android:maxLines="2"
                     android:paddingLeft="10dp"
                     android:theme="@style/MyFont"
                     android:textColor="@color/colorBlack"
-                    android:textSize="28dp" />
+                    android:textSize="20dp" />
             </RelativeLayout>
 
             <TextView
@@ -1403,14 +1409,14 @@
                 android:layout_marginLeft="30dp"
                 android:layout_marginRight="30dp"
                 android:layout_marginTop="23dp"
-                android:text="หมุนสวิทช์ไปที่ตำแหน่ง  OFF  เพื่อหยุดเครื่อง"
+                android:text="หมุนสวิทช์ไปที่ตำแหน่ง OFF เพื่อหยุดเครื่อง"
                 android:textColor="@color/colorBlack"
-                android:textSize="32dp"
+                android:textSize="28dp"
                 android:theme="@style/MyFont" />
 
             <RelativeLayout
                 android:layout_width="match_parent"
-                android:layout_height="60dp"
+                android:layout_height="wrap_content"
                 android:layout_marginLeft="30dp"
                 android:layout_marginTop="5dp"
                 android:layout_marginRight="30dp"
@@ -1419,10 +1425,10 @@
 
                 <Spinner
                     android:id="@+id/spinner_fnsafety12_GENERATOR_HONDA_TestWork4"
-                    android:layout_width="wrap_content"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="20dp"
-                    android:layout_marginTop="12dp"
+                    android:layout_marginTop="7dp"
                     android:entries="@array/choice_Fn12"
                     android:theme="@style/spinnerItemStyle" />
 
@@ -1436,7 +1442,7 @@
                 android:layout_marginTop="20dp"
                 android:text="หมายเหตุ"
                 android:textColor="@color/colorBlack"
-                android:textSize="32dp"
+                android:textSize="28dp"
                 android:theme="@style/MyFont" />
 
             <RelativeLayout
@@ -1449,12 +1455,12 @@
                 <EditText
                     android:id="@+id/notationfn12_4_19"
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent"
+                    android:layout_height="wrap_content"
                     android:maxLines="2"
                     android:paddingLeft="10dp"
                     android:theme="@style/MyFont"
                     android:textColor="@color/colorBlack"
-                    android:textSize="28dp" />
+                    android:textSize="20dp" />
             </RelativeLayout>
 
             <TextView
@@ -1474,12 +1480,12 @@
                 android:layout_marginTop="23dp"
                 android:text="สตาร์ทเครื่องเดือนละ 1 ครั้ง / 30 นาที"
                 android:textColor="@color/colorBlack"
-                android:textSize="32dp"
+                android:textSize="28dp"
                 android:theme="@style/MyFont" />
 
             <RelativeLayout
                 android:layout_width="match_parent"
-                android:layout_height="60dp"
+                android:layout_height="wrap_content"
                 android:layout_marginLeft="30dp"
                 android:layout_marginTop="5dp"
                 android:layout_marginRight="30dp"
@@ -1488,10 +1494,10 @@
 
                 <Spinner
                     android:id="@+id/spinner_fnsafety12_GENERATOR_HONDA_TestWork5"
-                    android:layout_width="wrap_content"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="20dp"
-                    android:layout_marginTop="12dp"
+                    android:layout_marginTop="7dp"
                     android:entries="@array/choice_Fn12"
                     android:theme="@style/spinnerItemStyle" />
 
@@ -1505,7 +1511,7 @@
                 android:layout_marginTop="20dp"
                 android:text="หมายเหตุ"
                 android:textColor="@color/colorBlack"
-                android:textSize="32dp"
+                android:textSize="28dp"
                 android:theme="@style/MyFont" />
 
             <RelativeLayout
@@ -1518,12 +1524,12 @@
                 <EditText
                     android:id="@+id/notationfn12_4_20"
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent"
+                    android:layout_height="wrap_content"
                     android:maxLines="2"
                     android:paddingLeft="10dp"
                     android:theme="@style/MyFont"
                     android:textColor="@color/colorBlack"
-                    android:textSize="28dp" />
+                    android:textSize="20dp" />
             </RelativeLayout>
 
             <TextView
@@ -1536,75 +1542,75 @@
                 android:textAppearance="@style/MyFont" />
 
 
-            <RelativeLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="30dp"
-                android:layout_marginTop="40dp"
-                android:layout_marginRight="240dp"
-                android:background="@drawable/frame_background_white"
-                android:theme="@style/spinnerItemStyle">
+<!--            <RelativeLayout-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginLeft="30dp"-->
+<!--                android:layout_marginTop="40dp"-->
+<!--                android:layout_marginRight="240dp"-->
+<!--                android:background="@drawable/frame_background_white"-->
+<!--                android:theme="@style/spinnerItemStyle">-->
 
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="15dp"
-                    android:paddingLeft="12dp"
-                    android:paddingTop="0dp"
-                    android:text="ลงชื่อผู้ตรวจ"
-                    android:textColor="@color/colorBlack"
-                    android:textSize="25dp"
-                    android:theme="@style/MyFont" />
+<!--                <TextView-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_marginTop="15dp"-->
+<!--                    android:paddingLeft="12dp"-->
+<!--                    android:paddingTop="0dp"-->
+<!--                    android:text="ลงชื่อผู้ตรวจ"-->
+<!--                    android:textColor="@color/colorBlack"-->
+<!--                    android:textSize="25dp"-->
+<!--                    android:theme="@style/MyFont" />-->
 
-                <EditText
-                    android:id="@+id/Signaturefn12_4"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_marginLeft="120dp"
-                    android:maxLines="1"
-                    android:textColor="@color/colorBlack"
-                    android:textSize="28dp"
-                    android:theme="@style/MyFont" />
-            </RelativeLayout>
+<!--                <EditText-->
+<!--                    android:id="@+id/Signaturefn12_4"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="match_parent"-->
+<!--                    android:layout_marginLeft="120dp"-->
+<!--                    android:maxLines="1"-->
+<!--                    android:textColor="@color/colorBlack"-->
+<!--                    android:textSize="28dp"-->
+<!--                    android:theme="@style/MyFont" />-->
+<!--            </RelativeLayout>-->
 
-            <RelativeLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="25dp"
-                android:layout_marginTop="15dp"
-                android:layout_marginRight="240dp"
-                android:background="@drawable/frame_background_white">
+<!--            <RelativeLayout-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginLeft="25dp"-->
+<!--                android:layout_marginTop="15dp"-->
+<!--                android:layout_marginRight="240dp"-->
+<!--                android:background="@drawable/frame_background_white">-->
 
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="15dp"
-                    android:paddingLeft="10dp"
-                    android:paddingTop="0dp"
-                    android:text="ลงชื่อผู้ตรวจสอบ"
-                    android:textColor="@color/colorBlack"
-                    android:textSize="25dp"
-                    android:theme="@style/MyFont" />
+<!--                <TextView-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_marginTop="15dp"-->
+<!--                    android:paddingLeft="10dp"-->
+<!--                    android:paddingTop="0dp"-->
+<!--                    android:text="ลงชื่อผู้ตรวจสอบ"-->
+<!--                    android:textColor="@color/colorBlack"-->
+<!--                    android:textSize="25dp"-->
+<!--                    android:theme="@style/MyFont" />-->
 
-                <EditText
-                    android:id="@+id/ed_Signspectorfn12_4"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_marginLeft="156dp"
-                    android:maxLines="1"
-                    android:textColor="@color/colorBlack"
-                    android:textSize="28dp"
-                    android:theme="@style/MyFont" />
-            </RelativeLayout>
+<!--                <EditText-->
+<!--                    android:id="@+id/ed_Signspectorfn12_4"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="match_parent"-->
+<!--                    android:layout_marginLeft="156dp"-->
+<!--                    android:maxLines="1"-->
+<!--                    android:textColor="@color/colorBlack"-->
+<!--                    android:textSize="28dp"-->
+<!--                    android:theme="@style/MyFont" />-->
+<!--            </RelativeLayout>-->
 
 
             <Button
                 android:id="@+id/btn_save_generator_honda"
                 android:layout_width="match_parent"
-                android:layout_height="60dp"
-                android:layout_marginLeft="170dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="80dp"
                 android:layout_marginTop="60dp"
-                android:layout_marginRight="170dp"
+                android:layout_marginRight="80dp"
                 android:background="@drawable/frame_btnsave"
                 android:gravity="center"
                 android:text="บันทึก"
