@@ -3,6 +3,7 @@ package com.example.tlm_app;
 public class FIRECABINETS {
     private String id_fn5;
     private String date_fn5;
+    private String result_fn5;
     private String numdevice_fn5;
     private String locat_fn5;
     private String device_typefn5;
@@ -16,6 +17,12 @@ public class FIRECABINETS {
     private String manufacturer_fn5;
     private String signature_fn5;
     private String ed_signspector_fn5;
+    private String notationFn5_1;
+    private String notationFn5_2;
+    private String notationFn5_3;
+    private String notationFn5_4;
+    private String notationFn5_5;
+    private String notationFn5_6;
 
     public FIRECABINETS() {
     }
@@ -134,6 +141,62 @@ public class FIRECABINETS {
 
     public String getEd_signspector_fn5() {
         return ed_signspector_fn5;
+    }
+
+    public String getResult_fn5() {
+        return result_fn5;
+    }
+
+    public void setResult_fn5(String result_fn5) {
+        this.result_fn5 = result_fn5;
+    }
+
+    public String getNotationFn5_1() {
+        return notationFn5_1;
+    }
+
+    public void setNotationFn5_1(String notationFn5_1) {
+        this.notationFn5_1 = notationFn5_1;
+    }
+
+    public String getNotationFn5_2() {
+        return notationFn5_2;
+    }
+
+    public void setNotationFn5_2(String notationFn5_2) {
+        this.notationFn5_2 = notationFn5_2;
+    }
+
+    public String getNotationFn5_3() {
+        return notationFn5_3;
+    }
+
+    public void setNotationFn5_3(String notationFn5_3) {
+        this.notationFn5_3 = notationFn5_3;
+    }
+
+    public String getNotationFn5_4() {
+        return notationFn5_4;
+    }
+
+    public void setNotationFn5_4(String notationFn5_4) {
+        this.notationFn5_4 = notationFn5_4;
+    }
+
+    public String getNotationFn5_5() {
+        return notationFn5_5;
+    }
+
+    public void setNotationFn5_5(String notationFn5_5) {
+        this.notationFn5_5 = notationFn5_5;
+    }
+
+    public String getNotationFn5_6() {
+        return notationFn5_6;
+    }
+
+    public void setNotationFn5_6(String notationFn5_6) {
+        this.notationFn5_6 = notationFn5_6;
     }
 
     public void setEd_signspector_fn5(String ed_signspector_fn5) {

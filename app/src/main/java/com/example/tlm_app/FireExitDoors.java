@@ -3,6 +3,7 @@ package com.example.tlm_app;
 public class FireExitDoors {
     private String id_fn4;
     private String dete_fn4;
+    private String result_fn4;
     private String locat_fn4;
     private String type_fn4;
     private String generality_fn4;
@@ -29,6 +30,14 @@ public class FireExitDoors {
 
     public void setDete_fn4(String dete_fn4) {
         this.dete_fn4 = dete_fn4;
+    }
+
+    public String getResult_fn4() {
+        return result_fn4;
+    }
+
+    public void setResult_fn4(String result_fn4) {
+        this.result_fn4 = result_fn4;
     }
 
     public String getLocat_fn4() {

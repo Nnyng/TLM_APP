@@ -75,6 +75,7 @@ public class Safety_11_1 extends AppCompatActivity {
 
     private void initFirebase() {
         firebaseReference = FirebaseDatabase.getInstance().getReference();
+      //  FirebaseDatabase.getInstance().setPersistenceEnabled(true);
     }
 
     private void initInstances() {

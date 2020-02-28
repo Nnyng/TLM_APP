@@ -18,10 +18,39 @@ public class Login extends AppCompatActivity {
         LinearLayout linearLayout_textLogin = (LinearLayout)findViewById(R.id.linearLayout_textLogin);
         LinearLayout linearLayout_textQrLogin= (LinearLayout)findViewById(R.id.linearLayout_textQrLogin);
 
+//        linearLayout_textLogin.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                Intent intent = new Intent(Login.this, TestFirebase.class);
+//                startActivity(intent);
+//            }
+//        });
+
+//        linearLayout_textLogin.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                Intent intent = new Intent(Login.this, TestDependentSpinner.class);
+//                startActivity(intent);
+//            }
+//        });
+
+
+//        linearLayout_textLogin.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                Intent intent = new Intent(Login.this, Test01.class);
+//                startActivity(intent);
+//            }
+//        });
+
+
+
+
+//
         linearLayout_textLogin.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(Login.this, User_Login.class);
+           public void onClick(View v) {
+                Intent intent = new Intent(Login.this, Login_User.class);
                 startActivity(intent);
             }
         });
@@ -34,6 +63,15 @@ public class Login extends AppCompatActivity {
             }
         });
 
-   }
+//                linearLayout_textQrLogin.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                Intent intent = new Intent(Login.this,MainResultQR.class);
+//                startActivity(intent);
+//            }
+//        });
+//
+
+    }
 
 }

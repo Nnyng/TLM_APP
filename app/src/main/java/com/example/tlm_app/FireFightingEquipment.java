@@ -13,6 +13,7 @@ public class FireFightingEquipment {
     private String position_signature_fn1;
     private String ed_signspector_fn1;
     private String position_ed_signspector_fn1;
+    private String result_fn1;
     private String manufacturer_fn1;
 
     public FireFightingEquipment() {
@@ -113,6 +114,14 @@ public class FireFightingEquipment {
 
     public void setEd_signspector_fn1(String ed_signspector_fn1) {
         this.ed_signspector_fn1 = ed_signspector_fn1;
+    }
+
+    public String getResult_fn1() {
+        return result_fn1;
+    }
+
+    public void setResult_fn1(String result_fn1) {
+        this.result_fn1 = result_fn1;
     }
 
     public String getPosition_ed_signspector_fn1() {

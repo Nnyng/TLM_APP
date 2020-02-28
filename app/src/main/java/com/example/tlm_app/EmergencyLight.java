@@ -9,6 +9,7 @@ public class EmergencyLight {
      private String notation_fn2;
      private String Signfn2;
      private String edSignfn2;
+    private String result_fn2;
      private String manufacturer_fn2;
 
     public EmergencyLight() {
@@ -72,6 +73,14 @@ public class EmergencyLight {
 
     public String getSignfn2() {
         return Signfn2;
+    }
+
+    public String getResult_fn2() {
+        return result_fn2;
+    }
+
+    public void setResult_fn2(String result_fn2) {
+        this.result_fn2 = result_fn2;
     }
 
     public void setSignfn2(String signfn2) {

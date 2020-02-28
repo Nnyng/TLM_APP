@@ -36,10 +36,10 @@ import java.util.Calendar;
 import java.util.List;
 
 public class FnSafety_5 extends AppCompatActivity {
-    private EditText Signature,ed_Signature;
+    private EditText Signature,ed_Signature,notationFn5_1,notationFn5_2,notationFn5_3,notationFn5_4,notationFn5_5,notationFn5_6;
     private Spinner spinner_numdevice,spinner_locat,spinner_devicetype,spinner_gener5_1,spinner_gener5_2,spinner_gener5_3,spinner_gener5_4,spinner_gener5_5,spinner_gener5_6;
-    private TextView dateAlert,CalendarText,nameDevicefn5;
-    private Button btn_save_fb5;
+    public static TextView dateAlert,CalendarText,nameDevicefn5,tv_ReadResultFn5;
+    private Button btn_save_fb5,btnQRScannerFn5;
     private ListView listViewSafety5;
     private List<FIRECABINETS>firecabinets;
     private SafetyFn5Adapter safetyFn5Adapter;
@@ -128,16 +128,24 @@ public class FnSafety_5 extends AppCompatActivity {
 
         btn_save_fb5 = (Button) findViewById(R.id.btn_save_fb5);
         dateAlert = (TextView)findViewById(R.id.datefn5);
-        spinner_numdevice = (Spinner)findViewById(R.id.spinner_fnsafety5_1);
-        spinner_locat = (Spinner)findViewById(R.id.spinner_fnsafety5_2);
-        spinner_devicetype = (Spinner)findViewById(R.id.spinner_fnsafety5_3);
+        tv_ReadResultFn5 = (TextView)findViewById(R.id.tv_ReadResultFn5);
+//        spinner_numdevice = (Spinner)findViewById(R.id.spinner_fnsafety5_1);
+//        spinner_locat = (Spinner)findViewById(R.id.spinner_fnsafety5_2);
+//        spinner_devicetype = (Spinner)findViewById(R.id.spinner_fnsafety5_3);
         spinner_gener5_1 = (Spinner)findViewById(R.id.spinner_fnsafety5_4);
+        notationFn5_1  = (EditText) findViewById(R.id.notationFn5_1);
         spinner_gener5_2 = (Spinner)findViewById(R.id.spinner_fnsafety5_5);
+        notationFn5_2  = (EditText) findViewById(R.id.notationFn5_2);
         spinner_gener5_3 = (Spinner)findViewById(R.id.spinner_fnsafety5_6);
+        notationFn5_3  = (EditText) findViewById(R.id.notationFn5_3);
         spinner_gener5_4 = (Spinner)findViewById(R.id.spinner_fnsafety5_7);
+        notationFn5_4  = (EditText) findViewById(R.id.notationFn5_4);
         spinner_gener5_5 = (Spinner)findViewById(R.id.spinner_fnsafety5_8);
+        notationFn5_5  = (EditText) findViewById(R.id.notationFn5_5);
         spinner_gener5_6 = (Spinner)findViewById(R.id.spinner_fnsafety5_9);
+        notationFn5_6  = (EditText) findViewById(R.id.notationFn5_6);
         CalendarText = (TextView)findViewById(R.id.tvCalendarTextFn5);
+        btnQRScannerFn5 = (Button) findViewById(R.id.btnQRScannerFn5);
         //nameDevicefn5 = (TextView) findViewById(R.id.nameDevicefn5);
         //Signature = (EditText) findViewById(R.id.SignatureFn5);
         //ed_Signature = (EditText) findViewById(R.id.ed_SigninspectorFn5);
@@ -174,31 +182,38 @@ public class FnSafety_5 extends AppCompatActivity {
          btn_save_fb5.setOnClickListener(new View.OnClickListener() {
              @Override
              public void onClick(View v) {
-                String num = spinner_numdevice.getSelectedItem().toString();
-                String location =  spinner_locat.getSelectedItem().toString();
-                String device = spinner_devicetype.getSelectedItem().toString();
-                String generality1 = spinner_gener5_1.getSelectedItem().toString();
-                String generality2 = spinner_gener5_2.getSelectedItem().toString();
-                String generality3 = spinner_gener5_3.getSelectedItem().toString();
-                String generality4 = spinner_gener5_4.getSelectedItem().toString();
-                String generality5 = spinner_gener5_5.getSelectedItem().toString();
-                String generality6 = spinner_gener5_6.getSelectedItem().toString();
-                String calendar = tvCalendarTextFn5.getText().toString();
-                String Sign = Signature.getText().toString();
-                String ed_Sign = ed_Signature.getText().toString();
 
-                 if(TextUtils.isEmpty(num)){
-                     Toast.makeText(getApplicationContext(),"กรุณากรอกข้อมูลให้ครบ!",Toast.LENGTH_SHORT).show();
-                     return;
-                 }
-                 if(TextUtils.isEmpty(location)){
-                     Toast.makeText(getApplicationContext(),"กรุณากรอกข้อมูลให้ครบ!",Toast.LENGTH_SHORT).show();
-                     return;
-                 }
-                 if(TextUtils.isEmpty(device)){
-                     Toast.makeText(getApplicationContext(),"กรุณากรอกข้อมูลให้ครบ!",Toast.LENGTH_SHORT).show();
-                     return;
-                 }
+//                String num = spinner_numdevice.getSelectedItem().toString();
+//                String location =  spinner_locat.getSelectedItem().toString();
+//                String device = spinner_devicetype.getSelectedItem().toString();
+                String generality1 = spinner_gener5_1.getSelectedItem().toString();
+                 String notation1 = notationFn5_1.getText().toString();
+                String generality2 = spinner_gener5_2.getSelectedItem().toString();
+                 String notation2 = notationFn5_2.getText().toString();
+                String generality3 = spinner_gener5_3.getSelectedItem().toString();
+                 String notation3 = notationFn5_3.getText().toString();
+                String generality4 = spinner_gener5_4.getSelectedItem().toString();
+                 String notation4 = notationFn5_4.getText().toString();
+                String generality5 = spinner_gener5_5.getSelectedItem().toString();
+                 String notation5 = notationFn5_5.getText().toString();
+                String generality6 = spinner_gener5_6.getSelectedItem().toString();
+                 String notation6 = notationFn5_6.getText().toString();
+                String calendar = tvCalendarTextFn5.getText().toString();
+                //String Sign = Signature.getText().toString();
+               // String ed_Sign = ed_Signature.getText().toString();
+
+//                 if(TextUtils.isEmpty(num)){
+//                     Toast.makeText(getApplicationContext(),"กรุณากรอกข้อมูลให้ครบ!",Toast.LENGTH_SHORT).show();
+//                     return;
+//                 }
+//                 if(TextUtils.isEmpty(location)){
+//                     Toast.makeText(getApplicationContext(),"กรุณากรอกข้อมูลให้ครบ!",Toast.LENGTH_SHORT).show();
+//                     return;
+//                 }
+//                 if(TextUtils.isEmpty(device)){
+//                     Toast.makeText(getApplicationContext(),"กรุณากรอกข้อมูลให้ครบ!",Toast.LENGTH_SHORT).show();
+//                     return;
+//                 }
                  if(TextUtils.isEmpty(generality1)) {
                      Toast.makeText(getApplicationContext(), "กรุณากรอกข้อมูลให้ครบ!", Toast.LENGTH_SHORT).show();
                      return;
@@ -239,6 +254,14 @@ public class FnSafety_5 extends AppCompatActivity {
              }
          });
 
+//        btnQRScannerFn5.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                startActivity(new Intent(FnSafety_5.this,ScanQRFn_5.class));
+//            }
+//        });
+
+
 //         listViewSafety5 = (ListView) findViewById(R.id.listViewSafety5);
 //         listViewSafety5.setOnItemLongClickListener(new AdapterView.OnItemLongClickListener() {
 //             @Override
@@ -260,23 +283,30 @@ public class FnSafety_5 extends AppCompatActivity {
 //        //manufacturer.setText(DeviceModel);
 //        nameDevicefn5.setText(DeviceName);
 
-        String datetime = dateAlert.getText().toString();
-        String numdevice = spinner_numdevice.getSelectedItem().toString();
-        String locat = spinner_locat.getSelectedItem().toString();
-        String deviceType = spinner_devicetype.getSelectedItem().toString();
+       String datetime = dateAlert.getText().toString();
+       String result5 = tv_ReadResultFn5.getText().toString();
+//        String numdevice = spinner_numdevice.getSelectedItem().toString();
+//        String locat = spinner_locat.getSelectedItem().toString();
+//        String deviceType = spinner_devicetype.getSelectedItem().toString();
         String gener1 = spinner_gener5_1.getSelectedItem().toString();
+        String note1 = notationFn5_1.getText().toString();
         String gener2 = spinner_gener5_2.getSelectedItem().toString();
+        String note2 = notationFn5_2.getText().toString();
         String gener3 = spinner_gener5_3.getSelectedItem().toString();
+        String note3 = notationFn5_3.getText().toString();
         String gener4 = spinner_gener5_4.getSelectedItem().toString();
+        String note4 = notationFn5_4.getText().toString();
         String gener5 = spinner_gener5_5.getSelectedItem().toString();
+        String note5 = notationFn5_5.getText().toString();
         String gener6 = spinner_gener5_6.getSelectedItem().toString();
+        String note6 = notationFn5_6.getText().toString();
       //  String nameDevice = nameDevicefn5.getText().toString();
         String tvcalendar = tvCalendarTextFn5.getText().toString();
       //  String sign = Signature.getText().toString();
        // String ed_Sign = ed_Signature.getText().toString();
 
         //checking if the value is provided
-        if(!TextUtils.isEmpty(locat)){
+        if(!TextUtils.isEmpty(gener1)){
             String id = firebaseReference.child("CHECKFIRECABINETSFn5").push().getKey();
 
             FIRECABINETS fire5 = new FIRECABINETS();
@@ -284,16 +314,24 @@ public class FnSafety_5 extends AppCompatActivity {
 
            fire5.setId_fn5(id);
            fire5.setDate_fn5(datetime);
-           fire5.setNumdevice_fn5(numdevice);
-           fire5.setLocat_fn5(locat);
-           fire5.setDevice_typefn5(deviceType);
+           fire5.setResult_fn5(result5);
+//           fire5.setNumdevice_fn5(numdevice);
+//           fire5.setLocat_fn5(locat);
+//           fire5.setDevice_typefn5(deviceType);
            fire5.setGenerality_fn5_1(gener1);
+           fire5.setNotationFn5_1(note1);
            fire5.setGenerality_fn5_2(gener2);
+            fire5.setNotationFn5_2(note2);
            fire5.setGenerality_fn5_3(gener3);
+            fire5.setNotationFn5_3(note3);
            fire5.setGenerality_fn5_4(gener4);
+            fire5.setNotationFn5_4(note4);
            fire5.setGenerality_fn5_5(gener5);
+            fire5.setNotationFn5_5(note5);
            fire5.setGenerality_fn5_6(gener6);
+            fire5.setNotationFn5_6(note6);
            fire5.setDateTest_fn5(tvcalendar);
+
           // fire5.setManufacturer_fn5(nameDevice);
           // fire5.setSignature_fn5(sign);
           // fire5.setEd_signspector_fn5(ed_Sign);

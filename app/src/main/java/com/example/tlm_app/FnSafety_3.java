@@ -35,10 +35,10 @@ import java.util.List;
 
 public class FnSafety_3 extends AppCompatActivity {
 
-    private TextView date,nameDevicefn3;
+    public static TextView date,nameDevicefn3,tv_ReadResultFn3;
     private Spinner numlocation,typedevicefn3,locationfn3,generalityfn3_1,generalityfn3_2,generalityfn3_3,generalityfn3_4,generalityfn3_5,generalityfn3_6;
-    private EditText namesignfn3,nameEdSignfn3;
-    private Button btn_saveData;
+    private EditText namesignfn3,nameEdSignfn3,notationFn3_1,notationFn3_2,notationFn3_3,notationFn3_4,notationFn3_5,notationFn3_6;
+    private Button btn_saveData,btnQRScannerFn3;
     private ListView listViewSafety3;
     private List<FireExtinguisher> fireExtinguishers;
     private SafetyFn3Adapter safetyFn3Adapter;
@@ -95,15 +95,23 @@ public class FnSafety_3 extends AppCompatActivity {
         btn_saveData = (Button) findViewById(R.id.btn_save_fn3);
        // manufacturer = (TextView) findViewById(R.id.manufacturer);
         date = (TextView) findViewById(R.id.datefn3);
-        numlocation = (Spinner) findViewById(R.id.spinner_fnsafety3_0);
-        locationfn3 = (Spinner) findViewById(R.id.spinner_fnsafety3_1);
-        typedevicefn3 = (Spinner) findViewById(R.id.spinner_fnsafety3_2);
+        tv_ReadResultFn3 = findViewById(R.id.tv_ReadResultFn3);
+//        numlocation = (Spinner) findViewById(R.id.spinner_fnsafety3_0);
+//        locationfn3 = (Spinner) findViewById(R.id.spinner_fnsafety3_1);
+//        typedevicefn3 = (Spinner) findViewById(R.id.spinner_fnsafety3_2);
         generalityfn3_1 = (Spinner) findViewById(R.id.spinner_fnsafety3_3);
+        notationFn3_1 = (EditText) findViewById(R.id.notationFn3_1);
         generalityfn3_2 = (Spinner) findViewById(R.id.spinner_fnsafety3_4);
+        notationFn3_2 = (EditText) findViewById(R.id.notationFn3_2);
         generalityfn3_3 =  (Spinner) findViewById(R.id.spinner_fnsafety3_5);
+        notationFn3_3 = (EditText) findViewById(R.id.notationFn3_3);
         generalityfn3_4 = (Spinner) findViewById(R.id.spinner_fnsafety3_6);
+        notationFn3_4 = (EditText) findViewById(R.id.notationFn3_4);
         generalityfn3_5 = (Spinner) findViewById(R.id.spinner_fnsafety3_7);
+        notationFn3_5 = (EditText) findViewById(R.id.notationFn3_5);
         generalityfn3_6  = (Spinner) findViewById(R.id.spinner_fnsafety3_8);
+        notationFn3_6 = (EditText) findViewById(R.id.notationFn3_6);
+        btnQRScannerFn3 = (Button) findViewById(R.id.btnQRScannerFn3);
         //nameDevicefn3 = (TextView) findViewById(R.id.nameDevicefn3);
         //namesignfn3 = (EditText) findViewById(R.id.Signfn3);
         //nameEdSignfn3 = (EditText) findViewById(R.id.ed_Signaturefn3);
@@ -116,13 +124,15 @@ public class FnSafety_3 extends AppCompatActivity {
                 finish();
             }
         });
+
+
         btn_saveData = (Button) findViewById(R.id.btn_save_fn3);
         btn_saveData.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                String numlocat = numlocation.getSelectedItem().toString();
-                String locat = locationfn3.getSelectedItem().toString();
-                String type = typedevicefn3.getSelectedItem().toString();
+//                String numlocat = numlocation.getSelectedItem().toString();
+//                String locat = locationfn3.getSelectedItem().toString();
+//                String type = typedevicefn3.getSelectedItem().toString();
                 String gener1 = generalityfn3_1.getSelectedItem().toString();
                 String gener2 = generalityfn3_2.getSelectedItem().toString();
                 String gener3 = generalityfn3_3.getSelectedItem().toString();
@@ -130,18 +140,18 @@ public class FnSafety_3 extends AppCompatActivity {
                 String gener5 = generalityfn3_5.getSelectedItem().toString();
                 String gener6 = generalityfn3_6.getSelectedItem().toString();
 
-                if (TextUtils.isEmpty(numlocat)) {
-                    Toast.makeText(getApplicationContext(), "กรุณากรอกข้อมูลให้ครบ!", Toast.LENGTH_SHORT).show();
-                    return;
-                }
-                if (TextUtils.isEmpty(locat)) {
-                    Toast.makeText(getApplicationContext(), "กรุณากรอกข้อมูลให้ครบ!", Toast.LENGTH_SHORT).show();
-                    return;
-                }
-                if (TextUtils.isEmpty(type)) {
-                    Toast.makeText(getApplicationContext(), "กรุณากรอกข้อมูลให้ครบ!", Toast.LENGTH_SHORT).show();
-                    return;
-                }
+//                if (TextUtils.isEmpty(numlocat)) {
+//                    Toast.makeText(getApplicationContext(), "กรุณากรอกข้อมูลให้ครบ!", Toast.LENGTH_SHORT).show();
+//                    return;
+//                }
+//                if (TextUtils.isEmpty(locat)) {
+//                    Toast.makeText(getApplicationContext(), "กรุณากรอกข้อมูลให้ครบ!", Toast.LENGTH_SHORT).show();
+//                    return;
+//                }
+//                if (TextUtils.isEmpty(type)) {
+//                    Toast.makeText(getApplicationContext(), "กรุณากรอกข้อมูลให้ครบ!", Toast.LENGTH_SHORT).show();
+//                    return;
+//                }
                 if (TextUtils.isEmpty(gener1)) {
                     Toast.makeText(getApplicationContext(), "กรุณากรอกข้อมูลให้ครบ!", Toast.LENGTH_SHORT).show();
                     return;
@@ -175,6 +185,42 @@ public class FnSafety_3 extends AppCompatActivity {
             }
         });
 
+//        btnQRScannerFn3.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                startActivity(new Intent(FnSafety_3.this,ScanQRFn_3.class));
+//            }
+//        });
+
+//        numlocation.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+//
+//                //ตำแหน่งของ spinner ที่เลือก
+//                int getPositionFirstSpinner = numlocation.getSelectedItemPosition();
+//
+//                //get array string ของ spinner 2 จาก strings.xml
+//                String[] secondSpinnerStr;
+//                secondSpinnerStr = getResources().getStringArray(R.array.location_Fn3);
+//
+//                //ถ้ากด spinner แรกเป็น No.1, No.2, No.4
+//                if(getPositionFirstSpinner == 0 || getPositionFirstSpinner == 1 ||  getPositionFirstSpinner == 3 ) {
+//                    //set spinner 2 เป็น Co2
+//                    locationfn3.setSelection()
+//                }
+//            }
+//
+//        });
+//
+//        locationfn3.setOnItemClickListener (new View.OnClickListener() {
+//            onItemSelected {
+//                //ทำเหมือนอันแรก
+//            }
+//        })
+//
+
+
+
+
+
 //        listViewSafety3 = (ListView) findViewById(R.id.listViewSafety3);
 //        listViewSafety3.setOnItemLongClickListener(new AdapterView.OnItemLongClickListener() {
 //            @Override
@@ -203,21 +249,28 @@ public class FnSafety_3 extends AppCompatActivity {
 
         String btn = btn_saveData.getText().toString();
         String datetime = date.getText().toString();
+        String result3 =tv_ReadResultFn3.getText().toString();
        // String Sign = namesignfn3.getText().toString();
        // String edSign = nameEdSignfn3.getText().toString();
-        String numlocat = numlocation.getSelectedItem().toString();
-        String locat = locationfn3.getSelectedItem().toString();
-        String type = typedevicefn3.getSelectedItem().toString();
+        //String numlocat = numlocation.getSelectedItem().toString();
+        //String locat = locationfn3.getSelectedItem().toString();
+       // String type = typedevicefn3.getSelectedItem().toString();
         String genera1 = generalityfn3_1.getSelectedItem().toString();
+        String note1 =  notationFn3_1.getText().toString();
         String genera2 = generalityfn3_2.getSelectedItem().toString();
+        String note2 =  notationFn3_2.getText().toString();
         String genera3 = generalityfn3_3.getSelectedItem().toString();
+        String note3 =  notationFn3_3.getText().toString();
         String genera4 = generalityfn3_4.getSelectedItem().toString();
+        String note4 =  notationFn3_4.getText().toString();
         String genera5 = generalityfn3_5.getSelectedItem().toString();
+        String note5 =  notationFn3_5.getText().toString();
         String genera6 = generalityfn3_6.getSelectedItem().toString();
+        String note6 =  notationFn3_6.getText().toString();
        // String nameDevice =  nameDevicefn3.getText().toString();
 
         //checking if the value is provided
-        if (!TextUtils.isEmpty(locat)){
+        if (!TextUtils.isEmpty(genera1)){
 
             String id = firebaseReference.child("CheckFireExtinguisherFn3").push().getKey();
 
@@ -232,15 +285,22 @@ public class FnSafety_3 extends AppCompatActivity {
 
             uisher.setId_fn3(id);
             uisher.setDate_fn3(datetime);
-            uisher.setNum_locatfn3(numlocat);
-            uisher.setLocat_fn3(locat);
-            uisher.setType_devicefn3(type);
+            uisher.setResult_fn3(result3);
+            //uisher.setNum_locatfn3(numlocat);
+            //uisher.setLocat_fn3(locat);
+           // uisher.setType_devicefn3(type);
             uisher.setGeneralityfn3_1(genera1);
+            uisher.setNotationFn3_1(note1);
             uisher.setGeneralityfn3_2(genera2);
+            uisher.setNotationFn3_2(note2);
             uisher.setGeneralityfn3_3(genera3);
+            uisher.setNotationFn3_3(note3);
             uisher.setGeneralityfn3_4(genera4);
+            uisher.setNotationFn3_4(note4);
             uisher.setGeneralityfn3_5(genera5);
+            uisher.setNotationFn3_5(note5);
             uisher.setGeneralityfn3_6(genera6);
+            uisher.setNotationFn3_6(note6);
            // uisher.setManufacturer_fn3(nameDevice);
            // uisher.setSignfn3(Sign);
             //uisher.setEdSignfn3(edSign);

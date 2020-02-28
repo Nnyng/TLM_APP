@@ -86,8 +86,8 @@ public class FnSafety_6 extends AppCompatActivity {
 
 
         datetime = (TextView)findViewById(R.id.datefn6);
-        spinner_locat = (Spinner) findViewById(R.id.spinner_fnsafety6_1);
-        spinner_TypeDevice = (Spinner) findViewById(R.id.spinner_fnsafety6_2);
+//        spinner_locat = (Spinner) findViewById(R.id.spinner_fnsafety6_1);
+//        spinner_TypeDevice = (Spinner) findViewById(R.id.spinner_fnsafety6_2);
         spinner_generat1 = (Spinner) findViewById(R.id.spinner_fnsafety6_3);
         spinner_generat2 = (Spinner) findViewById(R.id.spinner_fnsafety6_4);
         spinner_generat3 = (Spinner) findViewById(R.id.spinner_fnsafety6_5);
@@ -109,22 +109,22 @@ public class FnSafety_6 extends AppCompatActivity {
         btn_save6.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                String location = spinner_locat.getSelectedItem().toString();
-                String device = spinner_TypeDevice.getSelectedItem().toString();
+//                String location = spinner_locat.getSelectedItem().toString();
+//                String device = spinner_TypeDevice.getSelectedItem().toString();
                 String generality1 = spinner_generat1.getSelectedItem().toString();
                 String generality2 = spinner_generat2.getSelectedItem().toString();
                 String generality3 = spinner_generat3.getSelectedItem().toString();
                 String generality4 = spinner_generat4.getSelectedItem().toString();
                 String generality5 = spinner_generat5.getSelectedItem().toString();
 
-                if(TextUtils.isEmpty(location)){
-                    Toast.makeText(getApplicationContext(),"กรุณากรอกข้อมูลให้ครบ!",Toast.LENGTH_SHORT).show();
-                    return;
-                }
-                if(TextUtils.isEmpty(device)){
-                    Toast.makeText(getApplicationContext(),"กรุณากรอกข้อมูลให้ครบ!",Toast.LENGTH_SHORT).show();
-                    return;
-                }
+//                if(TextUtils.isEmpty(location)){
+//                    Toast.makeText(getApplicationContext(),"กรุณากรอกข้อมูลให้ครบ!",Toast.LENGTH_SHORT).show();
+//                    return;
+//                }
+//                if(TextUtils.isEmpty(device)){
+//                    Toast.makeText(getApplicationContext(),"กรุณากรอกข้อมูลให้ครบ!",Toast.LENGTH_SHORT).show();
+//                    return;
+//                }
                 if(TextUtils.isEmpty(generality1)){
                     Toast.makeText(getApplicationContext(),"กรุณากรอกข้อมูลให้ครบ!",Toast.LENGTH_SHORT).show();
                     return;
@@ -168,8 +168,8 @@ public class FnSafety_6 extends AppCompatActivity {
 //        nameDevicefn6.setText(DeviceName);
 
         String date = datetime.getText().toString();
-        String locat = spinner_locat.getSelectedItem().toString();
-        String typeDevice = spinner_TypeDevice.getSelectedItem().toString();
+//        String locat = spinner_locat.getSelectedItem().toString();
+//        String typeDevice = spinner_TypeDevice.getSelectedItem().toString();
         String generat1 = spinner_generat1.getSelectedItem().toString();
         String generat2 = spinner_generat2.getSelectedItem().toString();
         String generat3 = spinner_generat3.getSelectedItem().toString();
@@ -179,13 +179,13 @@ public class FnSafety_6 extends AppCompatActivity {
         //String Signature = Sign.getText().toString();
         //String Ed_signspector = ed_Sign.getText().toString();
 
-        if(!TextUtils.isEmpty(locat)){
+        if(!TextUtils.isEmpty(generat1)){
             String id = firebaseReference.child("CheckEyeShowerFn6").push().getKey();
             EyeShower eye6 = new EyeShower();
 
             eye6.setId_fn6(id);
             eye6.setDate_fn6(date);
-            eye6.setDevicetype_fn6(typeDevice);
+           // eye6.setDevicetype_fn6(typeDevice);
             eye6.setGeneralityfn6_1(generat1);
             eye6.setGeneralityfn6_2(generat2);
             eye6.setGeneralityfn6_3(generat3);

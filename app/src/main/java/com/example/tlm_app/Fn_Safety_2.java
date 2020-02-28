@@ -36,8 +36,8 @@ import java.util.List;
 public class Fn_Safety_2 extends AppCompatActivity {
     private EditText Sign,ed_Signaturefn2,notationFnSafety2;
     private Spinner spinner_fnsafety2_locat,spinner_fnsafety2_electricity,spinner_fnsafety2_generality;
-    private  Button btn_save_fn2;
-    private TextView date,nameDevicefn2;
+    private  Button btn_save_fn2,btnQRScannerFn2;
+    public static TextView date,nameDevicefn2,tv_ReadResultFn2;
     private List<EmergencyLight> emergencyLights;
     private DatabaseReference firebaseReference;
     private SafetyFn2Adapter safetyFn2Adapter;
@@ -92,8 +92,9 @@ public class Fn_Safety_2 extends AppCompatActivity {
     private void initInstances() {
 
         date = (TextView) findViewById(R.id.datefn2);
-        spinner_fnsafety2_locat = (Spinner) findViewById(R.id.spinner_fnsafety2_1);
-        spinner_fnsafety2_electricity = (Spinner) findViewById(R.id.spinner_fnsafety2_2);
+        tv_ReadResultFn2 = (TextView) findViewById(R.id.tv_ReadResultFn2);
+        //spinner_fnsafety2_locat = (Spinner) findViewById(R.id.spinner_fnsafety2_1);
+       // spinner_fnsafety2_electricity = (Spinner) findViewById(R.id.spinner_fnsafety2_2);
         spinner_fnsafety2_generality = (Spinner) findViewById(R.id.spinner_fnsafety2_3);
         ImageView im_back_arrowfn2 = (ImageView) findViewById(R.id.im_back_arrowfn2);
         //nameDevicefn2 = (TextView) findViewById(R.id.nameDevicefn2);
@@ -101,6 +102,7 @@ public class Fn_Safety_2 extends AppCompatActivity {
        // ed_Signaturefn2 = (EditText) findViewById(R.id.ed_Signaturefn2);
         notationFnSafety2 = (EditText) findViewById(R.id.notationFnSafety2);
         btn_save_fn2 = (Button) findViewById(R.id.btn_save_fn2);
+        btnQRScannerFn2 = (Button) findViewById(R.id.btnQRScannerFn2);
         im_back_arrowfn2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -113,20 +115,20 @@ public class Fn_Safety_2 extends AppCompatActivity {
         btn_save_fn2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                String location = spinner_fnsafety2_locat.getSelectedItem().toString();
-                String TypeLightEmer = spinner_fnsafety2_electricity.getSelectedItem().toString();
+               // String location = spinner_fnsafety2_locat.getSelectedItem().toString();
+               // String TypeLightEmer = spinner_fnsafety2_electricity.getSelectedItem().toString();
                 String gennerality = spinner_fnsafety2_generality.getSelectedItem().toString();
                 //  String namedevice = manufacturer.getText().toString();
                 String notation = notationFnSafety2.getText().toString();
 
-                if (TextUtils.isEmpty(location)) {
-                    Toast.makeText(getApplicationContext(), "กรุณากรอกข้อมูลให้ครบ!", Toast.LENGTH_SHORT).show();
-                    return;
-                }
-                if (TextUtils.isEmpty(TypeLightEmer)) {
-                    Toast.makeText(getApplicationContext(), "กรุณากรอกข้อมูลให้ครบ!", Toast.LENGTH_SHORT).show();
-                    return;
-                }
+//                if (TextUtils.isEmpty(location)) {
+//                    Toast.makeText(getApplicationContext(), "กรุณากรอกข้อมูลให้ครบ!", Toast.LENGTH_SHORT).show();
+//                    return;
+//                }
+//                if (TextUtils.isEmpty(TypeLightEmer)) {
+//                    Toast.makeText(getApplicationContext(), "กรุณากรอกข้อมูลให้ครบ!", Toast.LENGTH_SHORT).show();
+//                    return;
+//                }
                 if (TextUtils.isEmpty(gennerality)) {
                     Toast.makeText(getApplicationContext(), "กรุณากรอกข้อมูลให้ครบ!", Toast.LENGTH_SHORT).show();
                     return;
@@ -144,6 +146,13 @@ public class Fn_Safety_2 extends AppCompatActivity {
                 }
             }
         });
+
+//        btnQRScannerFn2.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                startActivity(new Intent(Fn_Safety_2.this,ScanQRFn_2.class));
+//            }
+//        });
 
 //        listViewSafety2 = (ListView) findViewById(R.id.listViewSafety2);
 //        listViewSafety2.setOnItemLongClickListener(new AdapterView.OnItemLongClickListener() {
@@ -170,16 +179,17 @@ public class Fn_Safety_2 extends AppCompatActivity {
 
        String btnfn2 = btn_save_fn2.getText().toString();
        String datetimefn2 = date.getText().toString();
+       String resultfn2 = tv_ReadResultFn2.getText().toString();
        //String Signfn2 = Sign.getText().toString();
       // String edSign = ed_Signaturefn2.getText().toString();
        String notefn2 = notationFnSafety2.getText().toString();
-       String locat = spinner_fnsafety2_locat.getSelectedItem().toString();
-       String typeLight = spinner_fnsafety2_electricity.getSelectedItem().toString();
+       //String locat = spinner_fnsafety2_locat.getSelectedItem().toString();
+       //String typeLight = spinner_fnsafety2_electricity.getSelectedItem().toString();
        String generafn2 = spinner_fnsafety2_generality.getSelectedItem().toString();
       // String nameDevice =  nameDevicefn2.getText().toString();
 
         //checking if the value is provided
-        if(!TextUtils.isEmpty(locat)){
+        if(!TextUtils.isEmpty(generafn2)){
             String id = firebaseReference.child("CheckEmergencyLightFn2").push().getKey();
             EmergencyLight light = new EmergencyLight();
 
@@ -191,8 +201,9 @@ public class Fn_Safety_2 extends AppCompatActivity {
 
             light.setId_fn2(id);
             light.setDate_fn2(datetimefn2);
-            light.setLocat_fn2(locat);
-            light.settype_EmergencyLight_fn2(typeLight);
+            light.setResult_fn2(resultfn2);
+            //light.setLocat_fn2(locat);
+            //light.settype_EmergencyLight_fn2(typeLight);
             light.setGenerality_fn2(generafn2);
           //  light.setManufacturer_fn2(nameDevice);
             light.setNotation_fn2(notefn2);

@@ -4,15 +4,22 @@ public class FireExtinguisher {
 
     private String id_fn3;
     private String date_fn3;
+    private String result_fn3;
     private String num_locatfn3;
     private String locat_fn3;
     private String type_devicefn3;
     private String generalityfn3_1;
+    private String notationFn3_1;
     private String generalityfn3_2;
+    private String notationFn3_2;
     private String generalityfn3_3;
+    private String notationFn3_3;
     private String generalityfn3_4;
+    private String notationFn3_4;
     private String generalityfn3_5;
+    private String notationFn3_5;
     private String generalityfn3_6;
+    private String notationFn3_6;
     private String manufacturer_fn3;
     private String Signfn3;
     private String edSignfn3;
@@ -26,6 +33,14 @@ public class FireExtinguisher {
 
     public void setId_fn3(String id_fn3) {
         this.id_fn3 = id_fn3;
+    }
+
+    public String getResult_fn3() {
+        return result_fn3;
+    }
+
+    public void setResult_fn3(String result_fn3) {
+        this.result_fn3 = result_fn3;
     }
 
     public String getDate_fn3() {
@@ -66,6 +81,54 @@ public class FireExtinguisher {
 
     public void setGeneralityfn3_1(String generalityfn3_1) {
         this.generalityfn3_1 = generalityfn3_1;
+    }
+
+    public String getNotationFn3_1() {
+        return notationFn3_1;
+    }
+
+    public void setNotationFn3_1(String notationFn3_1) {
+        this.notationFn3_1 = notationFn3_1;
+    }
+
+    public String getNotationFn3_2() {
+        return notationFn3_2;
+    }
+
+    public void setNotationFn3_2(String notationFn3_2) {
+        this.notationFn3_2 = notationFn3_2;
+    }
+
+    public String getNotationFn3_3() {
+        return notationFn3_3;
+    }
+
+    public void setNotationFn3_3(String notationFn3_3) {
+        this.notationFn3_3 = notationFn3_3;
+    }
+
+    public String getNotationFn3_4() {
+        return notationFn3_4;
+    }
+
+    public void setNotationFn3_4(String notationFn3_4) {
+        this.notationFn3_4 = notationFn3_4;
+    }
+
+    public String getNotationFn3_5() {
+        return notationFn3_5;
+    }
+
+    public void setNotationFn3_5(String notationFn3_5) {
+        this.notationFn3_5 = notationFn3_5;
+    }
+
+    public String getNotationFn3_6() {
+        return notationFn3_6;
+    }
+
+    public void setNotationFn3_6(String notationFn3_6) {
+        this.notationFn3_6 = notationFn3_6;
     }
 
     public String getGeneralityfn3_2() {

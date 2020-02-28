@@ -237,7 +237,7 @@ public class ScanQRMLKit extends AppCompatActivity {
 
 
 
-    private void createDialog(String text) {
+    private void createDialog(final String text) {
         //final TextView input = new TextView(ScanQRMLKit.this);
         //input.setSingleLine(true);
         AlertDialog.Builder builder = new AlertDialog.Builder(this);
@@ -246,7 +246,8 @@ public class ScanQRMLKit extends AppCompatActivity {
                 .setPositiveButton("OK", new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialogInterface, int i) {
-                       // String f = input.getText().toString();
+                       // String f = text.getText().toString();
+
                         dialogInterface.dismiss();
 
                     }

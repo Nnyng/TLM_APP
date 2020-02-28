@@ -59,98 +59,120 @@
                 android:textSize="20dp"
                 android:theme="@style/MyFont" />
 
+<!--            <TextView-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginRight="30dp"-->
+<!--                android:layout_marginLeft="30dp"-->
+<!--                android:layout_marginTop="20dp"-->
+<!--                android:text="หมายเลขจุดติดตั้ง"-->
+<!--                android:textColor="@color/colorBlack"-->
+<!--                android:textSize="28dp"-->
+<!--                android:theme="@style/MyFont" />-->
+
+<!--            <RelativeLayout-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginLeft="30dp"-->
+<!--                android:layout_marginRight="30dp"-->
+<!--                android:background="@drawable/frame_background_white"-->
+
+<!--                android:theme="@style/spinnerItemStyle">-->
+
+
+<!--                <Spinner-->
+<!--                    android:id="@+id/spinner_fnsafety3_0"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_marginLeft="20dp"-->
+<!--                    android:layout_weight="1"-->
+<!--                    android:layout_marginTop="7dp"-->
+<!--                    android:entries="@array/No_Fn3"-->
+<!--                    android:theme="@style/spinnerItemStyle" />-->
+<!--            </RelativeLayout>-->
+
+<!--            <TextView-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginLeft="30dp"-->
+<!--                android:layout_marginRight="30dp"-->
+<!--                android:layout_marginTop="20dp"-->
+<!--                android:text="สถานที่ติดตั้ง"-->
+<!--                android:textColor="@color/colorBlack"-->
+<!--                android:textSize="28dp"-->
+<!--                android:theme="@style/MyFont" />-->
+
+<!--            <RelativeLayout-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginLeft="30dp"-->
+<!--                android:layout_marginRight="30dp"-->
+<!--                android:background="@drawable/frame_background_white"-->
+<!--                android:theme="@style/spinnerItemStyle">-->
+
+
+<!--                <Spinner-->
+<!--                    android:id="@+id/spinner_fnsafety3_1"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_marginLeft="20dp"-->
+<!--                    android:layout_weight="1"-->
+<!--                    android:layout_marginTop="7dp"-->
+<!--                    android:entries="@array/location_Fn3"-->
+<!--                    android:theme="@style/spinnerItemStyle" />-->
+<!--            </RelativeLayout>-->
+
+<!--            <TextView-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginLeft="30dp"-->
+<!--                android:layout_marginRight="30dp"-->
+<!--                android:layout_marginTop="20dp"-->
+<!--                android:text="ชนิดของอุปกรณ์"-->
+<!--                android:textColor="@color/colorBlack"-->
+<!--                android:textSize="28dp"-->
+<!--                android:theme="@style/MyFont" />-->
+
+<!--            <RelativeLayout-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginLeft="30dp"-->
+<!--                android:layout_marginRight="30dp"-->
+<!--                android:background="@drawable/frame_background_white"-->
+<!--                android:theme="@style/spinnerItemStyle">-->
+
+<!--                <Spinner-->
+<!--                    android:id="@+id/spinner_fnsafety3_2"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_marginLeft="20dp"-->
+<!--                    android:layout_weight="1"-->
+<!--                    android:layout_marginTop="7dp"-->
+<!--                    android:entries="@array/Type_Device_Fn3"-->
+<!--                    android:theme="@style/spinnerItemStyle" />-->
+<!--            </RelativeLayout>-->
+
             <TextView
-                android:layout_width="match_parent"
+                android:id="@+id/tv_ReadResultFn3"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginRight="30dp"
-                android:layout_marginLeft="30dp"
                 android:layout_marginTop="20dp"
-                android:text="หมายเลขจุดติดตั้ง"
+                android:text="กรุณาสแกนคิวอาร์โค้ด"
+                android:layout_gravity="center"
                 android:textColor="@color/colorBlack"
-                android:textSize="28dp"
-                android:theme="@style/MyFont" />
+                android:textSize="28dp" />
 
-            <RelativeLayout
+
+            <Button
+                android:id="@+id/btnQRScannerFn3"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="30dp"
-                android:layout_marginRight="30dp"
-                android:background="@drawable/frame_background_white"
-
-                android:theme="@style/spinnerItemStyle">
-
-
-                <Spinner
-                    android:id="@+id/spinner_fnsafety3_0"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="20dp"
-                    android:layout_weight="1"
-                    android:layout_marginTop="7dp"
-                    android:entries="@array/No_Fn3"
-                    android:theme="@style/spinnerItemStyle" />
-            </RelativeLayout>
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="30dp"
-                android:layout_marginRight="30dp"
-                android:layout_marginTop="20dp"
-                android:text="สถานที่ติดตั้ง"
-                android:textColor="@color/colorBlack"
-                android:textSize="28dp"
-                android:theme="@style/MyFont" />
-
-            <RelativeLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="30dp"
-                android:layout_marginRight="30dp"
-                android:background="@drawable/frame_background_white"
-                android:theme="@style/spinnerItemStyle">
-
-
-                <Spinner
-                    android:id="@+id/spinner_fnsafety3_1"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="20dp"
-                    android:layout_weight="1"
-                    android:layout_marginTop="7dp"
-                    android:entries="@array/location_Fn3"
-                    android:theme="@style/spinnerItemStyle" />
-            </RelativeLayout>
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="30dp"
-                android:layout_marginRight="30dp"
-                android:layout_marginTop="20dp"
-                android:text="ชนิดของอุปกรณ์"
-                android:textColor="@color/colorBlack"
-                android:textSize="28dp"
-                android:theme="@style/MyFont" />
-
-            <RelativeLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="30dp"
-                android:layout_marginRight="30dp"
-                android:background="@drawable/frame_background_white"
-                android:theme="@style/spinnerItemStyle">
-
-                <Spinner
-                    android:id="@+id/spinner_fnsafety3_2"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="20dp"
-                    android:layout_weight="1"
-                    android:layout_marginTop="7dp"
-                    android:entries="@array/Type_Device_Fn3"
-                    android:theme="@style/spinnerItemStyle" />
-            </RelativeLayout>
+                android:layout_marginStart="30dp"
+                android:layout_marginEnd="30dp"
+                android:layout_marginTop="30dp"
+                android:layout_gravity="center"
+                android:text="สแกนคิวอาร์โค้ด"
+                android:textSize="28dp" />
 
             <TextView
                 android:layout_width="match_parent"
@@ -181,6 +203,35 @@
                     android:entries="@array/generality_Fn3"
                     android:theme="@style/spinnerItemStyle" />
 
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginTop="12dp"
+                android:text="หมายเหตุ"
+                android:textColor="@color/colorBlack"
+                android:textSize="28dp"
+                android:theme="@style/MyFont" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:background="@drawable/frame_background_white">
+
+                <EditText
+                    android:id="@+id/notationFn3_1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:maxLines="2"
+                    android:paddingLeft="10dp"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="20dp"
+                    android:theme="@style/MyFont" />
             </RelativeLayout>
 
             <TextView
@@ -219,6 +270,35 @@
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="30dp"
                 android:layout_marginRight="30dp"
+                android:layout_marginTop="12dp"
+                android:text="หมายเหตุ"
+                android:textColor="@color/colorBlack"
+                android:textSize="28dp"
+                android:theme="@style/MyFont" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:background="@drawable/frame_background_white">
+
+                <EditText
+                    android:id="@+id/notationFn3_2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:maxLines="2"
+                    android:paddingLeft="10dp"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="20dp"
+                    android:theme="@style/MyFont" />
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
                 android:layout_marginTop="20dp"
                 android:text="ตัวยึดมั่นคง แข็งแรง"
                 android:textColor="@color/colorBlack"
@@ -243,6 +323,35 @@
                     android:entries="@array/generality_Fn3"
                     android:theme="@style/spinnerItemStyle" />
             </RelativeLayout>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginTop="12dp"
+                android:text="หมายเหตุ"
+                android:textColor="@color/colorBlack"
+                android:textSize="28dp"
+                android:theme="@style/MyFont" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:background="@drawable/frame_background_white">
+
+                <EditText
+                    android:id="@+id/notationFn3_3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:maxLines="2"
+                    android:paddingLeft="10dp"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="20dp"
+                    android:theme="@style/MyFont" />
+            </RelativeLayout>
+
 
             <TextView
                 android:layout_width="match_parent"
@@ -273,6 +382,34 @@
                     android:entries="@array/generality_Fn3"
                     android:theme="@style/spinnerItemStyle" />
             </RelativeLayout>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginTop="12dp"
+                android:text="หมายเหตุ"
+                android:textColor="@color/colorBlack"
+                android:textSize="28dp"
+                android:theme="@style/MyFont" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:background="@drawable/frame_background_white">
+
+                <EditText
+                    android:id="@+id/notationFn3_4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:maxLines="2"
+                    android:paddingLeft="10dp"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="20dp"
+                    android:theme="@style/MyFont" />
+            </RelativeLayout>
 
             <TextView
                 android:layout_width="match_parent"
@@ -302,6 +439,34 @@
                     android:layout_marginTop="7dp"
                     android:entries="@array/generality_Fn3"
                     android:theme="@style/spinnerItemStyle" />
+            </RelativeLayout>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginTop="12dp"
+                android:text="หมายเหตุ"
+                android:textColor="@color/colorBlack"
+                android:textSize="28dp"
+                android:theme="@style/MyFont" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:background="@drawable/frame_background_white">
+
+                <EditText
+                    android:id="@+id/notationFn3_5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:maxLines="2"
+                    android:paddingLeft="10dp"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="20dp"
+                    android:theme="@style/MyFont" />
             </RelativeLayout>
 
             <TextView
@@ -354,7 +519,7 @@
                 android:background="@drawable/frame_background_white">
 
                 <EditText
-                    android:id="@+id/notationFn3"
+                    android:id="@+id/notationFn3_6"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:maxLines="2"

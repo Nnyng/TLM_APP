@@ -35,8 +35,8 @@ import java.util.List;
 public class FnSafety_4 extends AppCompatActivity {
     private EditText notationFnSafety4,Sign,ed_Sign;
     private Spinner spinner_location,spinner_type,spinner_generality;
-    private TextView date,nameDevicefn4;
-    private Button  btn_save_fn4;
+    public static TextView date,nameDevicefn4,tv_ReadResultFn4;
+    private Button  btn_save_fn4,btnQRScannerFn4;
     private ListView listViewSafety4;
     private List<FireExitDoors>fireExitDoors;
     private SafetyFn4Adapter safetyFn4Adapter;
@@ -93,14 +93,16 @@ public class FnSafety_4 extends AppCompatActivity {
 
         btn_save_fn4 = (Button) findViewById(R.id.btn_save_fn4);
         date = (TextView) findViewById(R.id.datefn4);
-        spinner_location = (Spinner) findViewById(R.id.spinner_fnsafety4_1);
-        spinner_type = (Spinner) findViewById(R.id.spinner_fnsafety4_2);
+        tv_ReadResultFn4 = (TextView) findViewById(R.id.tv_ReadResultFn4);
+        //spinner_location = (Spinner) findViewById(R.id.spinner_fnsafety4_1);
+        //spinner_type = (Spinner) findViewById(R.id.spinner_fnsafety4_2);
         spinner_generality = (Spinner) findViewById(R.id.spinner_fnsafety4_3);
         //nameDevicefn4 = (TextView) findViewById(R.id.nameDevicefn4);
         notationFnSafety4 = (EditText) findViewById(R.id.notationFn4) ;
         //Sign = (EditText) findViewById(R.id.SignatureFn4);
         //ed_Sign = (EditText)findViewById(R.id.ed_SigninspectorFn4);
         im_back_arrowfn4 = (ImageView) findViewById(R.id.im_back_arrowfn4);
+        btnQRScannerFn4 = (Button) findViewById(R.id.btnQRScannerFn4);
         im_back_arrowfn4.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -114,18 +116,18 @@ public class FnSafety_4 extends AppCompatActivity {
         btn_save_fn4.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                String location = spinner_location.getSelectedItem().toString();
-                String type = spinner_type.getSelectedItem().toString();
+                //String location = spinner_location.getSelectedItem().toString();
+                //String type = spinner_type.getSelectedItem().toString();
                 String generality = spinner_generality.getSelectedItem().toString();
                 String notation = notationFnSafety4.getText().toString();
-                if(TextUtils.isEmpty(location)){
-                    Toast.makeText(getApplicationContext(),"กรุณากรอกข้อมูลให้ครบ!",Toast.LENGTH_SHORT).show();
-                    return;
-                }
-                if(TextUtils.isEmpty(type)){
-                    Toast.makeText(getApplicationContext(),"กรุณากรอกข้อมูลให้ครบ!",Toast.LENGTH_SHORT).show();
-                    return;
-                }
+//                if(TextUtils.isEmpty(location)){
+//                    Toast.makeText(getApplicationContext(),"กรุณากรอกข้อมูลให้ครบ!",Toast.LENGTH_SHORT).show();
+//                    return;
+//                }
+//                if(TextUtils.isEmpty(type)){
+//                    Toast.makeText(getApplicationContext(),"กรุณากรอกข้อมูลให้ครบ!",Toast.LENGTH_SHORT).show();
+//                    return;
+//                }
                 if(TextUtils.isEmpty(generality)){
                     Toast.makeText(getApplicationContext(),"กรุณากรอกข้อมูลให้ครบ!",Toast.LENGTH_SHORT).show();
                     return;
@@ -143,6 +145,14 @@ public class FnSafety_4 extends AppCompatActivity {
                 }
             }
         });
+
+//        btnQRScannerFn4.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                startActivity(new Intent(FnSafety_4.this,ScanQRFn_4.class));
+//            }
+//        });
+
 
 //        listViewSafety4 = (ListView) findViewById(R.id.listViewSafety4);
 //        listViewSafety4.setOnItemLongClickListener(new AdapterView.OnItemLongClickListener() {
@@ -170,15 +180,16 @@ public class FnSafety_4 extends AppCompatActivity {
 
         String btn = btn_save_fn4.getText().toString();
         String datetime = date.getText().toString();
-        String location = spinner_location.getSelectedItem().toString();
-        String type = spinner_type.getSelectedItem().toString();
+        String result4 = tv_ReadResultFn4.getText().toString();
+        //String location = spinner_location.getSelectedItem().toString();
+        //String type = spinner_type.getSelectedItem().toString();
         String generality = spinner_generality.getSelectedItem().toString();
        // String nameDevice = nameDevicefn4.getText().toString();
         String note = notationFnSafety4.getText().toString();
         //String signfn4 = Sign.getText().toString();
         //String ed_signfn4  = ed_Sign.getText().toString();
 
-        if (!TextUtils.isEmpty(location)){
+        if (!TextUtils.isEmpty(generality)){
             String id = firebaseReference.child("CheckFireExitDoors").push().getKey();
 
             FireExitDoors fire4 = new FireExitDoors();
@@ -192,8 +203,9 @@ public class FnSafety_4 extends AppCompatActivity {
 
             fire4.setId_fn4(id);
             fire4.setDete_fn4(datetime);
-            fire4.setLocat_fn4(location);
-            fire4.setType_fn4(type);
+            fire4.setResult_fn4(result4);
+            //fire4.setLocat_fn4(location);
+            //fire4.setType_fn4(type);
             fire4.setGenerality_fn4(generality);
            // fire4.setManufacturer_fn4(nameDevice);
             fire4.setNonation_fn4(note);
