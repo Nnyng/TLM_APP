@@ -43,7 +43,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class ScanQRMLKit extends AppCompatActivity {
-    private TextView tvDialog;
+    public static TextView tvDialog,tv_ReadResult;
     private Button btn_again;
     private DatabaseReference firebaseReference;
     CameraView camera_view;
@@ -136,31 +136,33 @@ public class ScanQRMLKit extends AppCompatActivity {
                 int value_type = item.getValueType();
                 switch (value_type) {
                     case FirebaseVisionBarcode.TYPE_TEXT: {
+                       // tv_ReadResult.setText(item.getRawValue().toString());
                         createDialog(item.getRawValue());
                     }
                     break;
                     case FirebaseVisionBarcode.TYPE_URL: {
                         //Start Browser intent
                         Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse(item.getRawValue()));
-                        startActivity(intent);
-                    }
-                    break;
-                    case FirebaseVisionBarcode.TYPE_CONTACT_INFO: {
-                        String info = new StringBuilder("Location: ")
-                                .append(item.getContactInfo().getName().getFormattedName())
-                                .append("\n")
-                                .append("Detail1: ")
-                                .append(item.getContactInfo().getAddresses().get(0).getAddressLines()[0])
-                                .append("Detail2: ")
-                                .append(item.getContactInfo().getEmails().get(0).getAddress())
-                                .toString();
-                        createDialog(info);
-                    }
-                    break;
-                    default:
-                        break;
-                }
-            }
+            startActivity(intent);
+        }
+        break;
+        case FirebaseVisionBarcode.TYPE_CONTACT_INFO: {
+            String info = new StringBuilder("Location: ")
+                    .append(item.getContactInfo().getName().getFormattedName())
+                    .append("\n")
+                    .append("Detail1: ")
+                    .append(item.getContactInfo().getAddresses().get(0).getAddressLines()[0])
+                    .append("Detail2: ")
+                    .append(item.getContactInfo().getEmails().get(0).getAddress())
+                    .toString();
+           // tv_ReadResult.setText(info);
+            createDialog(info);
+        }
+        break;
+        default:
+        break;
+    }
+}
         }
     }
 
@@ -238,16 +240,16 @@ public class ScanQRMLKit extends AppCompatActivity {
 
 
     private void createDialog(final String text) {
-        //final TextView input = new TextView(ScanQRMLKit.this);
-        //input.setSingleLine(true);
+       // final TextView input = new TextView(ScanQRMLKit.this);
+       // input.setSingleLine(true);
         AlertDialog.Builder builder = new AlertDialog.Builder(this);
         builder.setMessage(text)
-                //.setView(input)
+              // .setView(input)
                 .setPositiveButton("OK", new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialogInterface, int i) {
                        // String f = text.getText().toString();
-
+                       // tv_ReadResult.getText().toString();
                         dialogInterface.dismiss();
 
                     }

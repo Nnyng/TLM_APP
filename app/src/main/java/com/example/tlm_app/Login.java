@@ -35,25 +35,25 @@ public class Login extends AppCompatActivity {
 //        });
 
 
-//        linearLayout_textLogin.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View v) {
-//                Intent intent = new Intent(Login.this, Test01.class);
-//                startActivity(intent);
-//            }
-//        });
+        linearLayout_textLogin.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(Login.this, User_Login.class);
+                startActivity(intent);
+            }
+        });
 
 
 
 
 //
-        linearLayout_textLogin.setOnClickListener(new View.OnClickListener() {
-            @Override
-           public void onClick(View v) {
-                Intent intent = new Intent(Login.this, Login_User.class);
-                startActivity(intent);
-            }
-        });
+//        linearLayout_textLogin.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//           public void onClick(View v) {
+//                Intent intent = new Intent(Login.this, Login_User.class);
+//                startActivity(intent);
+//            }
+//        });
 
         linearLayout_textQrLogin.setOnClickListener(new View.OnClickListener() {
             @Override

@@ -147,12 +147,12 @@ public class Fn_Safety_2 extends AppCompatActivity {
             }
         });
 
-//        btnQRScannerFn2.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View v) {
-//                startActivity(new Intent(Fn_Safety_2.this,ScanQRFn_2.class));
-//            }
-//        });
+        btnQRScannerFn2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(Fn_Safety_2.this,ScanQRFn_2.class));
+            }
+        });
 
 //        listViewSafety2 = (ListView) findViewById(R.id.listViewSafety2);
 //        listViewSafety2.setOnItemLongClickListener(new AdapterView.OnItemLongClickListener() {
