@@ -38,7 +38,7 @@ import java.util.List;
 public class FnSafety_5 extends AppCompatActivity {
     private EditText Signature,ed_Signature,notationFn5_1,notationFn5_2,notationFn5_3,notationFn5_4,notationFn5_5,notationFn5_6;
     private Spinner spinner_numdevice,spinner_locat,spinner_devicetype,spinner_gener5_1,spinner_gener5_2,spinner_gener5_3,spinner_gener5_4,spinner_gener5_5,spinner_gener5_6;
-    public static TextView dateAlert,CalendarText,nameDevicefn5,tv_ReadResultFn5;
+    public static TextView dateAlert,CalendarText,nameDevicefn5,ReadResultFn5;
     private Button btn_save_fb5,btnQRScannerFn5;
     private ListView listViewSafety5;
     private List<FIRECABINETS>firecabinets;
@@ -128,7 +128,7 @@ public class FnSafety_5 extends AppCompatActivity {
 
         btn_save_fb5 = (Button) findViewById(R.id.btn_save_fb5);
         dateAlert = (TextView)findViewById(R.id.datefn5);
-        tv_ReadResultFn5 = (TextView)findViewById(R.id.tv_ReadResultFn5);
+        ReadResultFn5 = (TextView)findViewById(R.id.tv_ReadResultFn5);
 //        spinner_numdevice = (Spinner)findViewById(R.id.spinner_fnsafety5_1);
 //        spinner_locat = (Spinner)findViewById(R.id.spinner_fnsafety5_2);
 //        spinner_devicetype = (Spinner)findViewById(R.id.spinner_fnsafety5_3);
@@ -254,12 +254,12 @@ public class FnSafety_5 extends AppCompatActivity {
              }
          });
 
-//        btnQRScannerFn5.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View v) {
-//                startActivity(new Intent(FnSafety_5.this,ScanQRFn_5.class));
-//            }
-//        });
+        btnQRScannerFn5.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(FnSafety_5.this,ScanQRFn_5.class));
+            }
+        });
 
 
 //         listViewSafety5 = (ListView) findViewById(R.id.listViewSafety5);
@@ -284,7 +284,7 @@ public class FnSafety_5 extends AppCompatActivity {
 //        nameDevicefn5.setText(DeviceName);
 
        String datetime = dateAlert.getText().toString();
-       String result5 = tv_ReadResultFn5.getText().toString();
+       String result5 = ReadResultFn5.getText().toString();
 //        String numdevice = spinner_numdevice.getSelectedItem().toString();
 //        String locat = spinner_locat.getSelectedItem().toString();
 //        String deviceType = spinner_devicetype.getSelectedItem().toString();

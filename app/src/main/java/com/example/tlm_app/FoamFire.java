@@ -3,6 +3,7 @@ package com.example.tlm_app;
 public class FoamFire {
     private String id_fn7;
     private String date_fn7;
+    private String result7;
     private String deviceType_fn7;
     private String location_fn7;
     private String generalityfn_7_1;
@@ -67,6 +68,14 @@ public class FoamFire {
 
     public void setGeneralityfn_7_2(String generalityfn_7_2) {
         this.generalityfn_7_2 = generalityfn_7_2;
+    }
+
+    public String getResult7() {
+        return result7;
+    }
+
+    public void setResult7(String result7) {
+        this.result7 = result7;
     }
 
     public String getGeneralityfn_7_3() {

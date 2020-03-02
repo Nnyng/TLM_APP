@@ -30,10 +30,10 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class FnSafety_6 extends AppCompatActivity {
-    private EditText ed_Sign, Sign;
+    private EditText ed_Sign, Sign,notatat6_1,notatat6_2,notatat6_3,notatat6_4,notatat6_5;
     private Spinner spinner_locat, spinner_TypeDevice, spinner_generat1, spinner_generat2, spinner_generat3, spinner_generat4, spinner_generat5;
-    private TextView datetime, nameDevicefn6;
-    private Button btn_save6;
+    public static TextView datetime, nameDevicefn6,ReadResultFn6;
+    private Button btn_save6,btnQRScannerFn6;
     private List<EyeShower> eyeShowers;
     private DatabaseReference firebaseReference;
     private ImageView im_back_arrowfn6;
@@ -88,7 +88,13 @@ public class FnSafety_6 extends AppCompatActivity {
         datetime = (TextView)findViewById(R.id.datefn6);
 //        spinner_locat = (Spinner) findViewById(R.id.spinner_fnsafety6_1);
 //        spinner_TypeDevice = (Spinner) findViewById(R.id.spinner_fnsafety6_2);
+        ReadResultFn6 = (TextView) findViewById(R.id.tv_ReadResultFn6);
         spinner_generat1 = (Spinner) findViewById(R.id.spinner_fnsafety6_3);
+        notatat6_1= (EditText) findViewById(R.id.notationFn6_1);
+        notatat6_2 = (EditText) findViewById(R.id.notationFn6_2);
+        notatat6_3 = (EditText) findViewById(R.id.notationFn6_3);
+        notatat6_4 = (EditText) findViewById(R.id.notationFn6_4);
+        notatat6_5 = (EditText) findViewById(R.id.notationFn6_5);
         spinner_generat2 = (Spinner) findViewById(R.id.spinner_fnsafety6_4);
         spinner_generat3 = (Spinner) findViewById(R.id.spinner_fnsafety6_5);
         spinner_generat4 = (Spinner) findViewById(R.id.spinner_fnsafety6_6);
@@ -96,6 +102,7 @@ public class FnSafety_6 extends AppCompatActivity {
         //nameDevicefn6 = (TextView) findViewById(R.id.nameDevicefn6);
         //Sign = (EditText) findViewById(R.id.signature_fn6);
         //ed_Sign = (EditText) findViewById(R.id.ed_signspector_fn6);
+        btnQRScannerFn6 = (Button) findViewById(R.id.btnQRScannerFn6);
         im_back_arrowfn6 = (ImageView) findViewById(R.id.im_back_arrowfn6);
         im_back_arrowfn6.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -156,6 +163,13 @@ public class FnSafety_6 extends AppCompatActivity {
             }
         });
 
+        btnQRScannerFn6.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(FnSafety_6.this,ScanQRFn_6.class));
+            }
+        });
+
         eyeShowers = new ArrayList<>();
     }
 
@@ -170,11 +184,17 @@ public class FnSafety_6 extends AppCompatActivity {
         String date = datetime.getText().toString();
 //        String locat = spinner_locat.getSelectedItem().toString();
 //        String typeDevice = spinner_TypeDevice.getSelectedItem().toString();
+        String result6 = ReadResultFn6.getText().toString();
         String generat1 = spinner_generat1.getSelectedItem().toString();
+        String note1 = notatat6_1.getText().toString();
         String generat2 = spinner_generat2.getSelectedItem().toString();
+        String note2 = notatat6_2.getText().toString();
         String generat3 = spinner_generat3.getSelectedItem().toString();
+        String note3 = notatat6_3.getText().toString();
         String generat4 = spinner_generat4.getSelectedItem().toString();
+        String note4 = notatat6_4.getText().toString();
         String generat5 = spinner_generat5.getSelectedItem().toString();
+        String note5 = notatat6_5.getText().toString();
        // String nameDevice = nameDevicefn6.getText().toString();
         //String Signature = Sign.getText().toString();
         //String Ed_signspector = ed_Sign.getText().toString();
@@ -185,12 +205,18 @@ public class FnSafety_6 extends AppCompatActivity {
 
             eye6.setId_fn6(id);
             eye6.setDate_fn6(date);
+            eye6.setResult_fn6(result6);
            // eye6.setDevicetype_fn6(typeDevice);
             eye6.setGeneralityfn6_1(generat1);
+            eye6.setNotation1(note1);
             eye6.setGeneralityfn6_2(generat2);
+            eye6.setNotation2(note2);
             eye6.setGeneralityfn6_3(generat3);
+            eye6.setNotation3(note3);
             eye6.setGeneralityfn6_4(generat4);
+            eye6.setNotation4(note4);
             eye6.setGeneralityfn6_5(generat5);
+            eye6.setNotation5(note5);
            // eye6.setManufacturer_fn6(nameDevice);
            // eye6.setSignature_fn6(Signature);
            // eye6.setEd_signspector_fn6(Ed_signspector);

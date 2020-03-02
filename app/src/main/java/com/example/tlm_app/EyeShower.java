@@ -4,12 +4,18 @@ public class EyeShower {
     private String id_fn6;
     private String date_fn6;
     private String locat_fn6;
+    private String result_fn6;
     private String devicetype_fn6;
     private String generalityfn6_1;
+    private String notation1;
     private String generalityfn6_2;
+    private String notation2;
     private String generalityfn6_3;
+    private String notation3;
     private String generalityfn6_4;
+    private String notation4;
     private String generalityfn6_5;
+    private String notation5;
     private String manufacturer_fn6;
     private String signature_fn6;
     private String ed_signspector_fn6;
@@ -57,6 +63,14 @@ public class EyeShower {
         this.generalityfn6_1 = generalityfn6_1;
     }
 
+    public String getResult_fn6() {
+        return result_fn6;
+    }
+
+    public void setResult_fn6(String result_fn6) {
+        this.result_fn6 = result_fn6;
+    }
+
     public String getGeneralityfn6_2() {
         return generalityfn6_2;
     }
@@ -95,6 +109,46 @@ public class EyeShower {
 
     public void setManufacturer_fn6(String manufacturer_fn6) {
         this.manufacturer_fn6 = manufacturer_fn6;
+    }
+
+    public String getNotation1() {
+        return notation1;
+    }
+
+    public void setNotation1(String notation1) {
+        this.notation1 = notation1;
+    }
+
+    public String getNotation2() {
+        return notation2;
+    }
+
+    public void setNotation2(String notation2) {
+        this.notation2 = notation2;
+    }
+
+    public String getNotation3() {
+        return notation3;
+    }
+
+    public void setNotation3(String notation3) {
+        this.notation3 = notation3;
+    }
+
+    public String getNotation4() {
+        return notation4;
+    }
+
+    public void setNotation4(String notation4) {
+        this.notation4 = notation4;
+    }
+
+    public String getNotation5() {
+        return notation5;
+    }
+
+    public void setNotation5(String notation5) {
+        this.notation5 = notation5;
     }
 
     public String getSignature_fn6() {

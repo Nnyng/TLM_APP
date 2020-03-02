@@ -30,9 +30,9 @@ import java.util.List;
 
 public class FnSafety_7 extends AppCompatActivity {
     private EditText notation,ed_Sign, Sign, position_Signature, position_ed_Signinspector;
-    private TextView datetime,nameDevicefn7;
+    public static TextView datetime,nameDevicefn7,ReadResultFn7;
     private Spinner spinnerDtype,spinnerlocat,spinnergener1,spinnergener2,spinnergener3,spinnergener4,spinnergener5,spinnergener6;
-    private Button btn_save_fb7;
+    private Button btn_save_fb7,btnQRScannerFn7;
     private List<FoamFire>foamFires;
     private DatabaseReference firebaseReference;
     private ImageView im_back_arrowfn7;
@@ -82,8 +82,9 @@ public class FnSafety_7 extends AppCompatActivity {
 
         im_back_arrowfn7 = (ImageView) findViewById(R.id.im_back_arrowfn7);
         datetime = (TextView) findViewById(R.id.datefn7);
-        spinnerDtype = (Spinner) findViewById(R.id.spinner_fnsafety7_1);
-        spinnerlocat = (Spinner) findViewById(R.id.spinner_fnsafety7_2);
+        ReadResultFn7 = (TextView) findViewById(R.id.tv_ReadResultFn7);
+        //spinnerDtype = (Spinner) findViewById(R.id.spinner_fnsafety7_1);
+        //spinnerlocat = (Spinner) findViewById(R.id.spinner_fnsafety7_2);
         spinnergener1 = (Spinner) findViewById(R.id.spinner_fnsafety7_3);
         spinnergener2 = (Spinner) findViewById(R.id.spinner_fnsafety7_4);
         spinnergener3 = (Spinner) findViewById(R.id.spinner_fnsafety7_5);
@@ -91,6 +92,7 @@ public class FnSafety_7 extends AppCompatActivity {
         spinnergener5 = (Spinner) findViewById(R.id.spinner_fnsafety7_7);
         spinnergener6 = (Spinner) findViewById(R.id.spinner_fnsafety7_8);
        // nameDevicefn7 = (TextView) findViewById(R.id.nameDevicefn7);
+        btnQRScannerFn7 = (Button) findViewById(R.id.btnQRScannerFn7);
         notation = (EditText) findViewById(R.id.notationFn7);
         //Sign = (EditText) findViewById(R.id.signature_fn7);
        // position_Signature = (EditText)findViewById(R.id.positionSignfn7);
@@ -110,8 +112,8 @@ public class FnSafety_7 extends AppCompatActivity {
         btn_save_fb7.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                String device = spinnerDtype.getSelectedItem().toString();
-                String location = spinnerlocat.getSelectedItem().toString();
+                //String device = spinnerDtype.getSelectedItem().toString();
+                //String location = spinnerlocat.getSelectedItem().toString();
                 String generality1 = spinnergener1.getSelectedItem().toString();
                 String generality2 = spinnergener2.getSelectedItem().toString();
                 String generality3 = spinnergener3.getSelectedItem().toString();
@@ -120,14 +122,14 @@ public class FnSafety_7 extends AppCompatActivity {
                 String generality6 = spinnergener6.getSelectedItem().toString();
                 String note = notation.getText().toString();
 
-                if(TextUtils.isEmpty(device)){
-                    Toast.makeText(getApplicationContext(),"กรุณากรอกข้อมูลให้ครบ!",Toast.LENGTH_SHORT).show();
-                    return;
-                }
-                if(TextUtils.isEmpty(location)){
-                    Toast.makeText(getApplicationContext(),"กรุณากรอกข้อมูลให้ครบ!",Toast.LENGTH_SHORT).show();
-                    return;
-                }
+//                if(TextUtils.isEmpty(device)){
+//                    Toast.makeText(getApplicationContext(),"กรุณากรอกข้อมูลให้ครบ!",Toast.LENGTH_SHORT).show();
+//                    return;
+//                }
+//                if(TextUtils.isEmpty(location)){
+//                    Toast.makeText(getApplicationContext(),"กรุณากรอกข้อมูลให้ครบ!",Toast.LENGTH_SHORT).show();
+//                    return;
+//                }
                 if(TextUtils.isEmpty(generality1)){
                     Toast.makeText(getApplicationContext(),"กรุณากรอกข้อมูลให้ครบ!",Toast.LENGTH_SHORT).show();
                     return;
@@ -174,8 +176,9 @@ public class FnSafety_7 extends AppCompatActivity {
 //        nameDevicefn7.setText(DeviceName);
 
         String date = datetime.getText().toString();
-        String devicetype = spinnerDtype.getSelectedItem().toString();
-        String locat = spinnerlocat.getSelectedItem().toString();
+//        String devicetype = spinnerDtype.getSelectedItem().toString();
+//        String locat = spinnerlocat.getSelectedItem().toString();
+        String result7 = ReadResultFn7.getText().toString();
         String gener1 = spinnergener1.getSelectedItem().toString();
         String gener2 = spinnergener2.getSelectedItem().toString();
         String gener3 = spinnergener3.getSelectedItem().toString();
@@ -189,14 +192,15 @@ public class FnSafety_7 extends AppCompatActivity {
        // String ed_Signfn7 = ed_Sign.getText().toString();
         //String posit_EdSign = position_ed_Signinspector.getText().toString();
 
-        if(!TextUtils.isEmpty(locat)){
+        if(!TextUtils.isEmpty(gener1)){
             String id = firebaseReference.child("CheckFoamFireFn7").push().getKey();
             FoamFire fire7 = new FoamFire();
 
             fire7.setId_fn7(id);
             fire7.setDate_fn7(date);
-            fire7.setDeviceType_fn7(devicetype);
-            fire7.setLocation_fn7(locat);
+//            fire7.setDeviceType_fn7(devicetype);
+//            fire7.setLocation_fn7(locat);
+            fire7.setResult7(result7);
             fire7.setGeneralityfn_7_1(gener1);
             fire7.setGeneralityfn_7_2(gener2);
             fire7.setGeneralityfn_7_3(gener3);
