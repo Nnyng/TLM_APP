@@ -185,12 +185,12 @@ public class FnSafety_3 extends AppCompatActivity {
             }
         });
 
-//        btnQRScannerFn3.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View v) {
-//                startActivity(new Intent(FnSafety_3.this,ScanQRFn_3.class));
-//            }
-//        });
+        btnQRScannerFn3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(FnSafety_3.this,ScanQRFn_3.class));
+            }
+        });
 
 //        numlocation.setOnItemClickListener(new AdapterView.OnItemClickListener() {
 //

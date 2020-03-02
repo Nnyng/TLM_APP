@@ -35,7 +35,7 @@ import java.util.List;
 public class FnSafety_4 extends AppCompatActivity {
     private EditText notationFnSafety4,Sign,ed_Sign;
     private Spinner spinner_location,spinner_type,spinner_generality;
-    public static TextView date,nameDevicefn4,tv_ReadResultFn4;
+    public static TextView date,nameDevicefn4,ReadResultFn4;
     private Button  btn_save_fn4,btnQRScannerFn4;
     private ListView listViewSafety4;
     private List<FireExitDoors>fireExitDoors;
@@ -93,7 +93,7 @@ public class FnSafety_4 extends AppCompatActivity {
 
         btn_save_fn4 = (Button) findViewById(R.id.btn_save_fn4);
         date = (TextView) findViewById(R.id.datefn4);
-        tv_ReadResultFn4 = (TextView) findViewById(R.id.tv_ReadResultFn4);
+        ReadResultFn4 = (TextView) findViewById(R.id.tv_ReadResultFn4);
         //spinner_location = (Spinner) findViewById(R.id.spinner_fnsafety4_1);
         //spinner_type = (Spinner) findViewById(R.id.spinner_fnsafety4_2);
         spinner_generality = (Spinner) findViewById(R.id.spinner_fnsafety4_3);
@@ -146,12 +146,12 @@ public class FnSafety_4 extends AppCompatActivity {
             }
         });
 
-//        btnQRScannerFn4.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View v) {
-//                startActivity(new Intent(FnSafety_4.this,ScanQRFn_4.class));
-//            }
-//        });
+        btnQRScannerFn4.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(FnSafety_4.this,ScanQRFn_4.class));
+            }
+        });
 
 
 //        listViewSafety4 = (ListView) findViewById(R.id.listViewSafety4);
@@ -180,7 +180,7 @@ public class FnSafety_4 extends AppCompatActivity {
 
         String btn = btn_save_fn4.getText().toString();
         String datetime = date.getText().toString();
-        String result4 = tv_ReadResultFn4.getText().toString();
+        String result4 = ReadResultFn4.getText().toString();
         //String location = spinner_location.getSelectedItem().toString();
         //String type = spinner_type.getSelectedItem().toString();
         String generality = spinner_generality.getSelectedItem().toString();
