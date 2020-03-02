@@ -3,15 +3,21 @@ package com.example.tlm_app;
 public class FoamFire {
     private String id_fn7;
     private String date_fn7;
-    private String result7;
+   private  String resultfn7;
     private String deviceType_fn7;
     private String location_fn7;
     private String generalityfn_7_1;
+    private String notetationfn7_1;
     private String generalityfn_7_2;
+    private String notetationfn7_2;
     private String generalityfn_7_3;
+    private String notetationfn7_3;
     private String generalityfn_7_4;
+    private String notetationfn7_4;
     private String generalityfn_7_5;
+    private String notetationfn7_5;
     private String generalityfn_7_6;
+    private String notetationfn7_6;
     private String manufacturer_fn7;
     private String notation_fn7;
     private String signature_fn7;
@@ -70,12 +76,60 @@ public class FoamFire {
         this.generalityfn_7_2 = generalityfn_7_2;
     }
 
-    public String getResult7() {
-        return result7;
+    public String getResultfn7() {
+        return resultfn7;
     }
 
-    public void setResult7(String result7) {
-        this.result7 = result7;
+    public String getNotetationfn7_1() {
+        return notetationfn7_1;
+    }
+
+    public void setNotetationfn7_1(String notetationfn7_1) {
+        this.notetationfn7_1 = notetationfn7_1;
+    }
+
+    public String getNotetationfn7_2() {
+        return notetationfn7_2;
+    }
+
+    public void setNotetationfn7_2(String notetationfn7_2) {
+        this.notetationfn7_2 = notetationfn7_2;
+    }
+
+    public String getNotetationfn7_3() {
+        return notetationfn7_3;
+    }
+
+    public void setNotetationfn7_3(String notetationfn7_3) {
+        this.notetationfn7_3 = notetationfn7_3;
+    }
+
+    public String getNotetationfn7_4() {
+        return notetationfn7_4;
+    }
+
+    public void setNotetationfn7_4(String notetationfn7_4) {
+        this.notetationfn7_4 = notetationfn7_4;
+    }
+
+    public String getNotetationfn7_5() {
+        return notetationfn7_5;
+    }
+
+    public void setNotetationfn7_5(String notetationfn7_5) {
+        this.notetationfn7_5 = notetationfn7_5;
+    }
+
+    public String getNotetationfn7_6() {
+        return notetationfn7_6;
+    }
+
+    public void setNotetationfn7_6(String notetationfn7_6) {
+        this.notetationfn7_6 = notetationfn7_6;
+    }
+
+    public void setResultfn7(String resultfn7) {
+        this.resultfn7 = resultfn7;
     }
 
     public String getGeneralityfn_7_3() {

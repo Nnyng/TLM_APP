@@ -29,7 +29,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class FnSafety_7 extends AppCompatActivity {
-    private EditText notation,ed_Sign, Sign, position_Signature, position_ed_Signinspector;
+    private EditText ed_Sign, Sign, position_Signature, position_ed_Signinspector,notatFn7_1,notatFn7_2,notatFn7_3,notatFn7_4,notatFn7_5,notatFn7_6;
     public static TextView datetime,nameDevicefn7,ReadResultFn7;
     private Spinner spinnerDtype,spinnerlocat,spinnergener1,spinnergener2,spinnergener3,spinnergener4,spinnergener5,spinnergener6;
     private Button btn_save_fb7,btnQRScannerFn7;
@@ -86,14 +86,20 @@ public class FnSafety_7 extends AppCompatActivity {
         //spinnerDtype = (Spinner) findViewById(R.id.spinner_fnsafety7_1);
         //spinnerlocat = (Spinner) findViewById(R.id.spinner_fnsafety7_2);
         spinnergener1 = (Spinner) findViewById(R.id.spinner_fnsafety7_3);
+        notatFn7_1 = (EditText) findViewById(R.id.notationFn7_1);
         spinnergener2 = (Spinner) findViewById(R.id.spinner_fnsafety7_4);
+        notatFn7_2 = (EditText) findViewById(R.id.notationFn7_2);
         spinnergener3 = (Spinner) findViewById(R.id.spinner_fnsafety7_5);
+        notatFn7_3 = (EditText) findViewById(R.id.notationFn7_3);
         spinnergener4 = (Spinner) findViewById(R.id.spinner_fnsafety7_6);
+        notatFn7_4 = (EditText) findViewById(R.id.notationFn7_4);
         spinnergener5 = (Spinner) findViewById(R.id.spinner_fnsafety7_7);
+        notatFn7_5 = (EditText) findViewById(R.id.notationFn7_5);
         spinnergener6 = (Spinner) findViewById(R.id.spinner_fnsafety7_8);
-       // nameDevicefn7 = (TextView) findViewById(R.id.nameDevicefn7);
+        notatFn7_6 = (EditText) findViewById(R.id.notationFn7_6);
+        // nameDevicefn7 = (TextView) findViewById(R.id.nameDevicefn7);
         btnQRScannerFn7 = (Button) findViewById(R.id.btnQRScannerFn7);
-        notation = (EditText) findViewById(R.id.notationFn7);
+
         //Sign = (EditText) findViewById(R.id.signature_fn7);
        // position_Signature = (EditText)findViewById(R.id.positionSignfn7);
        // ed_Sign = (EditText) findViewById(R.id.ed_signspector_fn7);
@@ -120,7 +126,7 @@ public class FnSafety_7 extends AppCompatActivity {
                 String generality4 = spinnergener4.getSelectedItem().toString();
                 String generality5 = spinnergener5.getSelectedItem().toString();
                 String generality6 = spinnergener6.getSelectedItem().toString();
-                String note = notation.getText().toString();
+
 
 //                if(TextUtils.isEmpty(device)){
 //                    Toast.makeText(getApplicationContext(),"กรุณากรอกข้อมูลให้ครบ!",Toast.LENGTH_SHORT).show();
@@ -165,6 +171,13 @@ public class FnSafety_7 extends AppCompatActivity {
             }
         });
 
+        btnQRScannerFn7.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(FnSafety_7.this,ScanQRFn_7.class));
+            }
+        });
+
         foamFires = new ArrayList<>();
     }
 
@@ -180,13 +193,19 @@ public class FnSafety_7 extends AppCompatActivity {
 //        String locat = spinnerlocat.getSelectedItem().toString();
         String result7 = ReadResultFn7.getText().toString();
         String gener1 = spinnergener1.getSelectedItem().toString();
+        String note1 = notatFn7_1.getText().toString();
         String gener2 = spinnergener2.getSelectedItem().toString();
+        String note2 = notatFn7_2.getText().toString();
         String gener3 = spinnergener3.getSelectedItem().toString();
+        String note3 = notatFn7_3.getText().toString();
         String gener4 = spinnergener4.getSelectedItem().toString();
+        String note4 = notatFn7_4.getText().toString();
         String gener5 = spinnergener5.getSelectedItem().toString();
+        String note5 = notatFn7_5.getText().toString();
         String gener6 = spinnergener6.getSelectedItem().toString();
+        String note6 = notatFn7_6.getText().toString();
       //  String nameDevice = nameDevicefn7.getText().toString();
-        String note = notation.getText().toString();
+
        // String signfn7 = Sign.getText().toString();
        // String posit_Sign = position_Signature.getText().toString();
        // String ed_Signfn7 = ed_Sign.getText().toString();
@@ -200,15 +219,21 @@ public class FnSafety_7 extends AppCompatActivity {
             fire7.setDate_fn7(date);
 //            fire7.setDeviceType_fn7(devicetype);
 //            fire7.setLocation_fn7(locat);
-            fire7.setResult7(result7);
+            fire7.setResultfn7(result7);
             fire7.setGeneralityfn_7_1(gener1);
+            fire7.setNotetationfn7_1(note1);
             fire7.setGeneralityfn_7_2(gener2);
+            fire7.setNotetationfn7_2(note2);
             fire7.setGeneralityfn_7_3(gener3);
+            fire7.setNotetationfn7_3(note3);
             fire7.setGeneralityfn_7_4(gener4);
+            fire7.setNotetationfn7_4(note4);
             fire7.setGeneralityfn_7_5(gener5);
+            fire7.setNotetationfn7_5(note5);
             fire7.setGeneralityfn_7_6(gener6);
+            fire7.setNotetationfn7_6(note6);
             //fire7.setManufacturer_fn7(nameDevice);
-            fire7.setNotation_fn7(note);
+
             //fire7.setSignature_fn7(signfn7);
            // fire7.setPosition_signature_fn7(posit_Sign);
            // fire7.setEd_signspector_fn7(ed_Signfn7);
